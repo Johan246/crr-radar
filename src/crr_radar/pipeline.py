@@ -22,7 +22,7 @@ def run_ingest(
     store: Store,
     only_sources: list[str] | None = None,
     limit: int | None = None,
-    max_age_days: int = 120,
+    max_age_days: int = 730,
 ) -> dict:
     client = make_client()
     known = store.known_hashes()
@@ -53,62 +53,14 @@ def run_ingest(
         for raw in raws:
             if limit is not None and s["new"] >= limit:
                 break
-            h = url_hash(raw.url)
-            if h in known:
-                s["duplicate"] += 1
-                continue
-            if raw.published_at and raw.published_at < cutoff:
-                s["too_old"] += 1
-                continue
-            known.add(h)
-            s["new"] += 1
-
-            # Stage 1 prefilter on cheap text; fetch the article only if needed.
-            article_text = ""
-            matched = keyword_match(cfg, f"{raw.title} {raw.feed_summary}")
-            if not matched and source.fetch_article_text:
-                article_text, date = fetch_article(client, raw.url)
-                if date and not raw.published_at:
-                    raw.published_at = date
-                matched = keyword_match(cfg, article_text)
-            if not matched:
-                _store_skipped(store, source, raw, h, article_text)
-                s["prefilter_skip"] += 1
-                continue
-            if source.fetch_article_text and not article_text:
-                article_text, date = fetch_article(client, raw.url)
-                if date and not raw.published_at:
-                    raw.published_at = date
-
-            cls = classify(cfg, source, raw, article_text)
-            row = {
-                "url": raw.url,
-                "url_hash": h,
-                "guid": raw.guid,
-                "title": raw.title,
-                "source_key": source.key,
-                "source_name": source.name,
-                "source_org": source.org,
-                "author_type": source.author_type,
-                "published_at": raw.published_at,
-                "first_seen_at": utcnow(),
-                "summary": cls["summary"],
-                "why_it_matters": cls["why_it_matters"],
-                "doc_status": cls["doc_status"],
-                "topics": cls["topics"],
-                "relevant": 1 if cls["relevant"] else 0,
-                "raw_excerpt": (article_text or raw.feed_summary)[:800],
-                "llm_model": cls["llm_model"],
-                "classified_at": utcnow(),
-            }
-            if not cls["relevant"]:
-                store.insert_item(row)
-                s["llm_skip"] += 1
-                continue
-            row["reviews"] = review(raw.title, cls["summary"], cls["why_it_matters"])
-            store.insert_item(row)
-            s["stored"] += 1
-            print(f"  + [{source.key}] {raw.title[:80]}")
+            try:
+                _process_item(cfg, store, client, source, raw, known, cutoff, s)
+            except Exception as exc:
+                errors.append(
+                    {"source": source.key, "url": raw.url,
+                     "error": f"{type(exc).__name__}: {exc}"}
+                )
+                print(f"    ! item failed [{source.key}] {raw.url}: {exc}")
 
         print(
             f"  ✓ {source.key}: {s['fetched']} fetched, {s['new']} new, "
@@ -124,8 +76,75 @@ def run_ingest(
         f"~${usage['approx_cost_usd']}"
     )
     if errors:
-        print(f"{len(errors)} source(s) failed: {[e['source'] for e in errors]}")
+        print(f"{len(errors)} error(s): {[e['source'] for e in errors][:10]}")
     return {"stats": stats, "errors": errors}
+
+
+def _process_item(cfg, store, client, source, raw, known, cutoff, s) -> None:
+    h = url_hash(raw.url)
+    if h in known:
+        s["duplicate"] += 1
+        return
+    if raw.published_at and raw.published_at < cutoff:
+        s["too_old"] += 1
+        return
+    known.add(h)
+    s["new"] += 1
+
+    # Stage 1 prefilter on cheap text; fetch the article only if needed.
+    article_text = ""
+    matched = keyword_match(cfg, f"{raw.title} {raw.feed_summary}")
+    if (not matched or raw.title_is_slug) and source.fetch_article_text:
+        article_text = _fetch_and_enrich(client, raw)
+        matched = matched or keyword_match(cfg, f"{raw.title} {article_text}")
+    if not matched:
+        _store_skipped(store, source, raw, h, article_text)
+        s["prefilter_skip"] += 1
+        return
+    if source.fetch_article_text and not article_text:
+        article_text = _fetch_and_enrich(client, raw)
+
+    cls = classify(cfg, source, raw, article_text)
+    row = {
+        "url": raw.url,
+        "url_hash": h,
+        "guid": raw.guid,
+        "title": raw.title,
+        "source_key": source.key,
+        "source_name": source.name,
+        "source_org": source.org,
+        "author_type": source.author_type,
+        "published_at": raw.published_at,
+        "first_seen_at": utcnow(),
+        "summary": cls["summary"],
+        "why_it_matters": cls["why_it_matters"],
+        "doc_status": cls["doc_status"],
+        "topics": cls["topics"],
+        "relevant": 1 if cls["relevant"] else 0,
+        "raw_excerpt": (article_text or raw.feed_summary)[:800],
+        "llm_model": cls["llm_model"],
+        "classified_at": utcnow(),
+    }
+    if not cls["relevant"]:
+        store.insert_item(row)
+        s["llm_skip"] += 1
+        return
+    row["reviews"] = review(raw.title, cls["summary"], cls["why_it_matters"])
+    store.insert_item(row)
+    s["stored"] += 1
+    print(f"  + [{source.key}] {raw.title[:80]}")
+
+
+def _fetch_and_enrich(client, raw) -> str:
+    """Fetch the article; backfill the item's date and replace slug titles
+    with the real page title."""
+    article_text, date, page_title = fetch_article(client, raw.url)
+    if date and not raw.published_at:
+        raw.published_at = date
+    if raw.title_is_slug and page_title:
+        raw.title = page_title
+        raw.title_is_slug = False
+    return article_text
 
 
 def _store_skipped(store: Store, source, raw, h: str, article_text: str) -> None:

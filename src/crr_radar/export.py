@@ -1,9 +1,12 @@
-"""Export relevant items to site/data/items.json for the static dashboard."""
+"""Export relevant items + the curated reference library to
+site/data/items.json for the static dashboard."""
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
+
+import yaml
 
 from .config import Config, project_root
 from .store import Store, utcnow
@@ -28,8 +31,19 @@ def run_export(cfg: Config, store: Store, out_path: Path | None = None) -> Path:
             {"key": s.key, "name": s.name, "org": s.org, "author_type": s.author_type}
             for s in cfg.active_sources
         ],
+        "references": _load_references(),
         "items": items,
     }
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
     print(f"Exported {len(items)} items → {out_path}")
     return out_path
+
+
+def _load_references() -> list[dict]:
+    path = project_root() / "config" / "references.yaml"
+    if not path.exists():
+        return []
+    refs = yaml.safe_load(path.read_text()).get("references", [])
+    for ref in refs:
+        ref["description"] = " ".join(str(ref.get("description", "")).split())
+    return refs

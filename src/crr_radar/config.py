@@ -22,11 +22,19 @@ class Source:
     name: str
     org: str
     author_type: str  # regulatory | consumer
-    fetch: str  # rss | html
-    url: str
+    fetch: str  # rss | html | sitemap
+    url: str = ""
+    urls: list[str] | None = None          # multiple listing URLs (e.g. per-year archives)
+    url_template: str | None = None        # pagination: URL containing {page}
+    max_pages: int = 1
+    page_start: int = 1
     link_selector: str | None = None
-    url_include: str | None = None
-    title_exclude: str | None = None  # regex; matching items are dropped at fetch
+    url_include: str | None = None         # regex a candidate URL must match
+    title_exclude: str | None = None       # regex; matching items are dropped at fetch
+    url_date_regex: str | None = None      # regex with one yymmdd capture group
+    sitemap_include: str | None = None     # regex filter on sitemap <loc> URLs
+    sitemap_index_include: str | None = None  # regex to select sub-sitemaps in an index
+    max_items: int = 300                   # cap per crawl (sitemap sources)
     fetch_article_text: bool = True
     active: bool = True
 

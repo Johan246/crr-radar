@@ -24,6 +24,20 @@ sources:
     url: https://www.bankingsupervision.europa.eu/rss/press.html
     active: true
 
+  - key: ecb-ssm-archive
+    name: ECB Banking Supervision (SSM)
+    org: ECB/SSM
+    author_type: regulatory
+    fetch: html
+    # Static per-year fragments behind the JS press list. Add new years here.
+    urls:
+      - https://www.bankingsupervision.europa.eu/press/pr/date/2024/html/index_include.en.html
+      - https://www.bankingsupervision.europa.eu/press/pr/date/2025/html/index_include.en.html
+      - https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/index_include.en.html
+    url_include: "press/pr/date/.*\\.en\\.html$"
+    url_date_regex: "\\.pr(\\d{6})"
+    active: true
+
   - key: ecb
     name: European Central Bank
     org: ECB
@@ -38,8 +52,11 @@ sources:
     author_type: regulatory
     fetch: html
     url: https://finance.ec.europa.eu/news_en
+    url_template: "https://finance.ec.europa.eu/news_en?page={page}"
+    page_start: 0
+    max_pages: 8
     link_selector: "article a, .ecl-content-item a.ecl-link"
-    url_include: "finance.ec.europa.eu"
+    url_include: "finance\\.ec\\.europa\\.eu"
     active: true
 
   - key: esrb
@@ -70,12 +87,33 @@ sources:
     url: https://www.bankofengland.co.uk/rss/news
     active: true
 
+  - key: boe-archive
+    name: Bank of England / PRA
+    org: BoE/PRA
+    author_type: regulatory
+    fetch: sitemap
+    # Full-site sitemap (from robots.txt); news + PRA publications, 2024 onward.
+    url: https://www.bankofengland.co.uk/_api/sitemap/getsitemap
+    sitemap_include: "/(news|prudential-regulation/publication)/202[4-9]/"
+    max_items: 400
+    active: true
+
   - key: bcbs
     name: Basel Committee on Banking Supervision
     org: BCBS/BIS
     author_type: regulatory
     fetch: rss
     url: https://www.bis.org/doclist/bcbspubls.rss
+    active: true
+
+  - key: bcbs-archive
+    name: Basel Committee on Banking Supervision
+    org: BCBS/BIS
+    author_type: regulatory
+    fetch: sitemap
+    url: https://www.bis.org/sitemap.xml
+    sitemap_index_include: "documents_202[4-9]"
+    sitemap_include: "bcbs/publ/.*\\.htm$"
     active: true
 
   # ------------------------------------------------------------------
@@ -98,6 +136,8 @@ sources:
     author_type: consumer
     fetch: rss
     url: https://www.ebf.eu/feed/
+    url_template: "https://www.ebf.eu/feed/?paged={page}"
+    max_pages: 12
     active: true
 
   - key: isda
@@ -106,6 +146,8 @@ sources:
     author_type: consumer
     fetch: rss
     url: https://www.isda.org/feed/
+    url_template: "https://www.isda.org/feed/?paged={page}"
+    max_pages: 20
     active: true
 
   - key: deloitte
@@ -154,8 +196,10 @@ sources:
     author_type: consumer
     fetch: html
     url: https://www.afme.eu/news-insights/press-releases/
+    url_template: "https://www.afme.eu/news-insights/press-releases/?page={page}"
+    max_pages: 12
     link_selector: "a[href*='/news-insights/press-releases/']"
-    url_include: "afme.eu"
+    url_include: "afme\\.eu"
     active: true
 
   # ------------------------------------------------------------------

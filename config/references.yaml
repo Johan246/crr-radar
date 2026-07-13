@@ -1,0 +1,255 @@
+# CRR Radar — curated reference library.
+# The core documents a credit risk professional works against. Shown in the
+# dashboard's Reference Library view and cross-linked from news items that
+# share a topic. Keep descriptions to one or two scannable sentences.
+#
+# group: legislation | eba | ecb | basel | uk
+# doc_type: regulation | directive | guideline | guide | standard | report | tool | policy
+
+references:
+  # ------------------------------------------------------------- EU law
+  - key: crr
+    group: legislation
+    title: "Regulation (EU) No 575/2013 — Capital Requirements Regulation (CRR)"
+    org: EU
+    doc_type: regulation
+    date: "2013-06-26"
+    url: https://eur-lex.europa.eu/eli/reg/2013/575/oj
+    topics: [crr3-implementation, irb-approach, standardised-approach, large-exposures]
+    description: >
+      The core prudential rulebook for EU banks: own funds, credit risk
+      (standardised and IRB), large exposures, liquidity and reporting.
+      Use the consolidated version on EUR-Lex for the current text.
+
+  - key: crr3
+    group: legislation
+    title: "Regulation (EU) 2024/1623 — CRR3 (Basel III implementation)"
+    org: EU
+    doc_type: regulation
+    date: "2024-05-31"
+    url: https://eur-lex.europa.eu/eli/reg/2024/1623/oj
+    topics: [crr3-implementation, output-floor, irb-approach, standardised-approach]
+    description: >
+      The amending regulation implementing final Basel III in the EU: output
+      floor, revised standardised approach, IRB constraints (removal of A-IRB
+      for large corporates, input floors), applicable from 1 January 2025.
+
+  - key: crd4
+    group: legislation
+    title: "Directive 2013/36/EU — Capital Requirements Directive (CRD IV)"
+    org: EU
+    doc_type: directive
+    date: "2013-06-26"
+    url: https://eur-lex.europa.eu/eli/dir/2013/36/oj
+    topics: [crr3-implementation, reporting-disclosure]
+    description: >
+      The directive half of the framework: authorisation, supervisory review
+      (SREP), buffers, governance and remuneration.
+
+  - key: crd6
+    group: legislation
+    title: "Directive (EU) 2024/1619 — CRD VI"
+    org: EU
+    doc_type: directive
+    date: "2024-05-31"
+    url: https://eur-lex.europa.eu/eli/dir/2024/1619/oj
+    topics: [crr3-implementation]
+    description: >
+      Companion directive to CRR3: supervisory powers, third-country branches,
+      ESG risk management requirements and fit-and-proper rules.
+
+  - key: banking-package
+    group: legislation
+    title: "European Commission — Banking Package (CRR3/CRD VI) overview"
+    org: European Commission
+    doc_type: tool
+    date: "2021-10-27"
+    url: https://finance.ec.europa.eu/publications/banking-package_en
+    topics: [crr3-implementation]
+    description: >
+      The Commission's landing page for the 2021 banking package with
+      legislative history, impact assessments and delegated acts.
+
+  # ------------------------------------------------------------- EBA
+  - key: eba-single-rulebook
+    group: eba
+    title: "EBA Interactive Single Rulebook"
+    org: EBA
+    doc_type: tool
+    url: https://www.eba.europa.eu/regulation-and-policy/single-rulebook/interactive-single-rulebook
+    topics: [crr3-implementation, reporting-disclosure]
+    description: >
+      Article-by-article view of CRR/CRD with all associated technical
+      standards, guidelines and Q&As attached. The fastest way from an
+      article number to everything that hangs off it.
+
+  - key: eba-qa
+    group: eba
+    title: "EBA Single Rulebook Q&A tool"
+    org: EBA
+    doc_type: tool
+    url: https://www.eba.europa.eu/single-rule-book-qa
+    topics: [crr3-implementation, reporting-disclosure]
+    description: >
+      Searchable database of official interpretations of CRR/CRD questions.
+      Practically binding for supervisory dialogue.
+
+  - key: eba-basel-roadmap
+    group: eba
+    title: "EBA Roadmap on the Banking Package (Basel III implementation)"
+    org: EBA
+    doc_type: report
+    date: "2023-12-14"
+    url: https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-roadmap-implementation-eu-banking-package
+    topics: [crr3-implementation, output-floor]
+    description: >
+      The EBA's plan and timeline for the ~140 mandates under CRR3/CRD VI —
+      the master schedule for what technical standards land when.
+
+  - key: eba-gl-pd-lgd
+    group: eba
+    title: "EBA Guidelines on PD estimation, LGD estimation and defaulted assets (EBA/GL/2017/16)"
+    org: EBA
+    doc_type: guideline
+    date: "2017-11-20"
+    url: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/model-validation/guidelines-pd-estimation-lgd
+    topics: [irb-approach]
+    description: >
+      The core IRB modelling standard: how to build and calibrate PD and LGD
+      models, margin of conservatism, treatment of defaulted assets.
+
+  - key: eba-gl-dod
+    group: eba
+    title: "EBA Guidelines on the definition of default (EBA/GL/2016/07)"
+    org: EBA
+    doc_type: guideline
+    date: "2016-09-28"
+    url: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-application-definition
+    topics: [irb-approach, npl-provisioning]
+    description: >
+      Harmonised application of the Article 178 default definition: days past
+      due, unlikeliness to pay, materiality thresholds, return to non-default.
+
+  - key: eba-gl-downturn-lgd
+    group: eba
+    title: "EBA Guidelines on downturn LGD estimation (EBA/GL/2019/03)"
+    org: EBA
+    doc_type: guideline
+    date: "2019-03-06"
+    url: https://www.eba.europa.eu/regulatory-technical-standards-and-guidelines-estimation-and-identification-economic-downturn-irb
+    topics: [irb-approach]
+    description: >
+      How to identify downturn periods and quantify downturn adjustments in
+      LGD estimates — completes the IRB repair programme with GL/2017/16.
+
+  - key: eba-gl-crm-airb
+    group: eba
+    title: "EBA Guidelines on credit risk mitigation for A-IRB institutions (EBA/GL/2020/05)"
+    org: EBA
+    doc_type: guideline
+    date: "2020-05-06"
+    url: https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-guidelines-credit-risk-mitigation
+    topics: [credit-risk-mitigation, irb-approach]
+    description: >
+      Eligibility and recognition of guarantees and collateral when using own
+      LGD estimates.
+
+  - key: eba-gl-npe
+    group: eba
+    title: "EBA Guidelines on management of non-performing and forborne exposures (EBA/GL/2018/06)"
+    org: EBA
+    doc_type: guideline
+    date: "2018-10-31"
+    url: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-management-non-performing
+    topics: [npl-provisioning]
+    description: >
+      NPE strategy, governance and operational requirements for banks with
+      elevated NPL levels; the framework behind NPE reporting and forbearance.
+
+  - key: eba-gl-lom
+    group: eba
+    title: "EBA Guidelines on loan origination and monitoring (EBA/GL/2020/06)"
+    org: EBA
+    doc_type: guideline
+    date: "2020-05-29"
+    url: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-loan-origination-and-monitoring
+    topics: [credit-risk-mitigation, npl-provisioning]
+    description: >
+      End-to-end credit-granting standards: creditworthiness assessment,
+      collateral valuation, pricing frameworks and ongoing monitoring.
+
+  # ------------------------------------------------------------- ECB
+  - key: ecb-guide-internal-models
+    group: ecb
+    title: "ECB Guide to internal models (2024 revision)"
+    org: ECB/SSM
+    doc_type: guide
+    date: "2024-02-19"
+    url: https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202402_internalmodels.en.pdf
+    topics: [irb-approach, counterparty-credit-risk]
+    description: >
+      The ECB's supervisory expectations for IRB (and other) models: model
+      governance, data, validation, return-to-standardised. What model teams
+      are inspected against.
+
+  - key: ecb-trim-report
+    group: ecb
+    title: "ECB TRIM project report (targeted review of internal models)"
+    org: ECB/SSM
+    doc_type: report
+    date: "2021-04-19"
+    url: https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.trim_project_report~aa49bb624c.en.pdf
+    topics: [irb-approach]
+    description: >
+      Findings from the ECB's multi-year on-site review of internal models —
+      still the reference for common IRB findings and supervisory follow-up.
+
+  - key: ecb-npl-guidance
+    group: ecb
+    title: "ECB Guidance to banks on non-performing loans"
+    org: ECB/SSM
+    doc_type: guide
+    date: "2017-03-20"
+    url: https://www.bankingsupervision.europa.eu/ecb/pub/pdf/guidance_on_npl.en.pdf
+    topics: [npl-provisioning]
+    description: >
+      Supervisory expectations for NPL strategy, governance, provisioning and
+      collateral valuation, extended by the 2018 addendum on provisioning
+      backstops.
+
+  # ------------------------------------------------------------- Basel
+  - key: basel-framework
+    group: basel
+    title: "BCBS — The Basel Framework (consolidated)"
+    org: BCBS/BIS
+    doc_type: standard
+    url: https://www.bis.org/basel_framework/
+    topics: [standardised-approach, irb-approach, output-floor, counterparty-credit-risk]
+    description: >
+      The consolidated global standards; the CRE chapters cover credit risk
+      (standardised, IRB, CRM, securitisation) that CRR3 transposes.
+
+  - key: basel-d424
+    group: basel
+    title: "Basel III: Finalising post-crisis reforms (December 2017)"
+    org: BCBS/BIS
+    doc_type: standard
+    date: "2017-12-07"
+    url: https://www.bis.org/bcbs/publ/d424.htm
+    topics: [output-floor, standardised-approach, irb-approach]
+    description: >
+      The 'Basel IV' package: revised standardised approach, IRB constraints
+      and the 72.5% output floor — the source text behind CRR3.
+
+  # ------------------------------------------------------------- UK
+  - key: pra-ps9-24
+    group: uk
+    title: "PRA PS9/24 — Implementation of Basel 3.1: near-final rules part 2 (credit risk)"
+    org: BoE/PRA
+    doc_type: policy
+    date: "2024-09-12"
+    url: https://www.bankofengland.co.uk/prudential-regulation/publication/2024/september/implementation-of-the-basel-3-1-standards-near-final-policy-statement-part-2
+    topics: [standardised-approach, irb-approach, output-floor]
+    description: >
+      The UK's near-final credit risk rules under Basel 3.1 — the comparison
+      point for EU/UK divergence on standardised and IRB treatment.

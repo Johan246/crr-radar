@@ -3,6 +3,7 @@
 const LAST_VISIT_KEY = "crr_radar_last_visit";
 
 const state = {
+  view: "feed", // feed | refs
   authorType: "all",
   org: "all",
   topics: new Set(),
@@ -12,7 +13,7 @@ const state = {
   showLowSignal: false,
 };
 
-let DATA = { items: [], topics: {}, sources: [] };
+let DATA = { items: [], topics: {}, sources: [], references: [] };
 let lastVisit = null;
 
 const $ = (sel) => document.querySelector(sel);
@@ -66,6 +67,74 @@ function fmtDay(iso) {
   });
 }
 
+const REF_GROUPS = {
+  legislation: "EU legislation",
+  eba: "EBA standards & guidelines",
+  ecb: "ECB supervisory guides",
+  basel: "Basel framework",
+  uk: "UK / PRA",
+};
+
+function relatedRefs(item) {
+  return DATA.references
+    .filter((r) => (r.topics || []).some((t) => item.topics.includes(t)))
+    .slice(0, 3);
+}
+
+function relatedRefsHTML(item) {
+  const refs = relatedRefs(item);
+  if (!refs.length) return "";
+  const links = refs
+    .map(
+      (r) =>
+        `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`
+    )
+    .join("");
+  return `<div class="related-refs"><span class="related-label">Related reference documents</span><ul>${links}</ul></div>`;
+}
+
+function refMatches(ref) {
+  if (state.topics.size && !(ref.topics || []).some((t) => state.topics.has(t)))
+    return false;
+  if (state.q) {
+    const hay = `${ref.title} ${ref.description} ${ref.org}`.toLowerCase();
+    if (!hay.includes(state.q)) return false;
+  }
+  return true;
+}
+
+function refHTML(ref) {
+  const year = ref.date ? ` · ${String(ref.date).slice(0, 4)}` : "";
+  const topicTags = (ref.topics || [])
+    .map((t) => `<span class="topic-tag">${esc(DATA.topics[t] || t)}</span>`)
+    .join("");
+  return `
+  <article class="item regulatory ref-card">
+    <div class="item-top">
+      <span class="badge regulatory">${esc((ref.doc_type || "doc").toUpperCase())}</span>
+      <span class="org">${esc(ref.org)}${year}</span>
+    </div>
+    <h3><a href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.title)}</a></h3>
+    <p class="why">${esc(ref.description)}</p>
+    <div class="topics">${topicTags}</div>
+  </article>`;
+}
+
+function renderRefs() {
+  const visible = DATA.references.filter(refMatches);
+  const groups = [...new Set(visible.map((r) => r.group))];
+  $("#refs").innerHTML = groups
+    .map(
+      (g) => `<section class="day-group">
+        <div class="day-head">${esc(REF_GROUPS[g] || g)}</div>
+        ${visible.filter((r) => r.group === g).map(refHTML).join("")}
+      </section>`
+    )
+    .join("");
+  $("#count").textContent = `${visible.length} reference document${visible.length === 1 ? "" : "s"}`;
+  $("#empty").hidden = visible.length > 0;
+}
+
 function reviewHTML(item) {
   const r = item.reviews;
   if (!r) return "";
@@ -103,12 +172,21 @@ function itemHTML(item) {
       <p>${esc(item.summary)}</p>
       <div class="topics">${topicTags}</div>
       ${reviewHTML(item)}
+      ${relatedRefsHTML(item)}
       <a href="${esc(item.url)}" target="_blank" rel="noopener">Read at source →</a>
     </div>
   </article>`;
 }
 
 function render() {
+  const feed = state.view === "feed";
+  $("#list").hidden = !feed;
+  $("#refs").hidden = feed;
+  document.querySelector(".filters").classList.toggle("refs-mode", !feed);
+  if (!feed) {
+    renderRefs();
+    return;
+  }
   const visible = DATA.items.filter(
     (i) => matches(i) && (state.showLowSignal || !isLowSignal(i))
   );
@@ -150,6 +228,15 @@ function buildFilters() {
 }
 
 function wireEvents() {
+  const tabs = { feed: $("#tab-feed"), refs: $("#tab-refs") };
+  for (const [view, btn] of Object.entries(tabs)) {
+    btn.addEventListener("click", () => {
+      state.view = view;
+      tabs.feed.classList.toggle("on", view === "feed");
+      tabs.refs.classList.toggle("on", view === "refs");
+      render();
+    });
+  }
   $("#seg-author").addEventListener("click", (e) => {
     const btn = e.target.closest("button");
     if (!btn) return;
@@ -185,6 +272,7 @@ function wireEvents() {
 async function init() {
   const resp = await fetch("data/items.json");
   DATA = await resp.json();
+  DATA.references = DATA.references || [];
 
   lastVisit = localStorage.getItem(LAST_VISIT_KEY);
   const newCount = DATA.items.filter(isNew).length;

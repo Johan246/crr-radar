@@ -18,6 +18,11 @@
 
 <div id="new-banner" class="new-banner" hidden></div>
 
+<nav class="view-tabs" role="tablist">
+  <button id="tab-feed" class="on" role="tab">News feed</button>
+  <button id="tab-refs" role="tab">Reference library</button>
+</nav>
+
 <nav class="filters" aria-label="Filters">
   <div class="filter-row">
     <div class="seg" id="seg-author" role="group" aria-label="Author type">
@@ -51,6 +56,7 @@
 <main>
   <div id="count" class="count"></div>
   <div id="list"></div>
+  <div id="refs" hidden></div>
   <div id="empty" class="empty" hidden>No items match the current filters.</div>
 </main>
 

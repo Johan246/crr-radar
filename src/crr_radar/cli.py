@@ -22,7 +22,7 @@ def main() -> None:
     p_ingest = sub.add_parser("ingest", help="Crawl sources, classify and store new items")
     p_ingest.add_argument("--source", action="append", help="Only these source keys")
     p_ingest.add_argument("--limit", type=int, help="Max new items per source")
-    p_ingest.add_argument("--max-age-days", type=int, default=120)
+    p_ingest.add_argument("--max-age-days", type=int, default=730)
     p_ingest.add_argument("--no-export", action="store_true",
                           help="Skip the JSON export after ingesting")
 

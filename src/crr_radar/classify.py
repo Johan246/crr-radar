@@ -61,11 +61,14 @@ def classify(cfg: Config, source: Source, raw: RawItem, article_text: str) -> di
     )
     if result is not None:
         topics = ([t for t in result.get("topics", []) if t in cfg.topics] or ["other"])[:3]
+        doc_status = str(result.get("doc_status") or "").strip().lower()
+        if doc_status not in ("proposed_change", "final_rule", "consultation", "commentary"):
+            doc_status = _fallback_status(source, content)
         return {
             "relevant": bool(result.get("relevant")),
             "summary": (result.get("summary") or "").strip(),
             "why_it_matters": (result.get("why_it_matters") or "").strip(),
-            "doc_status": result.get("doc_status") or _fallback_status(source, content),
+            "doc_status": doc_status,
             "topics": topics,
             "llm_model": llm.MODEL,
         }

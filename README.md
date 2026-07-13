@@ -21,6 +21,17 @@ The dashboard (static site, `site/`) offers filtering by author type, source,
 topic, status and reviewer relevance, a "new since your last visit" view,
 daily grouping, and expandable detail per item.
 
+**History**: the crawl covers the last 2 years. Shallow RSS feeds are
+supplemented by archive crawling — sitemap ingestion (BoE/PRA, BIS yearly
+document sitemaps), the ECB's static per-year press fragments, and WordPress
+feed pagination (ISDA, EBF) — all configured per source in `sources.yaml`.
+
+**Reference library**: a curated, URL-verified set of the ~20 core reference
+documents (CRR/CRR3/CRD on EUR-Lex, EBA IRB and NPL guidelines, ECB guides,
+Basel framework, PRA Basel 3.1 rules) lives in
+[config/references.yaml](config/references.yaml). It gets its own dashboard
+tab, and every news item links to the reference documents sharing its topics.
+
 ## Architecture
 
 ```
