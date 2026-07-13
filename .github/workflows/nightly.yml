@@ -1,0 +1,34 @@
+name: Nightly crawl
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC, after EU regulators' publishing day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Ingest and export
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: crr-radar ingest
+      - name: Commit updated data
+        run: |
+          git config user.name "crr-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ site/data/
+          git diff --cached --quiet || git commit -m "Nightly crawl $(date -u +%F)"
+          git push

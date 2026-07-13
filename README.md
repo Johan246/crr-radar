@@ -1,0 +1,86 @@
+# 📡 CRR Radar
+
+One-stop dashboard for credit risk professionals tracking regulatory news and
+developments under the EU Capital Requirements Regulation (CRR/CRR3) and
+related credit risk frameworks.
+
+Every night a crawler pulls from ~13 seed sources (EBA, ECB/SSM, BaFin,
+BoE/PRA, BCBS, Commission, Risk.net, PwC, EBF, ISDA, AFME, …), deduplicates,
+and uses an LLM to:
+
+- **summarize** each item (2–4 sentences, English, regardless of source language)
+- **classify** it: regulatory body vs. consumer reflection, CRR topic areas,
+  and document status (consultation / proposed change / final rule / commentary)
+- write a one-line **"why it matters"** for fast scanning
+- run a **persona verification layer**: two simulated reviewers — a quant
+  building PD/LGD models for corporates and a regulatory expert covering
+  corporate exposures at a major Scandinavian bank — each rate the item's
+  relevance and give a one-line verdict
+
+The dashboard (static site, `site/`) offers filtering by author type, source,
+topic, status and reviewer relevance, a "new since your last visit" view,
+daily grouping, and expandable detail per item.
+
+## Architecture
+
+```
+config/sources.yaml ─► crr-radar ingest ─► SQLite (data/crr_radar.db)
+                          │                     │
+                    Anthropic API         crr-radar export
+                    (Haiku, JSON)         site/data/items.json
+                                                │
+                              static dashboard on GitHub Pages
+GitHub Actions: nightly cron crawls, commits data, redeploys Pages
+```
+
+## Quick start (local)
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt && pip install -e .
+
+cp .env.example .env   # add your ANTHROPIC_API_KEY
+
+crr-radar ingest       # crawl, classify, store, export JSON
+crr-radar stats        # database counts per source
+python -m http.server -d site 8000   # open http://localhost:8000
+```
+
+Without an `ANTHROPIC_API_KEY`, ingestion still runs with rule-based fallback
+tagging (no summaries/reviews). A full nightly run costs a few cents on
+Claude Haiku; token usage and approximate cost are printed after each run.
+
+Useful flags: `crr-radar ingest --source eba --limit 5 --max-age-days 30 --no-export`
+
+## Deployment (GitHub Actions + Pages)
+
+1. Push this repo to GitHub.
+2. Repo **Settings → Secrets and variables → Actions**: add `ANTHROPIC_API_KEY`.
+3. Repo **Settings → Pages**: set Source to **GitHub Actions**.
+4. Done. `nightly.yml` crawls at 03:00 UTC and commits updated data;
+   `pages.yml` redeploys the dashboard on every push. Both can be run
+   manually from the Actions tab (`workflow_dispatch`).
+
+## Managing sources
+
+Everything lives in [config/sources.yaml](config/sources.yaml): the seed list
+(RSS or HTML+CSS-selector per source), the keyword prefilter that gates LLM
+calls, and the controlled topic vocabulary. To add a source, append an entry;
+to retire one, set `active: false`. Sources that are JS-rendered (ESRB,
+Deloitte, KPMG) are present but disabled, with notes.
+
+## Data model
+
+`items` — one row per crawled URL (normalized-URL hash is the dedup key).
+Relevant items carry summary, why-it-matters, doc status, topics, and the two
+persona reviews as JSON. Irrelevant items are stored with `relevant=0` so
+re-crawls skip them cheaply. `crawl_runs` — per-run stats and errors.
+
+## Future work (deliberately out of scope for the MVP)
+
+- User authentication / multi-user accounts
+- Email digest delivery
+- Saved searches & alerts
+- Admin UI for managing sources
+- Headless fetching for JS-rendered sources (ESRB, Deloitte, KPMG)
+- EBA Single Rulebook Q&A tracker as a dedicated source

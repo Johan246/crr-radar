@@ -1,0 +1,230 @@
+# CRR Radar — source seed list.
+# To add a source: append an entry, set author_type (regulatory | consumer),
+# fetch (rss | html), and for html a CSS selector for the article links.
+# Set active: false to disable without deleting.
+
+sources:
+  # ------------------------------------------------------------------
+  # Regulatory bodies — primary rulemaking / supervisory output
+  # ------------------------------------------------------------------
+  - key: eba
+    name: European Banking Authority
+    org: EBA
+    author_type: regulatory
+    fetch: rss
+    url: https://www.eba.europa.eu/news-press/news/rss.xml
+    title_exclude: "E-mail alert"   # multi-link digest nodes, not articles
+    active: true
+
+  - key: ecb-ssm
+    name: ECB Banking Supervision (SSM)
+    org: ECB/SSM
+    author_type: regulatory
+    fetch: rss
+    url: https://www.bankingsupervision.europa.eu/rss/press.html
+    active: true
+
+  - key: ecb
+    name: European Central Bank
+    org: ECB
+    author_type: regulatory
+    fetch: rss
+    url: https://www.ecb.europa.eu/rss/press.html
+    active: true
+
+  - key: ec-fisma
+    name: European Commission (DG FISMA)
+    org: European Commission
+    author_type: regulatory
+    fetch: html
+    url: https://finance.ec.europa.eu/news_en
+    link_selector: "article a, .ecl-content-item a.ecl-link"
+    url_include: "finance.ec.europa.eu"
+    active: true
+
+  - key: esrb
+    name: European Systemic Risk Board
+    org: ESRB
+    author_type: regulatory
+    fetch: html
+    url: https://www.esrb.europa.eu/news/html/index.en.html
+    link_selector: "dd a, .title a"
+    url_include: "esrb.europa.eu"
+    # List is JS-rendered (ECB-family site, no RSS found) — needs a headless
+    # fetcher or their JSON endpoint. Future work.
+    active: false
+
+  - key: bafin
+    name: BaFin (supervision, EN)
+    org: BaFin
+    author_type: regulatory
+    fetch: rss
+    url: https://www.bafin.de/EN/service/rss/_function/RSS_Aufsicht.xml
+    active: true
+
+  - key: boe-pra
+    name: Bank of England / PRA
+    org: BoE/PRA
+    author_type: regulatory
+    fetch: rss
+    url: https://www.bankofengland.co.uk/rss/news
+    active: true
+
+  - key: bcbs
+    name: Basel Committee on Banking Supervision
+    org: BCBS/BIS
+    author_type: regulatory
+    fetch: rss
+    url: https://www.bis.org/doclist/bcbspubls.rss
+    active: true
+
+  # ------------------------------------------------------------------
+  # Consumer reflection — secondary commentary and analysis
+  # ------------------------------------------------------------------
+  - key: risknet
+    name: Risk.net
+    org: Risk.net
+    author_type: consumer
+    fetch: rss
+    url: https://www.risk.net/feeds/rss
+    # Site-wide feed (category feeds are empty); keyword prefilter screens it.
+    # Paywalled: full text unavailable, classify on headline + feed summary only.
+    fetch_article_text: false
+    active: true
+
+  - key: ebf
+    name: European Banking Federation
+    org: EBF
+    author_type: consumer
+    fetch: rss
+    url: https://www.ebf.eu/feed/
+    active: true
+
+  - key: isda
+    name: ISDA
+    org: ISDA
+    author_type: consumer
+    fetch: rss
+    url: https://www.isda.org/feed/
+    active: true
+
+  - key: deloitte
+    name: Deloitte Financial Services Insights
+    org: Deloitte
+    author_type: consumer
+    fetch: html
+    url: https://www.deloitte.com/global/en/Industries/financial-services/perspectives.html
+    link_selector: "a[href*='/perspectives/'], a[href*='/insights/']"
+    url_include: "deloitte.com"
+    # Listing is JS-rendered — static scrape returns only asset links. Future work.
+    active: false
+
+  - key: kpmg-ecb
+    name: KPMG ECB Office
+    org: KPMG
+    author_type: consumer
+    fetch: html
+    url: https://kpmg.com/xx/en/our-insights/ecb-office.html
+    link_selector: "a[href*='/our-insights/']"
+    url_include: "kpmg.com"
+    # Page moved (404) and KPMG listings are JS-rendered. Future work.
+    active: false
+
+  - key: pwc-reg
+    name: PwC Regulatory Blog
+    org: PwC
+    author_type: consumer
+    fetch: rss
+    url: https://blogs.pwc.de/de/regulatory/feed/
+    active: true
+
+  - key: ey-fs
+    name: EY Financial Services Regulatory
+    org: EY
+    author_type: consumer
+    fetch: html
+    url: https://www.ey.com/en_gl/insights/banking-capital-markets
+    link_selector: "a[href*='/insights/']"
+    url_include: "ey.com"
+    active: true
+
+  - key: afme
+    name: AFME News
+    org: AFME
+    author_type: consumer
+    fetch: html
+    url: https://www.afme.eu/news-insights/press-releases/
+    link_selector: "a[href*='/news-insights/press-releases/']"
+    url_include: "afme.eu"
+    active: true
+
+  # ------------------------------------------------------------------
+  # Candidates — enable when selectors are confirmed
+  # ------------------------------------------------------------------
+  # - key: acpr
+  #   name: ACPR (Banque de France)
+  #   org: ACPR
+  #   author_type: regulatory
+  #   fetch: html
+  #   url: https://acpr.banque-france.fr/en/news
+  #   active: false
+  # - key: oliverwyman
+  #   name: Oliver Wyman Insights
+  #   org: Oliver Wyman
+  #   author_type: consumer
+  #   fetch: html
+  #   url: https://www.oliverwyman.com/our-expertise/insights.html
+  #   active: false
+
+# Keyword prefilter: an item must match at least one (case-insensitive,
+# matched against title + feed summary + extracted text) before it is sent
+# to the LLM. Keeps noise and token cost down.
+relevance_keywords:
+  - CRR
+  - CRR3
+  - CRR III
+  - CRD
+  - capital requirements regulation
+  - capital requirements directive
+  - Basel
+  - IRB
+  - internal ratings
+  - internal model
+  - standardised approach
+  - standardized approach
+  - credit risk
+  - output floor
+  - NPL
+  - non-performing
+  - provisioning
+  - expected credit loss
+  - large exposure
+  - securitisation
+  - securitization
+  - counterparty credit
+  - credit valuation adjustment
+  - own funds
+  - risk-weighted
+  - risk weight
+  - RWA
+  - capital requirement
+  - PD model
+  - LGD
+  - probability of default
+  - loss given default
+  - credit risk mitigation
+  - collateral valuation
+
+# Controlled topic vocabulary. The classifier must choose from these slugs.
+topics:
+  irb-approach: IRB approach
+  standardised-approach: Standardised approach
+  credit-risk-mitigation: Credit risk mitigation
+  npl-provisioning: NPL & provisioning
+  large-exposures: Large exposures
+  output-floor: Output floor
+  securitisation: Securitisation
+  counterparty-credit-risk: Counterparty credit risk
+  crr3-implementation: CRR3 implementation
+  reporting-disclosure: Reporting & disclosure
+  other: Other

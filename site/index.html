@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRR Radar</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📡</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <h1>📡 CRR Radar</h1>
+    <span class="tagline">EU credit risk regulation — CRR / CRR3</span>
+    <span id="meta" class="meta"></span>
+  </div>
+</header>
+
+<div id="new-banner" class="new-banner" hidden></div>
+
+<nav class="filters" aria-label="Filters">
+  <div class="filter-row">
+    <div class="seg" id="seg-author" role="group" aria-label="Author type">
+      <button data-value="all" class="on">All</button>
+      <button data-value="regulatory">Regulatory</button>
+      <button data-value="consumer">Commentary</button>
+    </div>
+    <select id="f-org" aria-label="Source"></select>
+    <select id="f-status" aria-label="Document status">
+      <option value="all">Any status</option>
+      <option value="consultation">Consultation</option>
+      <option value="proposed_change">Proposed change</option>
+      <option value="final_rule">Final rule</option>
+      <option value="commentary">Commentary</option>
+    </select>
+    <select id="f-persona" aria-label="Reviewer relevance">
+      <option value="all">Any reviewer</option>
+      <option value="quant">Relevant for quants</option>
+      <option value="regulatory">Relevant for reg. experts</option>
+    </select>
+    <input id="f-search" type="search" placeholder="Search title &amp; summary…" aria-label="Search">
+  </div>
+  <div class="filter-row">
+    <div id="topic-chips" class="chips" aria-label="Topics"></div>
+    <label class="lowsig-toggle">
+      <input type="checkbox" id="f-lowsignal"> <span id="lowsig-label">Show low-signal items</span>
+    </label>
+  </div>
+</nav>
+
+<main>
+  <div id="count" class="count"></div>
+  <div id="list"></div>
+  <div id="empty" class="empty" hidden>No items match the current filters.</div>
+</main>
+
+<footer>
+  <span>Sources are crawled nightly. Regulatory items are primary rulemaking/supervisory output; commentary items are secondary analysis.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
