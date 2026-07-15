@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-13T06:11:52+00:00",
+ "generated_at": "2026-07-15T05:26:32+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -392,6 +392,118 @@
   }
  ],
  "items": [
+  {
+   "id": 1160,
+   "url": "https://www.risk.net/node/7963846",
+   "title": "Bank loan credit risk pooling: risk diversification versus the moral hazard problem",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-14T14:07:01+00:00",
+   "first_seen_at": "2026-07-15T05:26:04+00:00",
+   "summary": "This paper offers a credit risk pooling arrangement which negates the moral hazard problem and improves the risk-return profiles of participating banks.",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "other"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1154,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/a-tailored-regime-for-captive-insurance-consultation-paper",
+   "title": "CP11/26 – A tailored regime for captive insurance",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-14T12:51:23+01:00",
+   "first_seen_at": "2026-07-15T05:26:00+00:00",
+   "summary": "Privacy statement\nBy responding to this consultation, you provide personal data to the Bank of England (the Bank, which includes the Prudential Regulation Authority (PRA)). This may include your name, contact details (including, if provided, details of the organisation you work for) and opinions or details offered in the response itself. The response will be assessed to inform our work as a regulator and central bank, both in the public interest and in the exercise of our official authority.",
+   "why_it_matters": "",
+   "doc_status": "consultation",
+   "topics": [
+    "reporting-disclosure"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1155,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/pra-rule-changes-for-hmt-overseas-prudential-requirements-regime",
+   "title": "PS16/26 – PRA rule changes to accommodate HM Treasury’s Overseas Prudential Requirements Regime",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-14T09:01:45+01:00",
+   "first_seen_at": "2026-07-15T05:26:00+00:00",
+   "summary": "1: Overview\n1.1 This Prudential Regulation Authority (PRA) policy statement (PS) provides feedback to responses the PRA received to consultation paper (CP) 3/26 – PRA rule changes to accommodate HM Treasury’s (HMT’s) Overseas Prudential Requirements Regime. It also contains the PRA’s final policy. The PRA’s final policy will amend the following Parts of the PRA Rulebook (Appendix 1):\n- Glossary;\n- Credit Risk: General Provisions (CRR);\n- Credit Risk: Standardised Approach (CRR);\n- Credit Risk: Internal Ratings Based Approach (CRR);\n- Credit Risk Mitigation (CRR);\n- Securitisation (CRR);\n- Coun",
+   "why_it_matters": "",
+   "doc_status": "consultation",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "credit-risk-mitigation"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1149,
+   "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+   "title": "ECB selects 36 payment service providers to join digital euro pilot",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-07-14T09:00:00+00:00",
+   "first_seen_at": "2026-07-15T05:25:53+00:00",
+   "summary": "- PRESS RELEASE\nECB selects 36 payment service providers to join digital euro pilot\n14 July 2026\n- Pilot to take place at the ECB and several Eurosystem national central banks to test digital euro functionalities\n- Over 50 applications received, reflecting strong market interest and engagement\n- Selected participants span a broad range of business models and sizes and offer broad geographical coverage\nThe European Central Bank (ECB) has selected 36 payment service providers (PSP) from across the euro area to participate in the digital euro pilot. The pilot exercise is crucial for testing the d",
+   "why_it_matters": "",
+   "doc_status": "proposed_change",
+   "topics": [
+    "other"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1165,
+   "url": "https://blogs.pwc.de/de/regulatory/article/255855/eba-simplification-package-benchmarking-und-sonstige-reporting-themen/",
+   "title": "Regulatory Blog: EBA Simplification Package: Benchmarking und sonstige Reporting-Themen",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-07-14T08:31:00+00:00",
+   "first_seen_at": "2026-07-15T05:26:29+00:00",
+   "summary": "EBA Simplification Package: Benchmarking und sonstige Reporting-Themen\nModul 9: EBA/CP/2026/07 und EBA/CP/2026/08\nNachdem der zuletzt veröffentlichte Beitrag dieser Blogreihe die geplanten Änderungen am Marktrisiko-Reporting im Fokus hatte, wird die Reihe durch diesen Beitrag abgeschlossen. Schwerpunkt sind einerseits die Integration des aufsichtlichen Benchmarkings in den ITS on Reporting sowie weitere, kleinere Änderungen. Formal sind die weiteren Änderungen im eigenständigen Modul 9 des EBA Konsultationspapiers CP/2026/07 enthalten, während die Vorschläge zum aufsichtlichen Benchmarking ein",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "npl-provisioning",
+    "crr3-implementation"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1164,
+   "url": "https://www.risk.net/regulation/7963830/us-regulators-throw-banks-a-curveball-on-committed-credit-lines",
+   "title": "US regulators throw banks a curveball on committed credit lines",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-14T03:30:00+00:00",
+   "first_seen_at": "2026-07-15T05:26:04+00:00",
+   "summary": "New Basel III charge on undrawn facilities will hit largest banks in areas like fund finance and credit cards",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "other"
+   ],
+   "reviews": null
+  },
   {
    "id": 157,
    "url": "https://www.ebf.eu/ebf-media-centre/ebf-position-paper-revised-eba-guidelines-on-limits-on-exposures-to-shadow-banking-entities-sbe/",
