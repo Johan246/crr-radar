@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T05:26:32+00:00",
+ "generated_at": "2026-07-16T05:35:47+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -392,6 +392,25 @@
   }
  ],
  "items": [
+  {
+   "id": 1173,
+   "url": "https://www.isda.org/2026/07/15/building-markets-creating-opportunity/",
+   "title": "Building Markets, Creating Opportunity",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-07-15T15:22:25+00:00",
+   "first_seen_at": "2026-07-16T05:35:43+00:00",
+   "summary": "ISDA Chief Executive Officer Scott O'Malia offers informal comments on important OTC derivatives issues in derivatiViews, reflecting ISDA's long-held commitment to making the market safer and more efficient. Deep and liquid derivatives markets are fundamental to the development of well-functioning financial markets and healthy economies. They support lending, investment and financial stability, creating the certainty needed for economic growth.",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "counterparty-credit-risk"
+   ],
+   "reviews": null
+  },
   {
    "id": 1160,
    "url": "https://www.risk.net/node/7963846",
