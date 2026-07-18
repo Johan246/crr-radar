@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-17T05:38:13+00:00",
+ "generated_at": "2026-07-18T05:20:29+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -392,6 +392,82 @@
   }
  ],
  "items": [
+  {
+   "id": 1184,
+   "url": "https://www.ebf.eu/ebf-media-centre/updates/ebf-calls-for-quick-solutions-to-close-europes-investment-gap-july-2026/",
+   "title": "EBF calls for quick solutions to close Europe’s Investment Gap",
+   "source_key": "ebf",
+   "source_name": "European Banking Federation",
+   "source_org": "EBF",
+   "author_type": "consumer",
+   "published_at": "2026-07-17T12:51:42+00:00",
+   "first_seen_at": "2026-07-18T05:19:59+00:00",
+   "summary": "PRESS RELEASE\nEBF calls for quick solutions to close Europe’s Investment Gap \nIn response to the publication of the EC report on bank competitiveness\nBrussels, 17 July 2026 – The European Banking Federation (EBF) welcomes the European Commission’s bank competitiveness report and calls on EU policymakers for an ambitious banking package, emphasising the need for speed. The Commission has identified the right challenges and proposes a clear direction for the way forward. The next step is to translate this momentum into concrete actions that help unlock investment and strengthen Europe’s competit",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "crr3-implementation"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1181,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+   "title": "The EBA publishes its final draft technical standards on material acquisitions, material transfers, mergers and divisions under the Capital Requirements Directive",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-17T12:00:00+00:00",
+   "first_seen_at": "2026-07-18T05:19:42+00:00",
+   "summary": "The EBA publishes its final draft technical standards on material acquisitions, material transfers, mergers and divisions under the Capital Requirements Directive\nThe European Banking Authority (EBA) today published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITSs) on material acquisitions, transfers of assets or liabilities, mergers and divisions involving credit institutions or (mixed) financial holding companies under the Capital Requirements Directive (CRD). The standards aim to support banking consolidation and deepen EU market integration by",
+   "why_it_matters": "",
+   "doc_status": "proposed_change",
+   "topics": [
+    "other"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1182,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-amendments-data-collection-2027-market-risk-benchmarking-exercise",
+   "title": "The EBA consults on amendments to data collection for the 2027 market risk benchmarking exercise",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-17T07:46:09+00:00",
+   "first_seen_at": "2026-07-18T05:19:42+00:00",
+   "summary": "The EBA consults on amendments to data collection for the 2027 market risk benchmarking exercise\nThe European Banking Authority (EBA) today launched a consultation on amendments to the Implementing Technical Standards (ITS) governing the benchmarking of internal models and the standardised approach for market risk for the 2027 exercise. The proposed amendments aim to ensure that the benchmarking framework remains aligned with the evolving regulatory framework, while providing institutions and supervisors with adequate time to prepare for the implementation of the upcoming market risk requireme",
+   "why_it_matters": "",
+   "doc_status": "consultation",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "crr3-implementation"
+   ],
+   "reviews": null
+  },
+  {
+   "id": 1187,
+   "url": "https://www.afme.eu/news-insights/press-releases/afme-welcomes-commission-report-on-banking-competitiveness-and-calls-for-ambitious-reforms/",
+   "title": "AFME Welcomes Commission Report on Banking Competitiveness and Calls for Ambitious Reforms",
+   "source_key": "afme",
+   "source_name": "AFME News",
+   "source_org": "AFME",
+   "author_type": "consumer",
+   "published_at": "2026-07-17T00:00:00+00:00",
+   "first_seen_at": "2026-07-18T05:20:29+00:00",
+   "summary": "The Association for Financial Markets in Europe (AFME) welcomes the European Commission's report on the competitiveness of the EU banking sector, which recognises that a stronger, more integrated banking market is essential to financing Europe's economic growth, strategic autonomy, and green and digital transitions. Caroline Liesegang, Managing Director and Head of Capital & Risk Management at AFME, said: “Europe cannot achieve its competitiveness ambitions without a banking sector that can deploy capital efficiently across borders and support businesses at scale. The Commission's report right",
+   "why_it_matters": "",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "output-floor",
+    "counterparty-credit-risk"
+   ],
+   "reviews": null
+  },
   {
    "id": 1173,
    "url": "https://www.isda.org/2026/07/15/building-markets-creating-opportunity/",
