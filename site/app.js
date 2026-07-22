@@ -283,10 +283,35 @@ async function init() {
   }
   localStorage.setItem(LAST_VISIT_KEY, new Date().toISOString());
 
-  $("#meta").textContent = `Last crawl: ${new Date(DATA.generated_at).toLocaleString("en-GB")} · ${DATA.items.length} items`;
+  $("#meta").textContent = `Updated ${new Date(DATA.generated_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
+  buildStats();
   buildFilters();
   wireEvents();
   render();
+}
+
+function buildStats() {
+  const items = DATA.items;
+  const reg = items.filter((i) => i.author_type === "regulatory").length;
+  const dates = items
+    .map((i) => (i.published_at || "").slice(0, 4))
+    .filter(Boolean);
+  const span = dates.length ? `${Math.min(...dates)}–${Math.max(...dates)}` : "—";
+  const tiles = [
+    { num: items.length, label: "Items tracked" },
+    { num: reg, label: "Regulatory", cls: "reg" },
+    { num: items.length - reg, label: "Commentary", cls: "com" },
+    { num: DATA.sources.length, label: "Sources" },
+    { num: span, label: "Coverage" },
+  ];
+  $("#stats").innerHTML = tiles
+    .map(
+      (t) => `<div class="stat ${t.cls || ""}">
+        <span class="stat-num">${esc(t.num)}</span>
+        <span class="stat-label">${esc(t.label)}</span>
+      </div>`
+    )
+    .join("");
 }
 
 init().catch((err) => {

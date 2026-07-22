@@ -4,56 +4,80 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CRR Radar</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📡</text></svg>">
 </head>
 <body>
-<header class="topbar">
-  <div class="topbar-inner">
-    <h1>📡 CRR Radar</h1>
-    <span class="tagline">EU credit risk regulation — CRR / CRR3</span>
-    <span id="meta" class="meta"></span>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none">
+        <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
+        <circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+        <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+        <path d="M16 16 L16 3 A13 13 0 0 1 27.3 9.5 Z" fill="currentColor" opacity="0.9"/>
+        <circle cx="16" cy="16" r="2" fill="currentColor"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-name">CRR&nbsp;Radar</span>
+        <span class="brand-tag">EU credit-risk regulatory intelligence</span>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <span class="live"><span class="live-dot"></span>Live</span>
+      <span id="meta" class="meta"></span>
+    </div>
   </div>
 </header>
 
-<div id="new-banner" class="new-banner" hidden></div>
+<section class="statsbar" aria-label="Overview">
+  <div class="wrap stats" id="stats"></div>
+</section>
 
-<nav class="view-tabs" role="tablist">
-  <button id="tab-feed" class="on" role="tab">News feed</button>
-  <button id="tab-refs" role="tab">Reference library</button>
-</nav>
+<div class="toolbar">
+  <div class="wrap">
+    <nav class="view-tabs" role="tablist">
+      <button id="tab-feed" class="on" role="tab">News feed</button>
+      <button id="tab-refs" role="tab">Reference library</button>
+    </nav>
 
-<nav class="filters" aria-label="Filters">
-  <div class="filter-row">
-    <div class="seg" id="seg-author" role="group" aria-label="Author type">
-      <button data-value="all" class="on">All</button>
-      <button data-value="regulatory">Regulatory</button>
-      <button data-value="consumer">Commentary</button>
-    </div>
-    <select id="f-org" aria-label="Source"></select>
-    <select id="f-status" aria-label="Document status">
-      <option value="all">Any status</option>
-      <option value="consultation">Consultation</option>
-      <option value="proposed_change">Proposed change</option>
-      <option value="final_rule">Final rule</option>
-      <option value="commentary">Commentary</option>
-    </select>
-    <select id="f-persona" aria-label="Reviewer relevance">
-      <option value="all">Any reviewer</option>
-      <option value="quant">Relevant for quants</option>
-      <option value="regulatory">Relevant for reg. experts</option>
-    </select>
-    <input id="f-search" type="search" placeholder="Search title &amp; summary…" aria-label="Search">
+    <nav class="filters" aria-label="Filters">
+      <div class="filter-row">
+        <div class="seg" id="seg-author" role="group" aria-label="Author type">
+          <button data-value="all" class="on">All</button>
+          <button data-value="regulatory">Regulatory</button>
+          <button data-value="consumer">Commentary</button>
+        </div>
+        <select id="f-org" aria-label="Source"></select>
+        <select id="f-status" aria-label="Document status">
+          <option value="all">Any status</option>
+          <option value="consultation">Consultation</option>
+          <option value="proposed_change">Proposed change</option>
+          <option value="final_rule">Final rule</option>
+          <option value="commentary">Commentary</option>
+        </select>
+        <select id="f-persona" aria-label="Reviewer relevance">
+          <option value="all">Any reviewer</option>
+          <option value="quant">Relevant for quants</option>
+          <option value="regulatory">Relevant for reg. experts</option>
+        </select>
+        <div class="search-wrap">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M9 3a6 6 0 104.47 10.03l3.75 3.75 1.06-1.06-3.75-3.75A6 6 0 009 3zm0 1.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="currentColor"/></svg>
+          <input id="f-search" type="search" placeholder="Search title &amp; summary…" aria-label="Search">
+        </div>
+      </div>
+      <div class="filter-row filter-row-2">
+        <div id="topic-chips" class="chips" aria-label="Topics"></div>
+        <label class="lowsig-toggle">
+          <input type="checkbox" id="f-lowsignal"> <span id="lowsig-label">Show low-signal items</span>
+        </label>
+      </div>
+    </nav>
   </div>
-  <div class="filter-row">
-    <div id="topic-chips" class="chips" aria-label="Topics"></div>
-    <label class="lowsig-toggle">
-      <input type="checkbox" id="f-lowsignal"> <span id="lowsig-label">Show low-signal items</span>
-    </label>
-  </div>
-</nav>
+</div>
 
-<main>
+<main class="wrap">
+  <div id="new-banner" class="new-banner" hidden></div>
   <div id="count" class="count"></div>
   <div id="list"></div>
   <div id="refs" hidden></div>
@@ -61,9 +85,11 @@
 </main>
 
 <footer>
-  <span>Sources are crawled nightly. Regulatory items are primary rulemaking/supervisory output; commentary items are secondary analysis.</span>
+  <div class="wrap">
+    <span>Sources are crawled nightly. <strong>Regulatory</strong> items are primary rulemaking &amp; supervisory output; <strong>commentary</strong> items are secondary analysis. Each item is screened by two simulated reviewers — a PD/LGD quant and a Nordic-bank regulatory expert.</span>
+  </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>
