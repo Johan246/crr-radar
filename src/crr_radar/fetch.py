@@ -92,16 +92,37 @@ def _listing_urls(source: Source) -> list[str]:
     return [source.url]
 
 
+# Accepted URL-date capture formats. %b is avoided (locale-dependent); month
+# abbreviations are mapped explicitly below.
+_URL_DATE_FORMATS = ("%y%m%d", "%Y%m%d", "%Y-%m-%d")
+_MONTH_ABBR = {
+    m: i
+    for i, m in enumerate(
+        ["jan", "feb", "mar", "apr", "may", "jun",
+         "jul", "aug", "sep", "oct", "nov", "dec"], start=1
+    )
+}
+
+
 def _date_from_url(pattern: str, url: str) -> str | None:
     m = re.search(pattern, url)
     if not m:
         return None
-    try:
-        return datetime.strptime(m.group(1), "%y%m%d").replace(
-            tzinfo=timezone.utc
+    raw = m.group(1)
+    # Year + month-abbreviation, e.g. "2025/mar" → first of that month.
+    ym = re.fullmatch(r"(\d{4})[/-]([a-z]{3})", raw, re.IGNORECASE)
+    if ym and ym.group(2).lower() in _MONTH_ABBR:
+        return datetime(
+            int(ym.group(1)), _MONTH_ABBR[ym.group(2).lower()], 1, tzinfo=timezone.utc
         ).isoformat(timespec="seconds")
-    except ValueError:
-        return None
+    for fmt in _URL_DATE_FORMATS:
+        try:
+            return datetime.strptime(raw, fmt).replace(
+                tzinfo=timezone.utc
+            ).isoformat(timespec="seconds")
+        except ValueError:
+            continue
+    return None
 
 
 def _fetch_rss(client: httpx.Client, source: Source, url: str) -> list[RawItem]:

@@ -202,6 +202,21 @@ sources:
     url_include: "afme\\.eu"
     active: true
 
+  - key: oliverwyman
+    name: Oliver Wyman Insights
+    org: Oliver Wyman
+    author_type: consumer
+    fetch: sitemap
+    # Insights listing is JS-rendered; crawl the (server-side) English sitemap.
+    # 2000+ insight URLs — the keyword prefilter + LLM relevance screen them,
+    # and the URL date (…/insights/2025/mar/…) skips items older than 2 years
+    # before any article fetch.
+    url: https://www.oliverwyman.com/en-sitemap.xml
+    sitemap_include: "our-expertise/insights/20\\d\\d/"
+    url_date_regex: "/insights/(20\\d\\d/[a-z]{3})/"
+    max_items: 250
+    active: true
+
   # ------------------------------------------------------------------
   # Candidates — enable when selectors are confirmed
   # ------------------------------------------------------------------
@@ -211,13 +226,6 @@ sources:
   #   author_type: regulatory
   #   fetch: html
   #   url: https://acpr.banque-france.fr/en/news
-  #   active: false
-  # - key: oliverwyman
-  #   name: Oliver Wyman Insights
-  #   org: Oliver Wyman
-  #   author_type: consumer
-  #   fetch: html
-  #   url: https://www.oliverwyman.com/our-expertise/insights.html
   #   active: false
 
 # Keyword prefilter: an item must match at least one (case-insensitive,

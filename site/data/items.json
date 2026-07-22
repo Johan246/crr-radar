@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-22T03:48:54+00:00",
+ "generated_at": "2026-07-22T04:07:10+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -108,6 +108,12 @@
    "key": "afme",
    "name": "AFME News",
    "org": "AFME",
+   "author_type": "consumer"
+  },
+  {
+   "key": "oliverwyman",
+   "name": "Oliver Wyman Insights",
+   "org": "Oliver Wyman",
    "author_type": "consumer"
   }
  ],
@@ -600,6 +606,34 @@
    "reviews": null
   },
   {
+   "id": 1251,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2023/jan/key-policy-issues-in-finance-2023.html",
+   "title": "The 2023 Key Policy Issues In Finance",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-07-13T00:00:00+00:00",
+   "first_seen_at": "2026-07-22T04:04:15+00:00",
+   "summary": "Oliver Wyman analysis identifies credit risk as a key 2023 policy issue, highlighting concerns about corporate solvency, household mortgage risks, and potential repricing of risk assets as interest rates normalize. The piece notes that 2023 could see credit losses materialise seriously across corporate, household, and sovereign borrowers, reflecting higher rates and increased recession risk.",
+   "why_it_matters": "Credit risk practitioners should track normalization of credit conditions after years of low rates and central bank support, as this meta-shift drives repricing risk, solvency concerns, and potential cyclical credit deterioration across all major borrower segments.",
+   "doc_status": "commentary",
+   "topics": [
+    "npl-provisioning",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly informs my downturn estimation framework and model recalibration priorities—the shift from low-rate to normalized conditions is precisely the kind of macroeconomic regime change that demands stress testing of corporate obligors, re-assessment of PD and LGD drivers, and validation that my through-the-cycle assumptions remain defensible under higher rate and recession scenarios."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I track this as a general risk environment signal rather than a regulatory or capital treatment change—Oliver Wyman's macro credit cycle assessment is relevant context for understanding credit stress scenarios and solvency risks in our Nordic corporate book, but it contains no specific CRR3 guidance, EBA Q&A, supervisory mandate, or reporting obligation that directly affects how we manage or report exposures today."
+    }
+   }
+  },
+  {
    "id": 157,
    "url": "https://www.ebf.eu/ebf-media-centre/ebf-position-paper-revised-eba-guidelines-on-limits-on-exposures-to-shadow-banking-entities-sbe/",
    "title": "EBF Position Paper: Revised EBA Guidelines on limits on exposures to Shadow Banking Entities (SBE)",
@@ -624,6 +658,33 @@
     "regulatory": {
      "relevance": "high",
      "verdict": "I need to monitor the EBA's final guidance on SBE exposure limits closely, as the outcome directly shapes how we classify and report counterparty credit risk for our Nordic corporate exposures and affects our large exposure framework."
+    }
+   }
+  },
+  {
+   "id": 1272,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jul/data-management-risk-reporting-challenges-eu-banks-bcbs239.html",
+   "title": "Data Management And Risk Reporting Challenges For EU Banks",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-07-10T00:00:00+00:00",
+   "first_seen_at": "2026-07-22T04:04:32+00:00",
+   "summary": "The ECB has made risk data aggregation and risk reporting (RDARR) a supervisory priority for 2024–2026 and published the \"Guide on Effective Risk Data Aggregation and Risk Reporting\" in May 2024. The guide extends BCBS 239 beyond risk reporting to include financial reporting and model development, assigns bankwide accountability, and signals enforcement actions and capital add-ons for non-compliance. Banks must embed data quality accountability across the organisation, implement data lineage practices, and demonstrate progress through KPIs aligned to risk outcomes.",
+   "why_it_matters": "Credit risk practitioners must recognise that BCBS 239/RDARR is now a material regulatory priority with escalating enforcement risk, requiring transformation of data governance and quality practices beyond minimum compliance.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "RDARR is directly material to our PD/LGD model infrastructure: poor data quality, weak lineage, and broken accountability cascade straight into model inputs, validation findings, and TRIM defensibility; the ECB's enforcement signal and capital add-on threat makes this a control framework we must embed into model development workflows and governance, not a compliance checkbox."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must take RDARR escalation seriously: the ECB has signalled this as a 2024–2026 supervisory priority with explicit capital add-on consequences for failures, making robust data governance across my credit risk function non-negotiable for regulatory capital treatment and supervisory standing."
     }
    }
   },
@@ -1743,6 +1804,35 @@
    }
   },
   {
+   "id": 1398,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2026/jun/europe-growing-investment-need.html",
+   "title": "How Europe can finance its next decade of growth",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-06-11T00:00:00+00:00",
+   "first_seen_at": "2026-07-22T04:06:23+00:00",
+   "summary": "Oliver Wyman and the European Banking Federation analysis argues that EU banking regulatory frameworks, particularly capital requirements introduced post-financial crisis, have reduced banks' capacity to support long-term corporate lending and productive investment. The report calls for regulatory simplification, proportionality review, and expanded securitisation markets to better balance financial stability with competitiveness and investment needs.",
+   "why_it_matters": "Credit risk practitioners should monitor potential regulatory reforms to capital requirements, securitisation rules, and proportionality frameworks that may be proposed in response to EU competitiveness concerns.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "securitisation",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I monitor this as a risk indicator for potential regulatory headwinds rather than as a direct modeling concern—it flags where supervisory priorities may shift, but PD/LGD model frameworks and data requirements remain my anchor regardless of whether capital rules relax."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I monitor this for strategic signals about potential CRR3 amendments and proportionality debates, but the report's competitiveness framing is political; our capital framework is set by ECB/EBA and Nordic FSAs, not industry lobbying."
+    }
+   }
+  },
+  {
    "id": 183,
    "url": "https://blogs.pwc.de/de/regulatory/article/255081/eba-simplification-package-finrep-im-wandel-der-zeit/",
    "title": "Regulatory Blog: EBA Simplification Package: FINREP im Wandel der Zeit",
@@ -2167,6 +2257,64 @@
     "regulatory": {
      "relevance": "low",
      "verdict": "This is a UK PRA initiative that does not affect my bank's capital treatment framework—we operate under CRR3/CRDVI in the Nordics and remain subject to EBA-coordinated standards, not UK rulebook definitions."
+    }
+   }
+  },
+  {
+   "id": 1429,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jan/banks-must-be-vigilant-to-credit-risk-and-rate-sensitivity.html",
+   "title": "Banks Must Be Vigilant To Credit Risk And Rate Sensitivity",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-05-27T00:00:00+00:00",
+   "first_seen_at": "2026-07-22T04:06:47+00:00",
+   "summary": "EBA Chairperson José Manuel Campa warns that banks must remain vigilant to credit risk in a \"higher for longer\" interest rate environment, with credit tightening and credit quality deterioration already visible. He emphasises early detection of counterparty difficulties and portfolio monitoring, particularly for interest-rate-sensitive and leveraged exposures. Campa also calls for accelerated completion of the EU banking union framework, including harmonised deposit insurance and crisis management rules.",
+   "why_it_matters": "Credit risk practitioners should understand EBA's current supervisory expectations around portfolio stress assessment, counterparty monitoring, and the macroeconomic risks now embedded in capital and provisioning frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "large-exposures"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to ensure our PD models reflect the deteriorating credit environment and our LGD assumptions account for stress scenarios in a higher-for-longer rate regime, particularly for rate-sensitive and leveraged borrowers; this directly impacts downturn calibration and our TRIM readiness."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to ensure our corporate credit portfolio models adequately stress interest rate sensitivity and leverage metrics, and my risk team should be reinforcing early warning indicators for counterparty distress in our Nordic corporate exposures under the \"higher for longer\" regime that EBA is clearly emphasizing as a supervisory priority."
+    }
+   }
+  },
+  {
+   "id": 1435,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jan/european-banks-are-resilient-with-strong-capital-positions.html",
+   "title": "European Banks Are Resilient With Strong Capital Positions",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-05-27T00:00:00+00:00",
+   "first_seen_at": "2026-07-22T04:06:56+00:00",
+   "summary": "ECB Supervisory Board Member Elizabeth McCaul discusses European banks' strong capital positions and solid resilience, while flagging supervisory concerns about credit portfolio effects from higher interest rates and lack of transparency into nonbank financial institution exposures that may correlate with bank risks. The ECB emphasizes robust credit analysis, deposit diversification, and third-party outsourcing risk management as supervisory priorities in the current environment.",
+   "why_it_matters": "Credit risk practitioners need to expect continued ECB focus on credit portfolio deterioration from rising rates, nonbank financial sector interconnection risks, and enhanced supervisory expectations on credit analysis and outsourcing governance.",
+   "doc_status": "commentary",
+   "topics": [
+    "large-exposures",
+    "credit-risk-mitigation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This signals continued ECB supervisory focus on credit deterioration and nonbank interconnection risks, which will influence our PD model downturn assumptions and credit portfolio segmentation, but the item lacks concrete methodological guidance—I'll monitor for follow-up technical expectations."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to take seriously the ECB's flagged concerns on credit portfolio effects from higher rates and nonbank interconnection risks, as these directly impact how we model and manage our Nordic corporate exposures, and I should expect incoming supervisory requests for enhanced credit analysis documentation and outsourcing risk governance."
     }
    }
   },
