@@ -11,6 +11,7 @@ permissions:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    environment: crr-radar   # ANTHROPIC_API_KEY lives as an environment secret here
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
