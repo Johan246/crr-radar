@@ -179,6 +179,83 @@ async function commitReport(path, markdown, message) {
   return data.content && data.content.html_url;
 }
 
+const LABEL_COLORS = {
+  "user-feedback": "1f6feb",
+  "severity:high": "b60205",
+  "severity:medium": "d4a72c",
+  "severity:low": "0e8a16",
+  category: "5319e7",
+  area: "0052cc",
+};
+
+function issueLabels(report) {
+  const labels = ["user-feedback"];
+  if (["low", "medium", "high"].includes(report.severity)) labels.push(`severity:${report.severity}`);
+  if (report.category) labels.push(`category:${report.category}`);
+  if (report.area) labels.push(`area:${report.area}`);
+  return labels;
+}
+
+function labelColor(name) {
+  return LABEL_COLORS[name] || LABEL_COLORS[name.split(":")[0]] || "ededed";
+}
+
+function buildIssue(report, id, reportUrl) {
+  const list = (arr) => (arr && arr.length ? arr.map((x) => `- ${x}`).join("\n") : "- (none)");
+  const checks = (arr) => (arr && arr.length ? arr.map((x) => `- [ ] ${x}`).join("\n") : "- [ ] (none)");
+  const body = [
+    `**Report:** [\`feedback/reports/${id}.md\`](${reportUrl || "#"})`,
+    `**Category:** ${report.category} · **Severity:** ${report.severity} · **Area:** ${report.area}`,
+    ``,
+    `## Summary`,
+    report.summary,
+    ``,
+    `## Suggested changes`,
+    checks(report.suggested_changes),
+    ``,
+    `## Acceptance criteria`,
+    list(report.acceptance_criteria),
+    ``,
+    `<sub>Filed automatically from CRR Radar user feedback. Full transcript in the linked report.</sub>`,
+  ].join("\n");
+  return { title: `[feedback] ${report.title}`, body, labels: issueLabels(report) };
+}
+
+async function ghApi(method, endpoint, payload) {
+  const resp = await fetch(`https://api.github.com/repos/${process.env.GITHUB_REPO}/${endpoint}`, {
+    method,
+    headers: {
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      Accept: "application/vnd.github+json",
+      "User-Agent": "crr-radar-feedback",
+      "Content-Type": "application/json",
+    },
+    body: payload ? JSON.stringify(payload) : undefined,
+  });
+  return resp;
+}
+
+async function ensureLabels(labels) {
+  // Idempotent: create each label, ignore "already exists" (422).
+  await Promise.all(
+    labels.map((name) =>
+      ghApi("POST", "labels", { name, color: labelColor(name) }).catch(() => {})
+    )
+  );
+}
+
+async function createIssue(report, id, reportUrl) {
+  const issue = buildIssue(report, id, reportUrl);
+  await ensureLabels(issue.labels);
+  const resp = await ghApi("POST", "issues", issue);
+  if (!resp.ok) {
+    const text = await resp.text();
+    throw new Error(`GitHub issue ${resp.status}: ${text.slice(0, 200)}`);
+  }
+  const data = await resp.json();
+  return data.html_url;
+}
+
 module.exports = async (req, res) => {
   cors(res);
   if (req.method === "OPTIONS") return res.status(204).end();
@@ -248,8 +325,18 @@ module.exports = async (req, res) => {
     const markdown = buildReportMarkdown(report, messages, id, createdAt);
 
     let committed = null;
+    let issueUrl = null;
+    const wantIssue = (process.env.FEEDBACK_ISSUES || "true") !== "false";
     if (!body.dryRun) {
       committed = await commitReport(path, markdown, `feedback: ${report.title}`);
+      if (wantIssue) {
+        // Best-effort: the report is already saved, so never fail the request on this.
+        try {
+          issueUrl = await createIssue(report, id, committed);
+        } catch (e) {
+          console.error("issue mirror failed:", e.message);
+        }
+      }
     }
 
     return res.status(200).json({
@@ -257,8 +344,11 @@ module.exports = async (req, res) => {
       id,
       path,
       url: committed,
+      issue_url: issueUrl,
       thank_you: report.thank_you || "Thank you so much for your feedback — it has been recorded.",
-      report: body.dryRun ? { markdown, report } : undefined,
+      report: body.dryRun
+        ? { markdown, report, issue: wantIssue ? buildIssue(report, id, null) : null }
+        : undefined,
     });
   } catch (err) {
     return res.status(502).json({ error: String(err.message || err) });

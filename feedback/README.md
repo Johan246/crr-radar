@@ -9,6 +9,11 @@ feedback" or "improve the app based on feedback", read the open reports in
 `reports/`, treat each `## Suggested changes` item as a task, and implement the
 ones that fit — verifying against the `## Acceptance criteria`.
 
+Each report is also mirrored as a **GitHub Issue** labeled `user-feedback` plus
+`severity:*`, `area:*`, and `category:*`, linking back to the report by `id`.
+The markdown here is the source of truth; the issue is for browsing/triage. When
+you finish a report, close its issue and set the report's `status:` accordingly.
+
 ## Report format
 
 Each file is `reports/<date>-<slug>-<rand>.md` with YAML frontmatter:

@@ -87,9 +87,13 @@ small **Vercel serverless function** ([api/feedback.js](api/feedback.js)) that
 holds the API key and drives a polite, thankful **clarifying-question chat**
 (the browser keeps the transcript and posts it back each turn — the function is
 stateless). On submit, the function synthesises a **structured, developer-actionable
-report** and commits it to [`feedback/reports/`](feedback/README.md) via the
-GitHub API. A coding agent then reads those reports to improve the app — the
-format and workflow are documented in [feedback/README.md](feedback/README.md).
+report**, commits it to [`feedback/reports/`](feedback/README.md), and mirrors
+it as a **labeled GitHub Issue** (`user-feedback`, `severity:*`, `area:*`,
+`category:*`) that links back to the report. The markdown report is the source
+of truth a coding agent reads; the issue is a triage/browse surface — both share
+the report `id`. The format and agent workflow are in
+[feedback/README.md](feedback/README.md). (Set `FEEDBACK_ISSUES=false` to skip
+the issue mirror; the report is still committed.)
 
 ### Deploying the feedback function (Vercel)
 
@@ -98,7 +102,8 @@ format and workflow are documented in [feedback/README.md](feedback/README.md).
 2. In the Vercel project's **Environment Variables**, set (see
    [api/.env.example](api/.env.example)):
    - `ANTHROPIC_API_KEY`
-   - `GITHUB_TOKEN` — a fine-grained PAT with **Contents: read & write** on this repo only
+   - `GITHUB_TOKEN` — a fine-grained PAT on this repo only, with **Contents: read & write**
+     (commit the report) and **Issues: read & write** (mirror the issue)
    - `GITHUB_REPO` = `Johan246/crr-radar`, `GITHUB_BRANCH` = `main`
    - `ALLOWED_ORIGIN` = `https://johan246.github.io` (locks the endpoint to the dashboard)
 3. Deploy, then paste the function URL into
