@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-22T05:45:28+00:00",
+ "generated_at": "2026-07-23T05:50:08+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1483,
+   "url": "https://www.afme.eu/news-insights/press-releases/afme-sets-out-priorities-to-strengthen-competitiveness-of-uk-financial-markets/",
+   "title": "AFME Sets Out Priorities to Strengthen Competitiveness of UK Financial Markets",
+   "source_key": "afme",
+   "source_name": "AFME News",
+   "source_org": "AFME",
+   "author_type": "consumer",
+   "published_at": "2026-07-22T00:00:00+00:00",
+   "first_seen_at": "2026-07-23T05:50:02+00:00",
+   "summary": "AFME published a policy agenda for UK financial services reform, calling for progress on bank capital requirements review, market transparency, DLT adoption, and reduction of regulatory burdens. The report emphasizes maintaining momentum on financial services growth strategy while balancing resilience and competitiveness in wholesale markets.",
+   "why_it_matters": "UK credit risk practitioners need to track the Financial Policy Committee's bank capital requirements review and any resulting changes to prudential regulation that may affect IRB approaches, output floor, or standardised approach under UK CRR.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to monitor the FPC's capital requirements review closely for any changes to IRB framework, output floor calibration, or standardised approach that could reshape our PD/LGD model scope and validation requirements, but this is early-stage advocacy rather than a concrete regulatory shift yet."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "AFME's UK financial services agenda is peripheral to my Nordic corporate loan book; while UK CRR divergence matters eventually, this is a UK-centric industry lobby position without concrete regulatory timelines or ECB/EBA mandates that would impact our capital treatment directly."
+    }
+   }
+  },
   {
    "id": 1184,
    "url": "https://www.ebf.eu/ebf-media-centre/updates/ebf-calls-for-quick-solutions-to-close-europes-investment-gap-july-2026/",
