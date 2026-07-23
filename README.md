@@ -80,6 +80,38 @@ calls, and the controlled topic vocabulary. To add a source, append an entry;
 to retire one, set `active: false`. Sources that are JS-rendered (ESRB,
 Deloitte, KPMG) are present but disabled, with notes.
 
+## Feedback loop
+
+The dashboard has a feedback widget (bottom-right). A user's message goes to a
+small **Vercel serverless function** ([api/feedback.js](api/feedback.js)) that
+holds the API key and drives a polite, thankful **clarifying-question chat**
+(the browser keeps the transcript and posts it back each turn — the function is
+stateless). On submit, the function synthesises a **structured, developer-actionable
+report** and commits it to [`feedback/reports/`](feedback/README.md) via the
+GitHub API. A coding agent then reads those reports to improve the app — the
+format and workflow are documented in [feedback/README.md](feedback/README.md).
+
+### Deploying the feedback function (Vercel)
+
+1. Create a Vercel account and **import this GitHub repo** (New Project → import).
+   Vercel auto-detects `api/feedback.js`; there's no build step.
+2. In the Vercel project's **Environment Variables**, set (see
+   [api/.env.example](api/.env.example)):
+   - `ANTHROPIC_API_KEY`
+   - `GITHUB_TOKEN` — a fine-grained PAT with **Contents: read & write** on this repo only
+   - `GITHUB_REPO` = `Johan246/crr-radar`, `GITHUB_BRANCH` = `main`
+   - `ALLOWED_ORIGIN` = `https://johan246.github.io` (locks the endpoint to the dashboard)
+3. Deploy, then paste the function URL into
+   [site/feedback-config.js](site/feedback-config.js):
+   `window.CRR_FEEDBACK = { endpoint: "https://<your-app>.vercel.app/api/feedback" };`
+   and push — GitHub Pages redeploys and the widget goes live. Until then the
+   widget opens but stays inert.
+
+Basic abuse protection is built in (per-IP throttle, transcript/length caps, a
+honeypot). Local testing without deploying: `node scripts/local-server.cjs`
+(runs the function on `localhost:8787` in dry-run — no commits), point
+`feedback-config.js` at it, and serve `site/`.
+
 ## Data model
 
 `items` — one row per crawled URL (normalized-URL hash is the dedup key).
@@ -95,3 +127,4 @@ re-crawls skip them cheaply. `crawl_runs` — per-run stats and errors.
 - Admin UI for managing sources
 - Headless fetching for JS-rendered sources (ESRB, Deloitte, KPMG)
 - EBA Single Rulebook Q&A tracker as a dedicated source
+- Durable rate-limiting / captcha for the public feedback endpoint (currently best-effort per-instance)
