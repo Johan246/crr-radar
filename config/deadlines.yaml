@@ -1,0 +1,110 @@
+# CRR Radar — regulatory deadlines & key dates.
+#
+# Operational timeline for credit-risk specialists: CRR3 application dates, the
+# output-floor phase-in ladder, transitional expiries, and Swedish Article 458
+# measures. Every date here is grounded in the research brief (deep-research-report.md)
+# — do NOT add invented dates. Dated milestones only; if a date is genuinely
+# uncertain (e.g. an adopted-but-not-yet-applicable measure), leave it out rather
+# than guess.
+#
+# category: crr3 | output-floor | transitional | national-se | supervisory
+# jurisdiction: EU | Sweden
+
+deadlines:
+  - date: "2024-07-09"
+    title: First CRR3 provisions apply
+    category: crr3
+    jurisdiction: EU
+    note: Selected provisions of CRR3 became applicable ahead of the main date.
+    legal_basis: Regulation (EU) 2024/1623
+
+  - date: "2024-12-31"
+    title: Last date for new IRB equity permissions
+    category: transitional
+    jurisdiction: EU
+    note: No new permissions for IRB treatment of equity exposures are granted after this date; equity moves toward standardised treatment.
+    legal_basis: CRR Art. 495a
+
+  - date: "2025-01-01"
+    title: CRR3 main application — output floor phase-in begins (50%)
+    category: output-floor
+    jurisdiction: EU
+    note: The main CRR3 credit-risk rules apply and the output-floor phase-in starts at 50% of the standardised-equivalent requirement.
+    legal_basis: Regulation (EU) 2024/1623; CRR Art. 465
+
+  - date: "2025-07-28"
+    title: ECB revised Guide to internal models published
+    category: supervisory
+    jurisdiction: EU
+    note: The 2025 revision adds CRR3 updates and machine-learning expectations. Persuasive supervisory interpretation, mainly for directly supervised banks.
+    legal_basis: ECB Guide to internal models
+
+  - date: "2025-09-17"
+    title: Finansinspektionen extends Swedish Article 458 floors
+    category: national-se
+    jurisdiction: Sweden
+    note: FI decision extending the Swedish mortgage and commercial-real-estate risk-weight floors for IRB banks.
+    legal_basis: CRR Art. 458; FI decision of 17 Sep 2025
+
+  - date: "2026-01-01"
+    title: Output floor rises to 55%
+    category: output-floor
+    jurisdiction: EU
+    note: Second step of the Article 465 phase-in ladder.
+    legal_basis: CRR Art. 465
+
+  - date: "2027-01-01"
+    title: Output floor rises to 60%
+    category: output-floor
+    jurisdiction: EU
+    note: Third step of the Article 465 phase-in ladder.
+    legal_basis: CRR Art. 465
+
+  - date: "2027-09-29"
+    title: Swedish Article 458 commercial-real-estate measures expire
+    category: national-se
+    jurisdiction: Sweden
+    note: The Swedish CRE-related Article 458 measures for IRB banks run to this date, unless further extended.
+    legal_basis: CRR Art. 458; FI measures
+
+  - date: "2027-12-30"
+    title: Swedish Article 458 mortgage floor (25%) expires
+    category: national-se
+    jurisdiction: Sweden
+    note: The 25% risk-weight floor for Swedish mortgages held by IRB banks runs to this date, unless further extended.
+    legal_basis: CRR Art. 458; FI measures
+
+  - date: "2028-01-01"
+    title: Output floor rises to 65%
+    category: output-floor
+    jurisdiction: EU
+    note: Fourth step of the Article 465 phase-in ladder.
+    legal_basis: CRR Art. 465
+
+  - date: "2029-01-01"
+    title: Output floor rises to 70%
+    category: output-floor
+    jurisdiction: EU
+    note: Fifth step of the Article 465 phase-in ladder.
+    legal_basis: CRR Art. 465
+
+  - date: "2029-12-31"
+    title: Output-floor 125% cap transitional ends
+    category: transitional
+    jurisdiction: EU
+    note: The 125% cap formula available under the output-floor transitionals is available until end-2029.
+    legal_basis: CRR Art. 465
+
+  - date: "2030-01-01"
+    title: Output floor fully phased in (72.5%)
+    category: output-floor
+    jurisdiction: EU
+    note: The output floor reaches its fully loaded 72.5% level, subject to expiry of the annual transitionals.
+    legal_basis: CRR Art. 465
+
+  - date: "2032-12-31"
+    title: Unrated-corporate & low-risk-mortgage output-floor transitionals end
+    category: transitional
+    jurisdiction: EU
+    note: The 65% output-floor risk weight for eligible unrated corporates (Art. 465(3)) and part of the low-risk residential mortgage transition (Art. 465(5)) run until end-2032 unless extended.
+    legal_basis: CRR Art. 465(3); Art. 465(5)

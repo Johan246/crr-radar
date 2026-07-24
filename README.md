@@ -80,6 +80,15 @@ calls, and the controlled topic vocabulary. To add a source, append an entry;
 to retire one, set `active: false`. Sources that are JS-rendered (ESRB,
 Deloitte, KPMG) are present but disabled, with notes.
 
+## Calendar (regulatory deadlines)
+
+The **Calendar** tab is a dated timeline of the milestones credit-risk specialists
+plan around — CRR3 application dates, the output-floor phase-in ladder (50% → 72.5%),
+transitional expiries, and Swedish Article 458 measures — split into Upcoming /
+Passed with countdowns and a "Next" highlight. Data lives in
+[config/deadlines.yaml](config/deadlines.yaml) (grounded, dated milestones only —
+no invented dates) and is exported to `site/data/deadlines.json` by `crr-radar export`.
+
 ## Learn (educational quiz)
 
 The **Learn** tab is a static, client-side quiz that builds regulatory judgement.

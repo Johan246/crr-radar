@@ -540,3 +540,55 @@ footer strong { color: var(--ink-2); font-weight: 600; }
   .quiz-mods { grid-template-columns: 1fr; }
   .quiz-fb-meta > div { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ---------- Regulatory calendar ---------- */
+#calendar { padding-top: 18px; }
+.cal-loading { color: var(--ink-3); padding: 48px 0; text-align: center; }
+.cal-intro h2 { font-size: 22px; margin: 0 0 6px; letter-spacing: -.02em; }
+.cal-lede { color: var(--ink-2); font-size: 14.5px; line-height: 1.6; margin: 0; max-width: 68ch; }
+.cal-lede strong { color: var(--ink); }
+.cal-section-h {
+  font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--ink-3); margin: 26px 2px 12px;
+}
+.cal-list { list-style: none; margin: 0; padding: 0; }
+.cal-row {
+  display: grid; grid-template-columns: 68px 1fr; gap: 14px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 13px 16px; margin-bottom: 8px; box-shadow: var(--shadow-sm);
+}
+.cal-row.upcoming { border-left: 3px solid var(--accent); }
+.cal-list:first-of-type .cal-row.upcoming:first-child {
+  border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--shadow-sm);
+}
+.cal-past .cal-row { opacity: .62; border-left: 3px solid var(--consumer); }
+.cal-date {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  border-right: 1px solid var(--line); padding-right: 12px;
+}
+.cal-d { font-size: 14px; font-weight: 700; letter-spacing: -.01em; white-space: nowrap; }
+.cal-y { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.cal-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cal-cat { font-size: 10.5px; font-weight: 700; letter-spacing: .04em; padding: 3px 8px; border-radius: 5px; }
+.cat-crr3 { color: var(--pill-proposed); background: var(--pill-proposed-bg); }
+.cat-output-floor { color: var(--accent); background: var(--accent-soft); }
+.cat-transitional { color: var(--pill-consultation); background: var(--pill-consultation-bg); }
+.cat-national-se { color: #0a6a6f; background: #d5eef0; }
+.cat-supervisory { color: var(--pill-commentary); background: var(--pill-commentary-bg); }
+.cal-away {
+  margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
+  border: 1px solid var(--line-2); padding: 2px 7px; border-radius: 999px; white-space: nowrap;
+}
+.cal-away.soon { color: var(--new); border-color: var(--new); font-weight: 600; }
+.cal-body h4 { margin: 8px 0 4px; font-size: 15px; line-height: 1.35; letter-spacing: -.01em; }
+.cal-note { margin: 0 0 8px; color: var(--ink-2); font-size: 13px; line-height: 1.5; }
+.cal-basis { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+.cal-empty { color: var(--ink-3); padding: 12px 2px; }
+.cal-disclaimer { color: var(--ink-3); font-size: 11.5px; line-height: 1.6; margin: 24px 0 8px; max-width: 72ch; }
+
+@media (prefers-color-scheme: dark) {
+  .cat-national-se { color: #6fd6db; background: #10373a; }
+}
+@media (max-width: 640px) {
+  .cal-row { grid-template-columns: 58px 1fr; gap: 10px; }
+}
