@@ -179,11 +179,22 @@ function itemHTML(item) {
 }
 
 function render() {
-  const feed = state.view === "feed";
-  $("#list").hidden = !feed;
-  $("#refs").hidden = feed;
-  document.querySelector(".filters").classList.toggle("refs-mode", !feed);
-  if (!feed) {
+  const view = state.view;
+  const feed = view === "feed";
+  $("#list").hidden = view !== "feed";
+  $("#refs").hidden = view !== "refs";
+  const quizEl = $("#quiz");
+  if (quizEl) quizEl.hidden = view !== "quiz";
+  const filters = document.querySelector(".filters");
+  filters.classList.toggle("refs-mode", view === "refs");
+  filters.classList.toggle("quiz-mode", view === "quiz");
+  $("#count").hidden = view === "quiz";
+  if (view === "quiz") {
+    $("#empty").hidden = true;
+    if (window.Quiz) window.Quiz.render(quizEl);
+    return;
+  }
+  if (view === "refs") {
     renderRefs();
     return;
   }
@@ -228,12 +239,12 @@ function buildFilters() {
 }
 
 function wireEvents() {
-  const tabs = { feed: $("#tab-feed"), refs: $("#tab-refs") };
+  const tabs = { feed: $("#tab-feed"), refs: $("#tab-refs"), quiz: $("#tab-quiz") };
   for (const [view, btn] of Object.entries(tabs)) {
+    if (!btn) continue;
     btn.addEventListener("click", () => {
       state.view = view;
-      tabs.feed.classList.toggle("on", view === "feed");
-      tabs.refs.classList.toggle("on", view === "refs");
+      for (const [v, b] of Object.entries(tabs)) if (b) b.classList.toggle("on", v === view);
       render();
     });
   }

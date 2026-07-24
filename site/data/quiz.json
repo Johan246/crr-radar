@@ -1,0 +1,673 @@
+{
+ "generated_at": "2026-07-24T03:52:46+00:00",
+ "meta": {
+  "title": "CRR Learn",
+  "subtitle": "Build regulatory judgement under CRR / CRR3",
+  "intro": "A short course in reading credit-risk regulation the way a prudent bank researcher does — checking source status, date, jurisdiction and transitionals before trusting a proposition. Each question gives you the rule, the legal basis, and the trap it targets. Progress is saved on this device only.",
+  "disclaimer": "Educational tool, not legal advice. Grounded in a research brief with a 23 July 2026 cut-off; always verify against the consolidated CRR on EUR-Lex and current EBA / Finansinspektionen material before relying on a point."
+ },
+ "authority_ladder": [
+  {
+   "level": "Binding law (Level 1)",
+   "example": "CRR (Reg. 575/2013) as amended by CRR3 (Reg. 2024/1623)",
+   "binding": true
+  },
+  {
+   "level": "Binding secondary law (Level 2)",
+   "example": "Delegated regulations, RTS, ITS (e.g. IRB assessment methodology RTS)",
+   "binding": true
+  },
+  {
+   "level": "National measures under CRR powers",
+   "example": "Finansinspektionen Article 458 risk-weight floors (Sweden)",
+   "binding": true
+  },
+  {
+   "level": "Supervisory guidelines (Level 3)",
+   "example": "EBA GL/2017/16; comply-or-explain, not Level 1 law",
+   "binding": false
+  },
+  {
+   "level": "Supervisory interpretation",
+   "example": "ECB Guide to internal models — persuasive, mainly for SSM banks",
+   "binding": false
+  },
+  {
+   "level": "Interpretive aids",
+   "example": "EBA Q&A, Interactive Single Rulebook — no binding force in law",
+   "binding": false
+  },
+  {
+   "level": "Industry / academic material",
+   "example": "GCD representativeness guide — a lens, never the legal basis",
+   "binding": false
+  }
+ ],
+ "modules": [
+  {
+   "key": "legal-hierarchy",
+   "name": "Legal hierarchy & source status",
+   "level": "Foundation",
+   "blurb": "Tell binding law from guidelines, Q&As, ECB guides and industry material."
+  },
+  {
+   "key": "architecture",
+   "name": "Credit-risk architecture",
+   "level": "Foundation",
+   "blurb": "EL, ELBE, prudential vs accounting loss, shortfall/excess."
+  },
+  {
+   "key": "irb-scope",
+   "name": "IRB scope under CRR3",
+   "level": "Practitioner",
+   "blurb": "Where IRB is narrowed, equity treatment, own-LGD/CCF, input floors."
+  },
+  {
+   "key": "default",
+   "name": "Definition of default",
+   "level": "Practitioner",
+   "blurb": "Days-past-due, unlikeliness-to-pay, return-to-performing, versioning."
+  },
+  {
+   "key": "parameters",
+   "name": "PD, LGD, downturn & MoC",
+   "level": "Practitioner",
+   "blurb": "Discrimination vs calibration, downturn, margin of conservatism, representativeness."
+  },
+  {
+   "key": "output-floor",
+   "name": "Output floor & transitionals",
+   "level": "Expert",
+   "blurb": "A bank-wide floor, the phase-in ladder, and CRR3 transitional reliefs."
+  },
+  {
+   "key": "sweden",
+   "name": "Swedish overlay & supervisors",
+   "level": "Expert",
+   "blurb": "Article 458 floors and qualifying ECB relevance for non-SSM banks."
+  },
+  {
+   "key": "ml",
+   "name": "ML, representativeness & model change",
+   "level": "Expert",
+   "blurb": "Principle-based ML expectations; model-change governance; industry data."
+  }
+ ],
+ "questions": [
+  {
+   "id": "Q001",
+   "module": "legal-hierarchy",
+   "level": "Foundation",
+   "type": "single",
+   "authority_skill": "distinguish_law_from_guideline",
+   "prompt": "A colleague cites an EBA guideline as \"the binding rule\" and ignores the CRR text on the point. What is the best correction?",
+   "options": [
+    "The guideline overrides the CRR because it is more specific.",
+    "The CRR is binding legislation; an EBA guideline is not Level 1 law, though it still matters in supervision (comply-or-explain).",
+    "Both are equally binding sources of law.",
+    "Neither is binding; only ECB guides bind banks."
+   ],
+   "answer": 1,
+   "explanation": "Authority status comes first. EBA guidelines matter greatly in supervisory practice, but they are not Level 1 legislation. (EBA Q&As are weaker still — no binding force in law.)",
+   "legal_basis": "Regulation (EU) No 575/2013; Regulation (EU) No 1093/2010 Art. 16",
+   "status_note": "Guideline — comply-or-explain, not Level 1 law",
+   "misconception": "EBA guideline = CRR article",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q011",
+   "module": "legal-hierarchy",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "status_of_qa",
+   "prompt": "What is the legal status of an EBA Single Rulebook Q&A answer?",
+   "options": [
+    "It is binding law once published.",
+    "It has no binding force in law, though it has practical significance and is scrutinised in application.",
+    "It binds only ECB-supervised banks.",
+    "It amends the CRR article it interprets."
+   ],
+   "answer": 1,
+   "explanation": "The EBA states directly that Q&A answers have no binding force in law. They are useful interpretive aids, never the sole legal basis for a \"correct\" answer.",
+   "legal_basis": "EBA Q&A process",
+   "status_note": "Interpretive aid — non-binding",
+   "misconception": "EBA Q&A is binding",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q012",
+   "module": "legal-hierarchy",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "version_awareness",
+   "prompt": "What is the status of the 2026 EBA amendment to the definition-of-default guidelines (as of the 23 July 2026 cut-off)?",
+   "options": [
+    "Fully applicable and supersedes the 2016 package.",
+    "Published, but not yet applicable.",
+    "Only a consultation paper.",
+    "Withdrawn."
+   ],
+   "answer": 1,
+   "explanation": "The amended guideline package is final but not yet applicable. Teach version-awareness — do not collapse the 2016 and 2026 states into one \"rule\".",
+   "legal_basis": "EBA guideline activity page",
+   "status_note": "Adopted but not yet applicable",
+   "misconception": "Collapsing current and future-adopted states",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q101",
+   "module": "legal-hierarchy",
+   "level": "Foundation",
+   "type": "single",
+   "authority_skill": "identify_binding_level1",
+   "prompt": "Which of these is binding Level 1 legislation?",
+   "options": [
+    "An EBA guideline (GL/2017/16)",
+    "The ECB Guide to internal models",
+    "The CRR (Regulation (EU) No 575/2013) as amended by CRR3",
+    "An entry in the EBA Interactive Single Rulebook"
+   ],
+   "answer": 2,
+   "explanation": "Only the CRR (and its amending regulations such as CRR3) is Level 1 law here. The EBA guideline is Level 3, the ECB guide is supervisory interpretation, and the Interactive Single Rulebook is a documentation tool with no legal effect.",
+   "legal_basis": "Regulation (EU) No 575/2013; Regulation (EU) 2024/1623",
+   "status_note": "Level 1 — binding",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q102",
+   "module": "legal-hierarchy",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "status_of_navigation_tools",
+   "prompt": "A user says \"the Interactive Single Rulebook is the authentic legal text.\" Correct?",
+   "options": [
+    "Yes, it is the authentic version.",
+    "No — it is a navigation/documentation tool with no legal effect; the authentic texts are the Official Journal acts on EUR-Lex.",
+    "Yes, but only for RTS.",
+    "It is binding only in Sweden."
+   ],
+   "answer": 1,
+   "explanation": "The EBA states the Interactive Single Rulebook has no legal effect; the authentic versions are the OJ texts on EUR-Lex. Consolidated texts are documentation tools, not the authentic law.",
+   "legal_basis": "EBA Interactive Single Rulebook notice; EUR-Lex",
+   "status_note": "Documentation tool — no legal effect",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q007",
+   "module": "architecture",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "prudential_vs_accounting",
+   "prompt": "Which statement best distinguishes IFRS 9 ECL from prudential EL under the CRR?",
+   "options": [
+    "They are the same number computed twice.",
+    "They interact, but are not the same concept; prudential EL is determined under CRR Articles 158-159.",
+    "Prudential EL is just IFRS 9 ECL plus a 10% add-on.",
+    "IFRS 9 ECL replaces prudential EL under CRR3."
+   ],
+   "answer": 1,
+   "explanation": "Accounting ECL and regulatory EL interact (via the shortfall/excess logic) but are distinct concepts. EBA's ECL guidelines explicitly do not determine expected losses for regulatory capital; CRR sets prudential EL.",
+   "legal_basis": "CRR Arts. 158-159; EBA-GL-2017-06",
+   "status_note": "Binding law (EL) vs accounting standard (ECL)",
+   "misconception": "IFRS 9 ECL = regulatory EL",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q103",
+   "module": "architecture",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "el_vs_elbe",
+   "prompt": "For a defaulted exposure, which parameter captures the best estimate of expected loss?",
+   "options": [
+    "The non-defaulted EL from PD × LGD × EAD.",
+    "ELBE (the best estimate of expected loss), alongside LGD-in-default.",
+    "The output floor.",
+    "The IFRS 9 stage-1 ECL."
+   ],
+   "answer": 1,
+   "explanation": "For defaulted exposures the relevant concepts are ELBE (best estimate of expected loss) and LGD-in-default — distinct from the PD×LGD EL used for non-defaulted exposures.",
+   "legal_basis": "CRR Art. 158; EBA GL/2017/16",
+   "status_note": "Binding law + Level 3 guideline detail",
+   "misconception": "Using non-defaulted EL for defaulted exposures",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q104",
+   "module": "architecture",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "shortfall_excess",
+   "prompt": "Under the IRB EL vs provisions comparison, what happens when regulatory EL exceeds eligible credit-risk adjustments (a shortfall)?",
+   "options": [
+    "Nothing; EL and provisions are unrelated.",
+    "The shortfall is deducted from CET1 (Common Equity Tier 1).",
+    "The shortfall is added to CET1.",
+    "The exposure moves to the standardised approach."
+   ],
+   "answer": 1,
+   "explanation": "An IRB EL shortfall (EL greater than provisions) is deducted from CET1; an excess (provisions greater than EL) may be added to Tier 2 up to a cap. This is prudential logic, separate from accounting adjustments.",
+   "legal_basis": "CRR Arts. 158-159 (with Art. 62 for excess)",
+   "status_note": "Binding law",
+   "misconception": "Treating provisions and regulatory EL as the same thing",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q004",
+   "module": "irb-scope",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "current_transitional_rule",
+   "prompt": "A bank wants a new permission in 2026 to use IRB for equity exposures. What should the tutor say?",
+   "options": [
+    "Fine — IRB equity permissions are unrestricted.",
+    "New permissions for IRB equity treatment should not be granted after 31 December 2024.",
+    "Only ECB can grant it.",
+    "Equity exposures are exempt from own funds requirements."
+   ],
+   "answer": 1,
+   "explanation": "CRR3 transitional provisions end the prospect of new permissions for IRB equity treatment after 31 December 2024; equity exposures move toward standardised treatment.",
+   "legal_basis": "CRR Art. 495a",
+   "status_note": "Current transitional law",
+   "misconception": "Assuming pre-CRR3 IRB scope still applies",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q105",
+   "module": "irb-scope",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "own_estimates_scope",
+   "prompt": "Under CRR3, which is true about own-LGD / own-CCF use in the IRB approach?",
+   "options": [
+    "Every exposure class may always use own estimates.",
+    "Own-LGD/own-CCF availability is more selective by exposure class; some exposures revert to Article 161 supervisory values or SA conversion factors.",
+    "Own estimates are abolished entirely.",
+    "Own estimates are only allowed for sovereigns."
+   ],
+   "answer": 1,
+   "explanation": "CRR3 narrows internal-estimation scope. Some exposure classes must use the supervisory LGD values in Article 161 or standardised CCFs rather than own estimates — teach which portfolios remain eligible.",
+   "legal_basis": "CRR Arts. 161, 166 (own estimates scope under CRR3)",
+   "status_note": "Current CRR3 state",
+   "misconception": "Assuming broad pre-CRR3 internal-estimation scope",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q106",
+   "module": "irb-scope",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "input_floors",
+   "prompt": "What did CRR3 introduce to constrain unduly low IRB parameter estimates?",
+   "options": [
+    "A ban on internal models.",
+    "Explicit PD, LGD and CCF input floors.",
+    "A single flat 100% risk weight.",
+    "Nothing — parameters are unconstrained."
+   ],
+   "answer": 1,
+   "explanation": "CRR3 adds explicit PD, LGD and CCF input floors so internal estimates cannot fall below regulatory minimums (with some transitional relief, e.g. specialised lending under Article 495b).",
+   "legal_basis": "CRR Arts. 160-164 input floors; Art. 495b relief",
+   "status_note": "Current CRR3 state (with transitionals)",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q009",
+   "module": "irb-scope",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "quantitative_floor",
+   "prompt": "Under the current CRR3 text, what LGD input floor applies to retail exposures secured by residential property?",
+   "options": [
+    "0%",
+    "5%",
+    "25%",
+    "45%"
+   ],
+   "answer": 1,
+   "explanation": "CRR3 introduces explicit LGD floors for retail exposures and sets the floor for retail exposures secured by residential property at 5%.",
+   "legal_basis": "CRR Art. 161(4)-(4a)",
+   "status_note": "Current CRR3 state",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q107",
+   "module": "default",
+   "level": "Practitioner",
+   "type": "multi",
+   "authority_skill": "default_elements",
+   "prompt": "Which of the following are elements of the CRR definition of default? Select all that apply.",
+   "options": [
+    "A material exposure more than 90 days past due.",
+    "Indications of unlikeliness to pay (UTP).",
+    "The exposure being profitable for the bank.",
+    "Consistent application across the obligor group where required."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explanation": "Default rests on the days-past-due criterion and unlikeliness-to-pay, with consistency of application (including at group/obligor level where required) and defined return-to-performing rules. Profitability is irrelevant.",
+   "legal_basis": "CRR Art. 178; EBA GL/2016/07",
+   "status_note": "Binding law + Level 3 guideline (2026 amendment not yet applicable)",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q108",
+   "module": "default",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "version_awareness",
+   "prompt": "A factoring case turns on a recent change to the definition-of-default guidance. What is the safe way to reason about it in mid-2026?",
+   "options": [
+    "Apply the 2026 amended guideline as if fully in force.",
+    "Apply the currently applicable definition, and flag the 2026 amendment as adopted-but-not-yet-applicable.",
+    "Ignore the definition of default for factoring.",
+    "Treat industry practice as controlling."
+   ],
+   "answer": 1,
+   "explanation": "The 2026 amendment is not yet applicable, so the currently applicable definition governs. Good practice tracks current vs future-adopted states separately rather than teaching a not-yet-applicable rule as operative.",
+   "legal_basis": "CRR Art. 178; EBA definition-of-default guideline activity page",
+   "status_note": "Current rule vs adopted-but-not-yet-applicable amendment",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q109",
+   "module": "parameters",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "discrimination_vs_calibration",
+   "prompt": "A PD model has a high AUC but its predicted default rates run well below realised rates. What is the correct reading?",
+   "options": [
+    "High AUC proves the model is compliant.",
+    "Discrimination (ranking power) and calibration (level accuracy) are separate properties; strong ranking does not fix a calibration problem.",
+    "Calibration is irrelevant if discrimination is strong.",
+    "The model must be discarded automatically."
+   ],
+   "answer": 1,
+   "explanation": "Ranking power and level calibration are distinct and must be evaluated separately. A model can rank well yet be mis-calibrated — a classic quant misconception that supervisory material warns against.",
+   "legal_basis": "EBA GL/2017/16; ECB Guide to internal models",
+   "status_note": "Level 3 guideline + supervisory interpretation",
+   "misconception": "Good discrimination means good calibration",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q110",
+   "module": "parameters",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "moc_structural",
+   "prompt": "Which best describes the Margin of Conservatism (MoC)?",
+   "options": [
+    "An ad hoc override applied to individual awkward cases.",
+    "A structural add-on addressing model and data uncertainty (e.g. deficiencies, estimation error), not case-by-case conservatism.",
+    "A way to lower parameter estimates.",
+    "The same thing as the output floor."
+   ],
+   "answer": 1,
+   "explanation": "MoC addresses identified deficiencies and general estimation uncertainty in a structured way. It is not ad hoc conservatism on individual exposures — a distinction that needs repeated remediation.",
+   "legal_basis": "EBA GL/2017/16",
+   "status_note": "Level 3 guideline",
+   "misconception": "MoC is just an override",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q111",
+   "module": "parameters",
+   "level": "Practitioner",
+   "type": "single",
+   "authority_skill": "downturn_lgd",
+   "prompt": "What is the point of a downturn LGD estimate?",
+   "options": [
+    "To reflect average conditions over the cycle.",
+    "To reflect economic downturn conditions, so it may exceed the long-run average LGD.",
+    "To minimise capital.",
+    "To replace the definition of default."
+   ],
+   "answer": 1,
+   "explanation": "Downturn LGD reflects adverse economic conditions and can exceed the long-run average. Identifying the downturn period and quantifying the adjustment is the subject of a dedicated EBA guideline.",
+   "legal_basis": "EBA GL/2019/03 (downturn LGD); GL/2017/16",
+   "status_note": "Level 3 guideline",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q005",
+   "module": "parameters",
+   "level": "Expert",
+   "type": "multi",
+   "authority_skill": "representativeness_status",
+   "prompt": "Which statements are supportable from current official sources on representativeness? Select all that apply.",
+   "options": [
+    "One universal metric proves representativeness.",
+    "Context matters, including portfolio composition and use case.",
+    "Industry guidance (e.g. the GCD guide) may help as a practical lens.",
+    "The GCD guide can be the primary legal basis for a \"correct\" answer."
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "explanation": "Official sources are objective- and context-based; there is no single mandatory metric that \"proves\" representativeness, and industry guidance is a lens, never the legal basis. So B and C only.",
+   "legal_basis": "EBA GL/2017/16; research brief (GCD as labelled industry lens)",
+   "status_note": "Objective-based law + labelled industry guidance",
+   "misconception": "One representativeness metric proves compliance",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q002",
+   "module": "output-floor",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "output_floor_mechanics",
+   "prompt": "An analyst says the output floor means every IRB mortgage exposure must carry at least a fixed minimum risk weight. Most accurate reply?",
+   "options": [
+    "Correct — it is an exposure-level minimum risk weight.",
+    "The output floor is a bank-wide floor on total own-funds requirements derived from standardised-equivalent calculations, not an exposure-level minimum.",
+    "It only applies to sovereigns.",
+    "It was abolished by CRR3."
+   ],
+   "answer": 1,
+   "explanation": "CRR3 frames the output floor as a limit on overall own-funds requirements from internal models relative to the standardised approach, computed bank-wide. Teaching it as an exposure-level minimum misstates the mechanism.",
+   "legal_basis": "CRR Art. 92; Art. 465",
+   "status_note": "Current CRR3 state (phasing in)",
+   "misconception": "Output floor = exposure-level minimum RW",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q112",
+   "module": "output-floor",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "transitional_ladder",
+   "prompt": "On the output-floor phase-in ladder, which factor applies in 2026?",
+   "options": [
+    "50%",
+    "55%",
+    "65%",
+    "72.5%"
+   ],
+   "answer": 1,
+   "explanation": "The Article 465 phase-in runs 50% (2025), 55% (2026), 60% (2027), 65% (2028), 70% (2029), reaching 72.5% from 2030. Always state whether a question is current-year, transitional or fully loaded.",
+   "legal_basis": "CRR Art. 465 (phase-in)",
+   "status_note": "Transitional (current-year factor)",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q113",
+   "module": "output-floor",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "fully_loaded_floor",
+   "prompt": "What is the fully phased-in output-floor factor from 2030 onwards?",
+   "options": [
+    "60%",
+    "70%",
+    "72.5%",
+    "100%"
+   ],
+   "answer": 2,
+   "explanation": "From 2030 the output floor is 72.5% of the standardised-equivalent own-funds requirement, once the annual transitionals have expired.",
+   "legal_basis": "CRR Art. 465",
+   "status_note": "Fully phased-in end state",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q010",
+   "module": "output-floor",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "current_transitional_rule",
+   "prompt": "In 2026 an IRB bank asks whether an eligible unrated corporate exposure can get a favourable output-floor transitional risk weight if its PD estimate is low enough. Is this current law or just policy discussion?",
+   "options": [
+    "Only a consultation idea.",
+    "Current transitional law — a 65% risk weight for eligible unrated corporates under the output floor, until 31 December 2032 where the PD condition is met.",
+    "Never permitted.",
+    "Only for sovereigns."
+   ],
+   "answer": 1,
+   "explanation": "Article 465(3) allows a 65% risk weight for certain unrated corporates in the output-floor calculation until 31 December 2032 when the PD condition is met. It is transitional law, not mere policy discussion.",
+   "legal_basis": "CRR Art. 465(3)",
+   "status_note": "Current transitional law (to 31 Dec 2032)",
+   "misconception": "Treating transitionals as non-law",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q114",
+   "module": "output-floor",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "sa_literacy",
+   "prompt": "Why must even advanced IRB quants now have strong Standardised Approach literacy?",
+   "options": [
+    "Because IRB has been abolished.",
+    "Because the output floor forces internal-model banks to compute standardised-equivalent requirements bank-wide.",
+    "Because the SA is optional trivia.",
+    "Because ECB guides require it for Swedish LSIs."
+   ],
+   "answer": 1,
+   "explanation": "The post-CRR3 learning problem is broader than IRB doctrine: the output floor makes SA classification, real-estate treatment and conversion factors directly relevant to internal-model banks.",
+   "legal_basis": "CRR Art. 465; CRR3 recitals",
+   "status_note": "Current CRR3 state",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q003",
+   "module": "sweden",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "national_measure",
+   "prompt": "As of 23 July 2026, which statement about Swedish mortgage risk-weight floors is correct?",
+   "options": [
+    "There is no Swedish-specific floor; only EU rules apply.",
+    "For IRB banks, the Swedish Article 458 mortgage floor remains 25% and has been extended to 30 December 2027.",
+    "The floor is 15% and expired in 2024.",
+    "It applies only to standardised-approach banks."
+   ],
+   "answer": 1,
+   "explanation": "Finansinspektionen extended the Swedish Article 458 mortgage floor (25%) to 30 December 2027, and it applies to banks using the IRB approach. These are jurisdiction-specific national measures, not generic EU rules.",
+   "legal_basis": "CRR Art. 458; FI decision of 17 Sep 2025",
+   "status_note": "Binding Swedish national measure (to 30 Dec 2027)",
+   "jurisdiction": "Sweden"
+  },
+  {
+   "id": "Q115",
+   "module": "sweden",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "national_measure",
+   "prompt": "Under the Swedish Article 458 measures for IRB banks, what is the floor for Swedish corporate exposures secured on commercial property?",
+   "options": [
+    "25%",
+    "35%",
+    "50%",
+    "No floor"
+   ],
+   "answer": 1,
+   "explanation": "The Swedish floors are 25% for mortgages, 35% for corporate exposures secured on commercial property, and 25% for corporate exposures secured on residential property. A Swedish tutor must branch by jurisdiction and portfolio.",
+   "legal_basis": "CRR Art. 458; FI measures",
+   "status_note": "Binding Swedish national measure",
+   "jurisdiction": "Sweden"
+  },
+  {
+   "id": "Q006",
+   "module": "sweden",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "qualify_ecb_relevance",
+   "prompt": "A Swedish bank outside direct ECB supervision copies an ECB Guide paragraph into a policy and labels it \"binding requirement in Sweden.\" Best review comment?",
+   "options": [
+    "Leave it — the ECB guide is binding law everywhere.",
+    "Re-label it as supervisory guidance / persuasive interpretation, unless the same proposition is grounded in binding law, EBA material, or FI practice.",
+    "Delete all reference to supervisory expectations.",
+    "Replace it with a GCD citation."
+   ],
+   "answer": 1,
+   "explanation": "The ECB guide explains how the ECB reads applicable rules for directly supervised institutions; it does not itself create binding law for all Swedish institutions. For a non-SSM bank it is persuasive, not automatically operative.",
+   "legal_basis": "ECB Guide to internal models; CRR",
+   "status_note": "Persuasive supervisory expectation (jurisdiction-dependent)",
+   "misconception": "ECB guide binds Swedish banks automatically",
+   "jurisdiction": "Sweden"
+  },
+  {
+   "id": "Q116",
+   "module": "ml",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "ml_status",
+   "prompt": "What is the official stance on using machine learning in IRB models?",
+   "options": [
+    "ML is prohibited for IRB.",
+    "The stance is conditional and principle-based — centred on explainability, governance, validation and compliance with prudential requirements.",
+    "ML is mandatory under CRR3.",
+    "ML is unregulated."
+   ],
+   "answer": 1,
+   "explanation": "EBA's discussion paper and 2023 follow-up, and the 2025 ECB guide, frame ML through explainability, governance and validation rather than a ban. ML is a prudential-compliance problem, not a yes/no technology question.",
+   "legal_basis": "EBA ML discussion paper & 2023 follow-up; ECB Guide to internal models",
+   "status_note": "Principle-based supervisory expectation (non-binding)",
+   "misconception": "ML is prohibited for IRB",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q008",
+   "module": "ml",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "model_change_governance",
+   "prompt": "A bank proposes an ML model with automatic frequent retraining and argues model-change governance is irrelevant because the algorithm family is unchanged. Best response?",
+   "options": [
+    "Agreed — unchanged algorithm family means no model change.",
+    "Frequent or automatic updates can still create material model-change issues and require careful classification and governance.",
+    "Model changes never matter for ML.",
+    "Only the ECB can decide."
+   ],
+   "answer": 1,
+   "explanation": "Update frequency, stability, and resulting changes in ordering/distribution are key prudential concerns. A stable algorithm family does not exempt a model from material-model-change classification and governance.",
+   "legal_basis": "RTS on material model changes; EBA ML follow-up report",
+   "status_note": "Binding Level 2 (current RTS; 2026 amendments still in draft)",
+   "misconception": "Assuming stable architecture means no model change",
+   "jurisdiction": "EU"
+  },
+  {
+   "id": "Q117",
+   "module": "ml",
+   "level": "Expert",
+   "type": "single",
+   "authority_skill": "industry_vs_law",
+   "prompt": "How should the GCD representativeness guide be used when deciding a compliance answer?",
+   "options": [
+    "As the primary legal basis for the correct answer.",
+    "As a labelled industry lens for practical reasoning and scenario design — never as the legal basis.",
+    "As binding EBA material.",
+    "It must be ignored entirely."
+   ],
+   "answer": 1,
+   "explanation": "Industry guidance can support practical reasoning and realism, but cannot define the legally correct answer. The legal basis stays with the CRR and adopted secondary law.",
+   "legal_basis": "Research brief (GCD as labelled industry guidance); EBA GL/2017/16",
+   "status_note": "Industry material — not a legal basis",
+   "misconception": "GCD tells us what the law requires",
+   "jurisdiction": "EU"
+  }
+ ]
+}

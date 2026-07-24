@@ -80,6 +80,26 @@ calls, and the controlled topic vocabulary. To add a source, append an entry;
 to retire one, set `active: false`. Sources that are JS-rendered (ESRB,
 Deloitte, KPMG) are present but disabled, with notes.
 
+## Learn (educational quiz)
+
+The **Learn** tab is a static, client-side quiz that builds regulatory judgement.
+Its pedagogy (from a research brief) is **regulatory-status discrimination** — the
+hardest professional mistakes are authority-status errors ("I treated a guideline
+like binding law", "IFRS 9 ECL = regulatory EL", "the output floor is an
+exposure-level minimum risk weight"), so every question shows the rule, its
+**legal basis**, its **status** (binding law / guideline / transitional /
+persuasive expectation), and the **common trap** it targets. It opens with an
+"authority ladder" and groups questions into Foundation → Practitioner → Expert
+modules; progress is saved in `localStorage` on the device only.
+
+Question content lives in [config/quiz.yaml](config/quiz.yaml) and is exported to
+`site/data/quiz.json` by `crr-radar export` (also refreshed on each nightly run).
+The current bank is a **vetted seed** grounded strictly in the research brief; the
+schema mirrors the brief's so it can grow toward its 150-item target — but keep the
+same discipline: **no invented article numbers or figures**, and treat industry
+material (e.g. the GCD guide) as a labelled lens, never the legal basis. It is an
+educational tool, not legal advice.
+
 ## Feedback loop
 
 The dashboard has a feedback widget (bottom-right). A user's message goes to a

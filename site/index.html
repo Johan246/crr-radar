@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CRR Radar</title>
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📡</text></svg>">
 </head>
 <body>
@@ -39,6 +39,7 @@
     <nav class="view-tabs" role="tablist">
       <button id="tab-feed" class="on" role="tab">News feed</button>
       <button id="tab-refs" role="tab">Reference library</button>
+      <button id="tab-quiz" role="tab">Learn</button>
     </nav>
 
     <nav class="filters" aria-label="Filters">
@@ -81,6 +82,7 @@
   <div id="count" class="count"></div>
   <div id="list"></div>
   <div id="refs" hidden></div>
+  <div id="quiz" hidden></div>
   <div id="empty" class="empty" hidden>No items match the current filters.</div>
 </main>
 
@@ -90,7 +92,8 @@
   </div>
 </footer>
 
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
+<script src="quiz.js?v=1"></script>
 <script src="feedback-config.js?v=1"></script>
 <script src="feedback.js?v=1"></script>
 </body>
