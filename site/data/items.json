@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-23T05:50:08+00:00",
+ "generated_at": "2026-07-24T05:46:22+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1495,
+   "url": "https://www.risk.net/risk-quantum/7963844/risk-density-and-capital-requirements-inversely-related-%E2%80%93-fsi",
+   "title": "Risk density and capital requirements inversely related – FSI",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-24T03:30:00+00:00",
+   "first_seen_at": "2026-07-24T05:45:43+00:00",
+   "summary": "A Financial Stability Institute report examines the relationship between risk density and capital requirements across jurisdictions. The analysis suggests that jurisdictions face a trade-off: either implementing higher capital requirements or restricting the use of internal models. This inverse relationship has implications for how regulators calibrate prudential frameworks under CRR.",
+   "why_it_matters": "Credit risk practitioners need to understand how their regulator's choice between tighter capital ratios or model restrictions will affect IRB and standardised approach calculations and internal validation frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This FSI analysis is relevant to our supervisory environment and model framework calibration, but only if it signals actual regulatory intent in our jurisdiction; the inverse trade-off between capital floors and model flexibility is a structural insight worth monitoring, yet the practical impact depends on whether our regulator will tighten either lever—I need to track this more closely if it appears in upcoming consultation papers or TRIM communications."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "This FSI analysis of the risk density–capital requirements trade-off directly informs how our regulator (ECB and Nordic FSAs) will calibrate CRR3 floors and model restrictions, which will reshape our IRB permissions and capital floors across the corporate book; I need to monitor their policy response carefully."
+    }
+   }
+  },
   {
    "id": 1483,
    "url": "https://www.afme.eu/news-insights/press-releases/afme-sets-out-priorities-to-strengthen-competitiveness-of-uk-financial-markets/",
