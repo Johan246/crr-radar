@@ -60,13 +60,22 @@ window.Cal = (function () {
     draw();
   }
 
-  function rowHTML(d, now) {
+  function rowHTML(d, now, isNext) {
     const dt = parseDate(d.date);
     const days = daysBetween(dt, now);
     const past = days < 0;
     const dd = dt.getUTCDate();
     const label = CAT[d.category] || d.category;
-    return `<li class="cal-row ${past ? "past" : "upcoming"}">
+    const href = d.source_url;
+    const cls = `cal-row ${past ? "past" : "upcoming"}${isNext ? " cal-next" : ""}${href ? " cal-link" : ""}`;
+    const open = href
+      ? `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener">`
+      : `<div class="${cls}">`;
+    const close = href ? "</a>" : "</div>";
+    const src = href
+      ? `<span class="cal-src">${esc(d.source_label || "Source")}<span class="cal-ext" aria-hidden="true"> ↗</span></span>`
+      : "";
+    return `<li>${open}
       <div class="cal-date">
         <span class="cal-d">${dd} ${MONTHS[dt.getUTCMonth()]}</span>
         <span class="cal-y">${dt.getUTCFullYear()}</span>
@@ -78,9 +87,12 @@ window.Cal = (function () {
         </div>
         <h4>${esc(d.title)}</h4>
         ${d.note ? `<p class="cal-note">${esc(d.note)}</p>` : ""}
-        ${d.legal_basis ? `<span class="cal-basis">${esc(d.legal_basis)}</span>` : ""}
+        <div class="cal-foot">
+          <span class="cal-basis">${esc(d.legal_basis || "")}</span>
+          ${src}
+        </div>
       </div>
-    </li>`;
+    ${close}</li>`;
   }
 
   function draw() {
@@ -103,12 +115,12 @@ window.Cal = (function () {
       </div>
 
       <div class="cal-section-h">Upcoming (${upcoming.length})</div>
-      <ol class="cal-list">${upcoming.map((d) => rowHTML(d, todayUTC)).join("") || '<li class="cal-empty">Nothing upcoming.</li>'}</ol>
+      <ol class="cal-list">${upcoming.map((d, i) => rowHTML(d, todayUTC, i === 0)).join("") || '<li class="cal-empty">Nothing upcoming.</li>'}</ol>
 
       ${
         past.length
           ? `<div class="cal-section-h">Passed (${past.length})</div>
-             <ol class="cal-list cal-past">${past.map((d) => rowHTML(d, todayUTC)).join("")}</ol>`
+             <ol class="cal-list cal-past">${past.map((d) => rowHTML(d, todayUTC, false)).join("")}</ol>`
           : ""
       }
 

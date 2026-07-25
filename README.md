@@ -85,9 +85,12 @@ Deloitte, KPMG) are present but disabled, with notes.
 The **Calendar** tab is a dated timeline of the milestones credit-risk specialists
 plan around — CRR3 application dates, the output-floor phase-in ladder (50% → 72.5%),
 transitional expiries, and Swedish Article 458 measures — split into Upcoming /
-Passed with countdowns and a "Next" highlight. Data lives in
+Passed with countdowns and a "Next" highlight. **Each item is clickable** — it
+links to an authoritative source (EUR-Lex, ECB, Finansinspektionen) that confirms
+the date and gives more detail. Data lives in
 [config/deadlines.yaml](config/deadlines.yaml) (grounded, dated milestones only —
-no invented dates) and is exported to `site/data/deadlines.json` by `crr-radar export`.
+no invented dates; each with a verified `source_url`) and is exported to
+`site/data/deadlines.json` by `crr-radar export`.
 
 ## Learn (educational quiz)
 
