@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T05:56:24+00:00",
+ "generated_at": "2026-07-27T06:24:49+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1511,
+   "url": "https://www.risk.net/risk-quantum/7963874/modelled-rwas-at-systemic-banks-undershoot-standardised-by-441bn",
+   "title": "Modelled RWAs at systemic banks undershoot standardised by $441bn",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-27T03:30:00+00:00",
+   "first_seen_at": "2026-07-27T06:24:17+00:00",
+   "summary": "Major US systemic banks including Wells Fargo and Bank of America show a combined $441 billion gap between RWAs calculated under internal models and standardised approaches. This variance reflects divergences in how IRB models estimate credit risk versus the standardised methodology mandated by regulators. The modelled RWAs undercut standardised calculations, indicating internal models produce lower risk-weighted asset requirements.",
+   "why_it_matters": "Credit risk practitioners need to understand RWA variance between IRB and standardised approaches, as this directly affects capital requirements, output floor implications, and regulatory scrutiny of model adequacy.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to understand whether our PD/LGD models are contributing to systemic undershooting versus the output floor, and whether supervisory scrutiny will tighten validation and conservatism requirements across our IRB framework."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "Interesting comparative observation on US systemic banks, but this has limited direct bearing on my Nordic corporate loan book given different regulatory jurisdictions, model approval histories, and capital frameworks—though the output floor dynamics merit watching as CRR3 tightens floor levels."
+    }
+   }
+  },
   {
    "id": 1495,
    "url": "https://www.risk.net/risk-quantum/7963844/risk-density-and-capital-requirements-inversely-related-%E2%80%93-fsi",
