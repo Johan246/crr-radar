@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-27T06:24:49+00:00",
+ "generated_at": "2026-07-28T05:43:06+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1515,
+   "url": "https://www.risk.net/risk-quantum/7963855/seb-model-shifts-nearly-treble-standardised-rwas",
+   "title": "SEB model shifts nearly treble standardised RWAs",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-28T03:30:00+00:00",
+   "first_seen_at": "2026-07-28T05:42:17+00:00",
+   "summary": "SEB (Skandinaviska Enskilda Banken) has shifted a Baltic portfolio between internal models and standardised approach, nearly tripling standardised credit RWAs. The transfer reduces the bank's CET1 ratio by 16 basis points. This reflects a change in the bank's approach to calculating risk weights for a specific portfolio segment.",
+   "why_it_matters": "Credit risk practitioners should track how banks reallocate portfolios between IRB and standardised approaches, as such shifts directly affect RWA outcomes and regulatory capital requirements under CRR.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly material to my work—SEB's reallocation of a Baltic portfolio from internal models to standardised approach signals either model performance issues, supervisory challenge, or risk profile reassessment that I need to monitor for comparable decisions affecting our own model perimeter and capital efficiency, especially given the magnitude (16bp CET1 impact)."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor SEB's portfolio transfer methodology closely because any shift from IRB to standardised approach affects our own capital efficiency benchmarking, exposes potential regulatory scrutiny of model validation, and signals how Nordic FSAs may be tightening expectations around portfolio eligibility for advanced approaches—which directly impacts our corporate exposure treatment and CRR3 capital planning."
+    }
+   }
+  },
   {
    "id": 1511,
    "url": "https://www.risk.net/risk-quantum/7963874/modelled-rwas-at-systemic-banks-undershoot-standardised-by-441bn",
