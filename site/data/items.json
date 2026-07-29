@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T05:43:06+00:00",
+ "generated_at": "2026-07-29T05:47:53+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,62 @@
   }
  ],
  "items": [
+  {
+   "id": 1527,
+   "url": "https://www.isda.org/2026/07/28/isda-requests-clarification-from-bcbs-on-rma-models-under-ifrs-9-ifrs-7/",
+   "title": "ISDA Requests Clarification from BCBS on RMA Models under IFRS 9/IFRS 7",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-07-28T10:50:25+00:00",
+   "first_seen_at": "2026-07-29T05:47:40+00:00",
+   "summary": "ISDA has requested clarification from the BCBS on the prudential capital treatment of the proposed Risk Mitigation Accounting (RMA) model under IFRS 9/IFRS 7. ISDA argues that the RMA adjustment should not attract additional capital requirements, risk-weighted assets, leverage ratio, or liquidity ratio impacts, and is consistent with existing hedge accounting. The letter urges the BCBS and BIS to issue guidance, potentially as FAQs, once the RMA model is finalized to ensure clarity for banks and regulators.",
+   "why_it_matters": "Credit risk practitioners need to understand how the new RMA accounting model will affect prudential capital calculations and whether it triggers additional RWA or leverage impacts, directly affecting capital planning and regulatory reporting.",
+   "doc_status": "consultation",
+   "topics": [
+    "credit-risk-mitigation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While RMA is an emerging IFRS development, this is primarily an accounting standards and capital policy issue rather than a PD/LGD model development concern—it affects capital treatment mechanics, not our model calibration, validation, or downturn estimation frameworks."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I don't see this affecting my Nordic corporate loan book directly—ISDA's request on RMA accounting is an industry-wide lobbying effort with no confirmed regulatory outcome, and RMA remains speculative with unclear implementation timelines for us."
+    }
+   }
+  },
+  {
+   "id": 1521,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260728~574c738cea.en.html",
+   "title": "Sharon Donnery: Interview with Liberal.gr",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-07-28T08:00:00+00:00",
+   "first_seen_at": "2026-07-29T05:46:41+00:00",
+   "summary": "Sharon Donnery discusses ECB Banking Supervision's forward-looking approach to risks, highlighting geopolitical shocks, cyber resilience, and AI governance as key supervisory priorities. The ECB is conducting a 2026 reverse stress test on geopolitical scenarios and expects banks to submit cyber resilience action plans by October. Supervisory simplification is framed as \"smarter supervision\" focusing on material risks rather than lighter oversight, while stress testing is evolving to incorporate climate and nature-related risks.",
+   "why_it_matters": "Credit risk practitioners need to understand SSM's forward-looking supervisory framework, including geopolitical stress testing expectations, cyber resilience requirements, and the evolving role of AI in risk governance that may affect IRB models and risk management practices.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I follow this for strategic supervisory direction, but the item lacks concrete implications for PD/LGD model development or calibration; the 2026 geopolitical reverse stress test may eventually shape downturn scenario design, and AI governance signals may affect model governance frameworks, but I need specifics on how ECB will translate these priorities into TRIM-style model validation expectations or data requirements."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track the 2026 geopolitical reverse stress test and October cyber resilience submission deadline closely, as these are material supervisory expectations from the SSM that will affect our capital models and operational risk frameworks for the corporate portfolio."
+    }
+   }
+  },
   {
    "id": 1515,
    "url": "https://www.risk.net/risk-quantum/7963855/seb-model-shifts-nearly-treble-standardised-rwas",
