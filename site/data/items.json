@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T05:47:53+00:00",
+ "generated_at": "2026-07-30T05:36:25+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,91 @@
   }
  ],
  "items": [
+  {
+   "id": 1537,
+   "url": "https://www.risk.net/risk-quantum/7963895/standardised-rwas-bind-jp-morgan%E2%80%99s-cet1-ratio-again",
+   "title": "Standardised RWAs bind JP Morgan’s CET1 ratio again",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-07-30T03:30:00+00:00",
+   "first_seen_at": "2026-07-30T05:35:42+00:00",
+   "summary": "JP Morgan's CET1 ratio is now constrained by standardised approach RWA calculations rather than advanced (IRB) approach, making it the last US G-SIB to shift to this binding constraint. This indicates a reversal from IRB dominance in the bank's capital calculations. The shift reflects higher standardised RWA output relative to internal model outputs across the portfolio.",
+   "why_it_matters": "Credit risk practitioners need to monitor whether standardised approach output floors and regulatory capital constraints are now the effective binding limit for major institutions' capital management and lending decisions.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This signals a material structural shift in capital constraints that will directly influence IRB model usage, calibration expectations, and the supervisory posture toward our internal models—I need to understand whether our own standardised floor is tightening relative to our advanced models and adjust model conservatism accordingly."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "JP Morgan's shift to standardised RWA binding constraint is a useful market signal on regulatory capital floor effectiveness, but has limited direct bearing on our Nordic corporate loan book since we operate under ECB/CRR3 supervision where output floors and binding constraints differ materially from US G-SIB regime."
+    }
+   }
+  },
+  {
+   "id": 1533,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/low-impact-amendments-finalisation-july-2026",
+   "title": "LIAF02/26 – Low Impact Amendments Finalisation July 2026",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-29T15:00:07+01:00",
+   "first_seen_at": "2026-07-30T05:35:30+00:00",
+   "summary": "UK PRA finalises low-impact amendments to the Groups Part of the PRA Rulebook clarifying proportional consolidation requirements for participations based on voting rights and share of capital, effective 30 July 2026 and 1 January 2027. The PRA also updates the Countercyclical Capital Buffer Rates UK Technical Standard to replace cross-references to CRR provisions with references to the updated PRA Rulebook following Basel 3.1 and CRR restatement implementation. Supervisory Statement 15/13 (Groups) is amended to provide expectations on consolidation proportions when voting rights and capital holdings differ, allowing optionality where voting rights exceed capital share.",
+   "why_it_matters": "UK banks must now update consolidation methodologies for participations to align with PRA clarification on voting rights vs. capital precedence and ensure CCyB calculations reference the correct PRA Rulebook provisions rather than legacy CRR articles.",
+   "doc_status": "final_rule",
+   "topics": [
+    "crr3-implementation",
+    "large-exposures"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a technical rulebook amendment on proportional consolidation mechanics and CCyB procedural references that does not materially affect PD/LGD model design, calibration, data requirements, or validation—it concerns balance sheet consolidation treatment of participations upstream in our governance structure, which is a group finance and capital reporting matter, not a credit risk model parameter."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a UK PRA rulebook amendment with no direct application to my Scandinavian bank's corporate loan book, as our regulatory framework derives from CRR3, EBA guidelines, and Nordic FSA requirements, not UK PRA rules."
+    }
+   }
+  },
+  {
+   "id": 1539,
+   "url": "https://www.isda.org/2026/07/29/cds-market-dynamics-five-years-of-activity-and-a-record-2025/",
+   "title": "CDS Market Dynamics: Five Years of Activity and a Record 2025",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-07-29T14:16:59+00:00",
+   "first_seen_at": "2026-07-30T05:36:16+00:00",
+   "summary": "Global CDS market notional reached a record $41.8 trillion in 2025, with index CDS accounting for 93.3% of activity. CDS trading patterns shifted across different market stress events: index CDS increased more during systemic shocks (2020 pandemic, 2025 tariff shock), while single-name CDS spiked following bank failures in 2023. Index-to-single-name activity ratio recovered to 13.8 times in 2025 after falling to 8.5 times in 2023.",
+   "why_it_matters": "This market data informs counterparty credit risk exposure measurement and CDS-based credit risk mitigation practices that banks rely on under CRR credit risk frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "credit-risk-mitigation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "CDS market activity and notional volumes are interesting for treasury and trading risk management, but have minimal direct impact on my PD/LGD model development, calibration, or validation work under the IRB approach."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While CDS market dynamics are tangentially related to counterparty credit risk measurement, this item is primarily historical market analysis with no direct bearing on my bank's regulatory capital treatment, CRR3 implementation timelines, EBA guidance, supervisory expectations, or reporting obligations for corporate exposures."
+    }
+   }
+  },
   {
    "id": 1527,
    "url": "https://www.isda.org/2026/07/28/isda-requests-clarification-from-bcbs-on-rma-models-under-ifrs-9-ifrs-7/",
