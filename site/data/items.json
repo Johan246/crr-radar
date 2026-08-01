@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-31T06:07:59+00:00",
+ "generated_at": "2026-08-01T05:52:18+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,117 @@
   }
  ],
  "items": [
+  {
+   "id": 1561,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+   "title": "The EBA-ECB-EIOPA “Data Point Model Alliance” consults on improvements to their data dictionary metamodel to better support statistical and supervisory reporting",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-07-31T11:30:00+00:00",
+   "first_seen_at": "2026-08-01T05:50:55+00:00",
+   "summary": "The EBA-ECB-EIOPA Data Point Model Alliance has launched a two-month public consultation on DPM 2.1, an enhanced metadata model designed to integrate European prudential, resolution and statistical reporting frameworks. The new version introduces enhanced metadata versioning, extends support for logical data models, and includes published naming conventions to improve consistency across regulatory reporting. The consultation closes on 30 September 2026.",
+   "why_it_matters": "Credit risk practitioners must adapt their reporting systems and data governance to align with DPM 2.1 standards to ensure compliance with integrated EBA/ECB/EIOPA reporting requirements and reduce operational reporting burden.",
+   "doc_status": "consultation",
+   "topics": [
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to monitor DPM 2.1 closely for any changes to credit risk data definitions and reporting requirements, but this is primarily an operational reporting matter rather than a model development or calibration issue—the real impact depends on whether the metamodel changes affect how exposure data, defaults, or loss data are defined or validated for IRB purposes."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track this DPM 2.1 consultation closely—changes to the supervisory data metamodel directly impact how we structure and validate our corporate credit risk data for COREP, FINREP, and resolution reporting, and we should consider responding to the EBA-ECB-EIOPA consultation by late September 2026 to influence the final standard before implementation cascades into our IT roadmap."
+    }
+   }
+  },
+  {
+   "id": 1566,
+   "url": "https://www.isda.org/2026/07/31/us-basel-iii-endgame-trading-and-capital-markets-impact-2026-update/",
+   "title": "US Basel III Endgame: Trading and Capital Markets Impact 2026 Update",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-07-31T09:27:27+00:00",
+   "first_seen_at": "2026-08-01T05:52:07+00:00",
+   "summary": "In March 2026, US banking regulators (Federal Reserve, OCC, FDIC) published a revised Basel III Endgame proposal for capital rules with significant changes to market risk requirements under the Fundamental Review of the Trading Book (FRTB). ISDA's quantitative impact study with eight US global systemically important banks shows the standardized approach would increase market risk capital by approximately 89%, or 30% under a blend of internal models and standardized approach. ISDA recommends targeted calibration changes to improve risk sensitivity while maintaining capital framework safety and resilience.",
+   "why_it_matters": "Credit risk practitioners must assess how revised FRTB market risk capital requirements and standardized approach calibrations affect counterparty credit risk mitigation frameworks and overall capital allocation for trading book exposures at US banks.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "standardised-approach",
+    "counterparty-credit-risk"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While Basel III Endgame affects US banking capital rules, the focus on trading book market risk under FRTB and standardized approach calibrations has limited direct bearing on my PD/LGD model development, calibration, or IRB validation work for corporate exposures—this is primarily a market risk and counterparty credit risk issue outside the credit risk model perimeter."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While Basel III Endgame revisions are directionally important, this focuses on US trading book and FRTB market risk calibrations that don't materially impact my Nordic corporate loan book capital treatment or supervisory expectations under CRR3."
+    }
+   }
+  },
+  {
+   "id": 1562,
+   "url": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr260731~93964644b0.en.html",
+   "title": "ECB publishes results of 2026 geopolitical risk reverse stress test",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-07-31T09:00:00+00:00",
+   "first_seen_at": "2026-08-01T05:51:03+00:00",
+   "summary": "The ECB published results of its 2026 thematic reverse stress test on geopolitical risks covering 110 directly supervised euro area banks. The exercise required banks to design scenarios causing 300 bps CET1 depletion, revealing strengths in scenario tailoring but weaknesses in stress-testing framework granularity, solvency-liquidity interactions, and realism of mitigating actions. Results will inform supervisory dialogue on capital adequacy, recovery planning, and operational resilience frameworks.",
+   "why_it_matters": "Credit risk practitioners must strengthen their stress-testing frameworks' consistency between scenarios and capital/liquidity impacts, and realistic modelling of management actions under systemic crisis, as the ECB will follow up supervisory expectations in ICAAP and capital planning processes.",
+   "doc_status": "final_rule",
+   "topics": [
+    "irb-approach",
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This reverse stress test directly impacts our PD and LGD model assumptions and calibration—particularly downturn scenarios, correlation structures under systemic geopolitical shock, and the realism of our management action modelling; the ECB's findings on scenario granularity and solvency-liquidity nexus will force us to validate and likely tighten our stress framework and margin of conservatism ahead of next ICAAP cycle."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must strengthen our credit risk stress-testing framework—the ECB's findings on scenario granularity, solvency-liquidity interactions, and realism of mitigating actions will directly shape supervisory expectations in our 2027 ICAAP submission and capital planning dialogue."
+    }
+   }
+  },
+  {
+   "id": 1563,
+   "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr260731~93964644b0.en.html",
+   "title": "ECB publishes results of 2026 geopolitical risk reverse stress test",
+   "source_key": "ecb-ssm-archive",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-07-31T00:00:00+00:00",
+   "first_seen_at": "2026-08-01T05:51:16+00:00",
+   "summary": "The ECB published results of a 2026 thematic reverse stress test on geopolitical risks covering 110 euro area banks, in which banks designed scenarios targeting a 300 basis points CET1 depletion. The exercise identified weaknesses in banks' stress-testing frameworks, particularly in granularity of risk assessments, consistency between scenario narratives and solvency/liquidity impacts, realism of mitigating actions, and articulation of solvency-liquidity interactions. The test served as a replacement for an annual ICAAP stress test submission, streamlining supervisory processes.",
+   "why_it_matters": "Credit risk practitioners must strengthen stress-testing frameworks on geopolitical transmission channels (credit risk, impairments, profitability), ensure solvency-liquidity consistency, and reassess the realism of mitigation assumptions under systemic stress, as the ECB will follow up during supervisory dialogue and capital planning reviews.",
+   "doc_status": "final_rule",
+   "topics": [
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our downturn estimation capability and stress-testing framework governance—the ECB has explicitly flagged weaknesses in granularity of risk assessments and scenario consistency that will be scrutinized in TRIM-style reviews, and we need to tighten our geopolitical credit risk transmission channels and validation of mitigation assumptions to withstand supervisory scrutiny in upcoming capital planning cycles."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to ensure our corporate credit risk models explicitly capture geopolitical transmission channels—impairments on Nordic corporates, sector-specific vulnerabilities, and liquidity-solvency linkages—and prepare for ECB follow-up scrutiny on the realism of our mitigation assumptions in the next supervisory dialogue and ICAAP submission."
+    }
+   }
+  },
   {
    "id": 1537,
    "url": "https://www.risk.net/risk-quantum/7963895/standardised-rwas-bind-jp-morgan%E2%80%99s-cet1-ratio-again",
