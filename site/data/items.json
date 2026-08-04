@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-03T06:17:08+00:00",
+ "generated_at": "2026-08-04T05:43:50+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1588,
+   "url": "https://blogs.pwc.de/de/regulatory/article/256215/eba-veroeffentlicht-final-report-zu-den-rts-und-its-fuer-material-acquisitions-material-transfers-mergers-and-divisions/",
+   "title": "Regulatory Blog: EBA veröffentlicht Final Report zu den RTS und ITS für Material Acquisitions, Material Transfers, Mergers and Divisions",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-08-03T09:20:00+00:00",
+   "first_seen_at": "2026-08-04T05:43:39+00:00",
+   "summary": "The EBA published its final report on 17 July 2026 establishing regulatory technical standards (RTS) and implementing technical standards (ITS) for material acquisitions, material transfers of assets and liabilities, and mergers and divisions under CRD VI. The final rules strengthen differentiation between acquisitions with and without control, streamline overlapping information requirements, and clarify fit-and-proper procedures for mergers while maintaining notification obligations for indirect and intra-group acquisitions. Material acquisitions, transfers, and mergers now require proportionalized supervisory notification and assessment procedures at the consolidated group level.",
+   "why_it_matters": "Credit risk practitioners must understand revised CRD VI notification, approval, and assessment timelines for material acquisitions and transfers, as these directly affect capital adequacy, governance, and AML controls subject to prudential review.",
+   "doc_status": "final_rule",
+   "topics": [
+    "large-exposures",
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a governance and regulatory compliance item with no direct bearing on PD/LGD model development, calibration, validation, or data architecture—it concerns M&A notification procedures and capital adequacy assessment frameworks downstream of model outputs, not the models themselves."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track the EBA's final RTS/ITS on material acquisitions and transfers under CRD VI carefully, as these directly govern how our corporate loan exposures may be affected by M&A activity, consolidated group capital treatment, and supervisory approval timelines we must meet."
+    }
+   }
+  },
   {
    "id": 1561,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
