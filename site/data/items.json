@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-05T05:42:33+00:00",
+ "generated_at": "2026-08-06T05:44:01+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1609,
+   "url": "https://blogs.pwc.de/de/regulatory/article/256314/slotting-neu-gedacht/",
+   "title": "Regulatory Blog: Slotting neu gedacht",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-08-05T08:24:00+00:00",
+   "first_seen_at": "2026-08-06T05:43:48+00:00",
+   "summary": "The EBA consultation paper EBA/CP/2026/09 proposes a comprehensive revision of the Supervisory Slotting Criteria Approach (SSCA) for the first time since 2021, effective under the CRR3 mandate. Key changes include: ESG integration as a full risk driver across all categories; DSCR as the primary financial metric with ICR deprecated; removal of the 5% floor on factor weights; and enhanced documentation and validation requirements for overrides. Risk weights (50%–250%, 0% for default) remain unchanged, but the logic for assigning exposures to categories is materially altered.",
+   "why_it_matters": "Banks using the slotting approach must fundamentally rewrite their rating methodologies, data governance, and validation frameworks, with significant capital impact if data gaps trigger Category 4 (250% risk weight) classification.",
+   "doc_status": "consultation",
+   "topics": [
+    "irb-approach",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly reshapes how we calibrate and validate corporate PD models under slotting—especially the shift from ICR to DSCR, ESG integration mechanics, and the removal of the 5% floor which changes factor weight optimisation; we need to immediately audit our current overrides documentation and data capture to assess CRR3 readiness."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must closely track EBA/CP/2026/09 slotting revision for our corporate book—ESG integration and DSCR primacy represent material methodology shifts that could repricing our Nordic infrastructure and project finance exposures, and I need to assess data readiness before CRR3 deadline to avoid Category 4 penalties."
+    }
+   }
+  },
   {
    "id": 1588,
    "url": "https://blogs.pwc.de/de/regulatory/article/256215/eba-veroeffentlicht-final-report-zu-den-rts-und-its-fuer-material-acquisitions-material-transfers-mergers-and-divisions/",
