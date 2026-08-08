@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-07T04:51:43+00:00",
+ "generated_at": "2026-08-08T04:08:47+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1623,
+   "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260807~58eb5109ce.en.html",
+   "title": "ECB publishes consolidated banking data for end-March 2026",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-08-07T08:00:00+00:00",
+   "first_seen_at": "2026-08-08T04:08:07+00:00",
+   "summary": "The ECB published consolidated banking data for end-March 2026, covering 335 banking groups and 2,284 stand-alone credit institutions representing nearly 100% of EU banking sector assets. Key metrics show total assets increased 3.63% year-on-year to €34.33 trillion, non-performing loan ratios rose 0.02 percentage points to 1.98%, and the aggregate Common Equity Tier 1 ratio stood at 16.27%. The dataset includes comprehensive indicators on capital adequacy, asset quality, profitability, and solvency compiled on a consolidated basis under EBA Supervisory Reporting standards.",
+   "why_it_matters": "Credit risk practitioners use this consolidated supervisory data to benchmark capital ratios, asset quality trends, and provisioning adequacy across the EU banking system and to validate their own institution's risk metrics against peer aggregates.",
+   "doc_status": "final_rule",
+   "topics": [
+    "reporting-disclosure",
+    "npl-provisioning",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This ECB data release is useful for macro validation and peer benchmarking of our portfolio metrics, but has limited direct impact on our model development cycle unless we need to refresh downturn assumptions or adjust conservatism margins based on observed sector NPL trends—worth monitoring for any material shifts in asset quality, but not a primary driver of PD/LGD recalibration."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is useful reference data for peer benchmarking, but it does not affect our capital treatment, supervisory expectations, or regulatory obligations—we already report into the same EBA framework and receive individual supervisory feedback from the ECB and Nordic FSAs that is far more material to our risk appetite and compliance."
+    }
+   }
+  },
   {
    "id": 1609,
    "url": "https://blogs.pwc.de/de/regulatory/article/256314/slotting-neu-gedacht/",
