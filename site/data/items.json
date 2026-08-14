@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-13T04:48:09+00:00",
+ "generated_at": "2026-08-14T04:46:21+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 1655,
+   "url": "https://www.risk.net/risk-quantum/7963945/ccr-rwas-spike-across-asian-banks-in-q1-2026",
+   "title": "CCR RWAs spike across Asian banks in Q1 2026",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-08-14T03:30:00+00:00",
+   "first_seen_at": "2026-08-14T04:45:34+00:00",
+   "summary": "Counterparty credit risk (CCR) risk-weighted assets increased notably across Asian banks in Q1 2026, with Singapore and Hong Kong lenders experiencing the sharpest rises. The article notes this category receives limited disclosure from banks despite its material impact on capital requirements.",
+   "why_it_matters": "CCR RWA movements affect capital adequacy ratios and signal shifts in derivative exposures or CVA risk; practitioners need to monitor regional trends and disclosure gaps in this category.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a market observation on Asian bank capital dynamics with no direct bearing on my PD/LGD model framework, calibration methodology, or validation approach—CCR and CVA risk sit outside the corporate credit risk domain I govern."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This article focuses on Asian bank CCR dynamics and does not materially affect our Nordic corporate loan book capital treatment or regulatory obligations under CRR3 and ECB/FSA supervisory frameworks."
+    }
+   }
+  },
+  {
+   "id": 1657,
+   "url": "https://blogs.pwc.de/de/regulatory/article/256405/eba-frtb-anwendung-ab-1-januar-2027-und-no-action-letter-zur-handelsbuchabgrenzung-im-uebergangszeitraum/",
+   "title": "Regulatory Blog: EBA: FRTB-Anwendung ab 1. Januar 2027 und No Action Letter zur Handelsbuchabgrenzung im Übergangszeitraum",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-08-13T09:48:00+00:00",
+   "first_seen_at": "2026-08-14T04:46:08+00:00",
+   "summary": "The EBA published two key documents on 3 August 2026 regarding FRTB implementation from 1 January 2027: Opinion EBA/Op/2026/08 (no action letter on trading book boundary classification and internal hedging under Article 106 CRR) and EBA considerations on FRTB application addressing practical implementation issues and transition reliefs through 31 December 2029. Key guidance covers the bank-specific multiplier eligibility criteria (comparison of capital requirements under CRR3/FRTB versus CRR2 as of 31 March 2027), mandatory dual-run systems during calibration, capital neutrality including output floor effects, structural FX position treatment, and enhanced disclosure requirements for the transition period.",
+   "why_it_matters": "Credit risk practitioners and trading book supervisors must understand the FRTB transition mechanics, the bank-specific multiplier notification process (deadline well before 12 May 2027), mandatory parallel calculation obligations, output floor interactions, and dual disclosure templates required during the relief period to ensure compliant implementation from 1 January 2027.",
+   "doc_status": "final_rule",
+   "topics": [
+    "standardised-approach",
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a trading book market risk regulation (FRTB/CRR3) matter with no bearing on my PD/LGD model development, calibration, validation, or IRB governance work."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I recognize EBA/Op/2026/08 as important for trading book supervisors and market risk teams, but my core focus is corporate credit risk in the loan book where FRTB has no direct application—the trading book boundary classification no-action letter and FRTB multiplier mechanics are outside my remit, though I need to stay informed of capital treatment transitions that could affect our consolidated regulatory capital ratios and any spillover impacts on corporate counterparty stress testing or credit valuation adjustments."
+    }
+   }
+  },
   {
    "id": 1623,
    "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260807~58eb5109ce.en.html",
