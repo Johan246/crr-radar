@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-17T03:44:56+00:00",
+ "generated_at": "2026-08-18T03:41:12+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1668,
+   "url": "https://www.risk.net/regulation/7963985/europe%E2%80%99s-banks-can%E2%80%99t-agree-on-how-to-fix-the-output-floor",
+   "title": "Europe’s banks can’t agree on how to fix the output floor",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-08-18T03:30:00+00:00",
+   "first_seen_at": "2026-08-18T03:39:43+00:00",
+   "summary": "European banks are divided on how to address CRR3 output floor constraints, with disagreement between those seeking exclusion of market risk capital requirements and those advocating for greater credit risk modelling flexibility. The divergence reflects conflicting preferences on scope and calibration of the output floor mechanism ahead of implementation.",
+   "why_it_matters": "Output floor design directly affects capital requirements under IRB approaches; unresolved industry positions may influence final regulatory guidance and implementation timelines.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "irb-approach",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our IRB capital framework and model validation requirements; output floor calibration will constrain our PD/LGD model risk appetite and influence supervisor expectations on conservatism margins, making regulatory clarity on scope and mechanics essential for our model roadmap."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor this closely because output floor design under CRR3 will directly impact our IRB capital calculations for corporate exposures, and fragmented industry positions risk prolonging regulatory clarity or leading to unfavorable supervisory interpretation that could disadvantage our compliance posture."
+    }
+   }
+  },
   {
    "id": 1655,
    "url": "https://www.risk.net/risk-quantum/7963945/ccr-rwas-spike-across-asian-banks-in-q1-2026",
