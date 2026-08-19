@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-18T03:41:12+00:00",
+ "generated_at": "2026-08-19T03:42:04+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1674,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2024/april/pra-business-plan-2024-25",
+   "title": "Prudential Regulation Authority Business Plan 2024/25",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-08-18T15:11:15+01:00",
+   "first_seen_at": "2026-08-19T03:41:23+00:00",
+   "summary": "The PRA Business Plan 2024/25 outlines major regulatory priorities including implementation of Basel 3.1 standards for capital requirements, a focus on maintaining banking and insurance sector resilience, and supervisory work on stress testing and operational resilience. The plan confirms continued day-to-day supervision of financial and operational resilience, governance, and risk management across PRA-regulated firms, alongside new powers to oversee critical third parties post-FSMA 2023.",
+   "why_it_matters": "Credit risk practitioners must understand the PRA's 2024/25 supervisory priorities and Basel 3.1 implementation timeline, which will directly affect capital requirement calculations, risk measurement consistency, and supervisory engagement over the coming year.",
+   "doc_status": "final_rule",
+   "topics": [
+    "crr3-implementation",
+    "output-floor",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly affects my IRB model framework—Basel 3.1 implementation will reshape capital calculations, data granularity requirements, and supervisory expectations around model conservatism; I need to track the PRA's timeline and stress testing priorities to ensure our PD/LGD models remain compliant and front-run any additional validation or recalibration demands."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I work in a Scandinavian bank, so PRA oversight is not my regulator; CRR3/EBA/ECB and Nordic FSAs drive my capital framework and supervisory expectations, making this UK-focused plan not directly applicable to my day-to-day work."
+    }
+   }
+  },
   {
    "id": 1668,
    "url": "https://www.risk.net/regulation/7963985/europe%E2%80%99s-banks-can%E2%80%99t-agree-on-how-to-fix-the-output-floor",
