@@ -185,13 +185,20 @@ function render() {
   $("#refs").hidden = view !== "refs";
   const quizEl = $("#quiz");
   if (quizEl) quizEl.hidden = view !== "quiz";
+  const calEl = $("#calendar");
+  if (calEl) calEl.hidden = view !== "calendar";
   const filters = document.querySelector(".filters");
   filters.classList.toggle("refs-mode", view === "refs");
-  filters.classList.toggle("quiz-mode", view === "quiz");
-  $("#count").hidden = view === "quiz";
+  filters.classList.toggle("quiz-mode", view === "quiz" || view === "calendar");
+  $("#count").hidden = view === "quiz" || view === "calendar";
   if (view === "quiz") {
     $("#empty").hidden = true;
     if (window.Quiz) window.Quiz.render(quizEl);
+    return;
+  }
+  if (view === "calendar") {
+    $("#empty").hidden = true;
+    if (window.Cal) window.Cal.render(calEl);
     return;
   }
   if (view === "refs") {
@@ -239,7 +246,10 @@ function buildFilters() {
 }
 
 function wireEvents() {
-  const tabs = { feed: $("#tab-feed"), refs: $("#tab-refs"), quiz: $("#tab-quiz") };
+  const tabs = {
+    feed: $("#tab-feed"), refs: $("#tab-refs"),
+    calendar: $("#tab-calendar"), quiz: $("#tab-quiz"),
+  };
   for (const [view, btn] of Object.entries(tabs)) {
     if (!btn) continue;
     btn.addEventListener("click", () => {

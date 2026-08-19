@@ -39,15 +39,13 @@ The scheduled task `crr-radar-daily-improve` reads this roadmap each run, ships
 ## Backlog (prioritized — the loop picks the highest-value next slice)
 
 ### Near-term (high value, well-scoped)
-1. **Regulatory calendar / deadlines tracker.** Key CRR3 dates (output-floor phase-in
-   ladder, transitional expiries), consultation deadlines, application dates. A dated
-   timeline view + "upcoming" widget. Specialists live by deadlines.
-2. **Consultations & Q&A coverage.** Track EBA/ECB consultations open for comment
+1. **Consultations & Q&A coverage.** Track EBA/ECB consultations open for comment
    (with close dates) and surface them distinctly; explore an EBA Single Rulebook
-   Q&A feed as a source.
-3. **Saved items / watchlist.** localStorage bookmarks + a "saved" view; optional
+   Q&A feed as a source. Natural companion to the new Calendar (add consultation
+   close dates as deadlines).
+2. **Saved items / watchlist.** localStorage bookmarks + a "saved" view; optional
    per-topic watch so returning users see what's new in their areas.
-4. **"What changed this week" digest view.** A weekly rollup grouping the feed by
+3. **"What changed this week" digest view.** A weekly rollup grouping the feed by
    topic with counts and the few highest-signal items.
 
 ### Growing depth
@@ -68,3 +66,10 @@ The scheduled task `crr-radar-daily-improve` reads this roadmap each run, ships
 ## Shipped by the loop
 
 _(The daily loop appends entries here as it completes slices — newest first.)_
+
+- **2026-07-24 — Regulatory calendar / deadlines tracker.** New "Calendar" tab: a
+  dated timeline of CRR3 application dates, the output-floor phase-in ladder,
+  transitional expiries, and Swedish Article 458 measures, split into Upcoming /
+  Passed with countdowns and a "Next" highlight. Data grounded in the research
+  brief (`config/deadlines.yaml` → `site/data/deadlines.json`). Follow-up: fold
+  consultation close dates in once consultation tracking lands.

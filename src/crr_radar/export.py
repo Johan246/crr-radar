@@ -37,6 +37,7 @@ def run_export(cfg: Config, store: Store, out_path: Path | None = None) -> Path:
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
     print(f"Exported {len(items)} items → {out_path}")
     export_quiz()
+    export_deadlines()
     return out_path
 
 
@@ -81,4 +82,24 @@ def export_quiz(out_path: Path | None = None) -> Path | None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
     print(f"Exported {len(questions)} quiz questions → {out_path}")
+    return out_path
+
+
+def export_deadlines(out_path: Path | None = None) -> Path | None:
+    """Write site/data/deadlines.json from config/deadlines.yaml (static
+    regulatory-timeline content)."""
+    src = project_root() / "config" / "deadlines.yaml"
+    if not src.exists():
+        return None
+    raw = yaml.safe_load(src.read_text())
+    deadlines = raw.get("deadlines", [])
+    for d in deadlines:
+        if "note" in d:
+            d["note"] = _clean_multiline(d["note"])
+    deadlines.sort(key=lambda d: d.get("date", ""))
+    payload = {"generated_at": utcnow(), "deadlines": deadlines}
+    out_path = out_path or project_root() / "site" / "data" / "deadlines.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
+    print(f"Exported {len(deadlines)} deadlines → {out_path}")
     return out_path
