@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T03:50:15+00:00",
+ "generated_at": "2026-08-25T03:44:06+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 1714,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jan/unintended-consequences-of-the-basel-endgame.html",
+   "title": "The Unintended Consequences Of The Basel Endgame",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-08-21T00:00:00+00:00",
+   "first_seen_at": "2026-08-25T03:43:51+00:00",
+   "summary": "Oliver Wyman commentary on the Federal Reserve's Basel endgame proposal, which calls for 20–25% increase in capital requirements for largest US banks, focusing on three unintended consequences: potential harm to green infrastructure financing through reduced tax equity capacity, withdrawal of bank market-making in fixed income, and incentivization of corporate lending migration to private credit markets. The piece also notes that key risks from SVB's failure (supervision, interest rate risk, depositor concentration) remain unaddressed.",
+   "why_it_matters": "Credit risk professionals must understand how the output floor, market risk capital treatment, and SME risk weightings under Basel endgame reshape bank capital allocation, potentially shifting credit flows away from regulated banking and increasing systemic reliance on private credit.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "standardised-approach",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our IRB framework calibration and supervisory strategy: Basel endgame's output floor mechanics will constrain our model parameter discretion, and the projected shift toward private credit channels fundamental credit risk concentration and validation assumptions we must monitor in downturn scenarios."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a Federal Reserve proposal targeting US banks; while Basel frameworks eventually filter to CRR3, this commentary focuses on US-specific impacts (tax equity, green infrastructure financing) and does not address Nordic corporate exposures, ECB/EBA mandates, or Scandinavian regulatory expectations that directly affect our capital treatment and loan portfolio."
+    }
+   }
+  },
+  {
+   "id": 1716,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/oct/private-credit-next-act-impact-on-banks-and-asset-managers.html",
+   "title": "The Rise Of Private Credit And Its Market Opportunities",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-08-21T00:00:00+00:00",
+   "first_seen_at": "2026-08-25T03:43:59+00:00",
+   "summary": "The article discusses the growth of private credit markets and increased bank-private credit partnerships where banks are transferring riskier loan portions to private credit funds while retaining lower-risk assets. Banks face pressure from new capital regulations driving disintermediation, and the author describes this as \"re-tranching of the banking system\" where banks optimize their credit risk portfolios. The piece highlights how 14 major banks have formed partnerships with private credit firms in the past year, a significant increase from two the year prior.",
+   "why_it_matters": "Credit risk practitioners need to understand how bank-private credit partnerships are reshaping credit risk distribution and capital optimization strategies under evolving regulatory frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "credit-risk-mitigation",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I find this relevant to our portfolio dynamics and capital optimization context, but it has limited direct impact on PD/LGD model development or calibration; the syndication and risk transfer patterns are important for portfolio composition and downturn resilience assumptions, but the article itself appears to focus on market trends rather than modelling methodology or data quality issues we control."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "This market trend is tangentially relevant to my work—I see the regulatory capital pressure driving disintermediation and private credit partnerships—but the article lacks the specific CRR3 technical details, EBA Q&As, or supervisory guidance on capital treatment that would directly inform our corporate loan origination and portfolio strategy."
+    }
+   }
+  },
   {
    "id": 1674,
    "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2024/april/pra-business-plan-2024-25",
