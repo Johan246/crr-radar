@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-25T03:44:06+00:00",
+ "generated_at": "2026-08-26T03:51:04+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1718,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-technical-standards-reclassification-investment-firms-credit-institutions",
+   "title": "The EBA consults on revised technical standards for the reclassification of investment firms as credit institutions",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-08-25T08:32:13+00:00",
+   "first_seen_at": "2026-08-26T03:49:47+00:00",
+   "summary": "The EBA launched a consultation on three revised Regulatory Technical Standards (RTS) governing the reclassification of investment firms as credit institutions when they exceed EUR 30 billion in total assets. The proposals clarify total asset calculation methodologies, reporting requirements for investment firms, and conditions under which competent authorities may grant waivers from credit institution authorisation. These revised standards reflect 2024 CRD amendments and introduce waiver assessment criteria for the first time.",
+   "why_it_matters": "Credit risk practitioners need to understand the revised asset calculation and reporting rules, as they affect which investment firms become subject to full CRR credit risk requirements and how waiver eligibility is determined.",
+   "doc_status": "consultation",
+   "topics": [
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While this addresses supervisory regulatory scope, it has no direct implication for PD/LGD model development, calibration, validation, data architecture, or margin of conservatism for existing corporate credit portfolios—it concerns institutional classification and waiver mechanics rather than credit risk quantification."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I should track this consultation timeline and final RTS outcomes, but our Nordic corporate lending book is primarily exposed through traditional credit institutions rather than reclassifying investment firms; the substance matters only if we hold significant exposures to cross-border investment firms approaching the EUR 30bn threshold."
+    }
+   }
+  },
   {
    "id": 1714,
    "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jan/unintended-consequences-of-the-basel-endgame.html",
