@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-26T03:51:04+00:00",
+ "generated_at": "2026-08-27T13:39:18+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,62 @@
   }
  ],
  "items": [
+  {
+   "id": 1749,
+   "url": "https://blogs.pwc.de/de/regulatory/article/256557/eba-supervisory-benchmarking-exercise-2027-ausgeweitete-teilnahmepflicht-im-marktrisiko-benchmarking-fuer-institute-die-nur-den-asa-anwenden/",
+   "title": "Regulatory Blog: EBA Supervisory Benchmarking Exercise 2027: Ausgeweitete Teilnahmepflicht im Marktrisiko-Benchmarking für Institute, die nur den ASA anwenden",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-08-26T11:10:00+00:00",
+   "first_seen_at": "2026-08-27T13:38:33+00:00",
+   "summary": "The EBA is expanding participation in the 2027 Market Risk Supervisory Benchmarking Exercise (MKR SBE) to include banks that apply only the Alternative Standardised Approach (ASA) for market risk. The number of participating institutions is expected to rise from approximately 40 to 100, with participation determined by status on 31 October 2026 (those required to use ASA and with market risk exposures ≥€500m). Key reporting dates for ASA-only banks are initial market valuation submission by 9 July 2027 and final ASA calculations by 22 October 2027, with reporting required at individual instrument/portfolio granularity in both institutional reporting currency and EBA instrument currency.",
+   "why_it_matters": "Credit risk and market risk practitioners must assess whether their institution falls into the newly expanded ASA-only category for MKR SBE 2027 and prepare for materially higher reporting granularity and dual-currency submission requirements that differ from standard COREP templates.",
+   "doc_status": "consultation",
+   "topics": [
+    "standardised-approach",
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a market risk supervisory benchmarking exercise—outside my remit as a credit risk (PD/LGD) model builder; while supervisory reporting is always relevant, this item has no direct implication for corporate credit model development, calibration, validation, or downturn estimation."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I need to monitor whether our Nordic bank falls under the expanded ASA-only participation criterion by 31 October 2026, but this is primarily a market risk operational burden; it does not directly affect my corporate loan book capital treatment or CRR3 implementation roadmap, though coordination with market risk teams on dual-currency instrument-level reporting will be necessary."
+    }
+   }
+  },
+  {
+   "id": 1741,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-draft-technical-standards-institutions-operational-risk-management",
+   "title": "The EBA consults on draft technical standards on institutions’ operational risk management",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-08-26T08:37:24+00:00",
+   "first_seen_at": "2026-08-27T13:37:49+00:00",
+   "summary": "The EBA launched a public consultation on draft Regulatory Technical Standards (RTS) specifying the operational risk management framework required under Article 323 of CRR3. The draft RTS set out harmonised, proportionate requirements for governance, management processes, and systems for identifying, assessing, monitoring and managing operational risk. A key feature is proportionality: institutions with a business indicator below EUR 750 million will benefit from lower frequency of reviews, reporting, and granularity requirements.",
+   "why_it_matters": "Credit risk practitioners must understand the new standardised operational risk framework replacing advanced measurement approaches, as operational risk capital requirements directly impact overall regulatory capital adequacy under CRR3.",
+   "doc_status": "consultation",
+   "topics": [
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While CRR3 capital requirements affect our bank's overall capital adequacy ratio, operational risk management standards don't materially influence PD/LGD model development, calibration, validation, or supervisory review of credit models—they sit in a different risk silo with distinct data and methodological requirements."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I need to track the EBA's consultation timeline and final RTS publication, as operational risk capital floors under CRR3 will directly affect our group-wide Pillar 1 capital requirements; however, our corporate credit risk management processes are not directly constrained by this operational framework, and we likely fall below the EUR 750m business indicator threshold for proportionality relief anyway."
+    }
+   }
+  },
   {
    "id": 1718,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-technical-standards-reclassification-investment-firms-credit-institutions",
