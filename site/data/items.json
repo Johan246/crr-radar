@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-27T13:39:18+00:00",
+ "generated_at": "2026-08-28T14:49:50+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1775,
+   "url": "https://www.risk.net/risk-quantum/7963995/japan%E2%80%99s-g-sibs%E2%80%99-fallback-fund-rwas-top-%C2%A51trn",
+   "title": "Japan’s G-Sibs’ fallback fund RWAs top ¥1trn",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-08-28T03:30:00+00:00",
+   "first_seen_at": "2026-08-28T14:49:10+00:00",
+   "summary": "Japanese G-SIBs' risk-weighted assets in fallback funds have surpassed ¥1 trillion, driven largely by a 62% quarterly increase at SMFG. MUFG attributed part of the increase to methodology effects. Fallback fund RWAs are a key metric under Japan's implementation of Basel III capital frameworks for systemically important banks.",
+   "why_it_matters": "Credit risk practitioners tracking RWA movements in G-SIBs and fallback mechanisms need to understand these volatility drivers and whether methodology shifts signal capital requirement changes.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a capital adequacy and regulatory reporting item with no bearing on my PD/LGD model development, calibration, or validation work; the RWA movements in fallback funds reflect asset composition and methodology changes at the bank level, not changes to corporate credit risk parameters or downturn estimation that would affect model inputs or margin of conservatism."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I track Nordic FSA guidance and CRR3 implementation timelines for our corporate book, not Japanese G-SIB regulatory mechanics; while fallback fund RWA volatility is interesting conceptually, it has no bearing on our capital treatment or supervisory expectations in Scandinavia."
+    }
+   }
+  },
   {
    "id": 1749,
    "url": "https://blogs.pwc.de/de/regulatory/article/256557/eba-supervisory-benchmarking-exercise-2027-ausgeweitete-teilnahmepflicht-im-marktrisiko-benchmarking-fuer-institute-die-nur-den-asa-anwenden/",
