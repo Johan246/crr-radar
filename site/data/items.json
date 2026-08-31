@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-30T08:51:33+00:00",
+ "generated_at": "2026-08-31T09:15:01+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -423,6 +423,35 @@
     "regulatory": {
      "relevance": "low",
      "verdict": "I track Nordic FSA guidance and CRR3 implementation timelines for our corporate book, not Japanese G-SIB regulatory mechanics; while fallback fund RWA volatility is interesting conceptually, it has no bearing on our capital treatment or supervisory expectations in Scandinavia."
+    }
+   }
+  },
+  {
+   "id": 1790,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/nov/wholesale-banking-credit-markets-risks-benefits.html",
+   "title": "Exploring The Shift In Wholesale Banking In Credit Markets",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-08-28T00:00:00+00:00",
+   "first_seen_at": "2026-08-31T09:14:56+00:00",
+   "summary": "Oliver Wyman/Morgan Stanley 2024 wholesale banking outlook analyzes structural shifts in credit markets, including regulatory pressure driving credit business model transformation. The report discusses potential capital requirement impacts (Basel 3 Endgame), non-bank competition in credit trading and private credit origination, and risks to bank revenue pools estimated at $35–50 billion by 2027. It projects industry-wide return on equity of ~14% by 2027, emphasizing that capital requirement changes of 5% would reduce RoE by ~60 basis points.",
+   "why_it_matters": "Regulatory capital pressures and structural market shifts discussed here directly affect credit risk practitioners' capital planning assumptions, IRB/standardised approach scope (especially for middle-market and asset-based lending), and competitive dynamics in credit risk assessment and pricing.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to monitor Basel 3 Endgame capital impacts on our IRB scope decisions and ensure PD/LGD calibration reflects realistic pricing dynamics as non-bank competition reshapes credit origination and risk transfer strategies."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor this closely because Basel 3 Endgame capital impacts on credit exposures—particularly the standardised approach floor and IRB scope changes—directly reshape how we model capital requirements for our Nordic corporate loan book and price credit risk going forward."
     }
    }
   },
