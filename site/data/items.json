@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T07:32:56+00:00",
+ "generated_at": "2026-09-03T07:41:24+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1825,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260902~f61170cf2f.en.html",
+   "title": "Claudia Buch: Bank resilience and sustainable growth: two sides of the same coin",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-02T13:30:00+00:00",
+   "first_seen_at": "2026-09-03T07:39:53+00:00",
+   "summary": "ECB Supervisory Board Chair Claudia Buch outlines the ECB's position on banking union completion, capital regulation and market integration as mechanisms for sustainable growth and resilience. She argues that well-capitalised banks and faithful implementation of Basel standards (including output floor and leverage ratio) are necessary safeguards, while warning against weakening capital requirements as a growth strategy. The speech emphasizes that further harmonization of national insolvency, consumer protection and mortgage rules, plus a European deposit insurance scheme, would strengthen both integration and resilience without compromising supervisor scrutiny.",
+   "why_it_matters": "Supervisory guidance on capital requirements, output floor and leverage ratio treatment; strategic direction on CRR implementation and banking union reforms that affect capital adequacy frameworks and cross-border regulatory treatment.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "large-exposures",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to monitor this for regulatory direction on output floor and leverage ratio implementation, but the speech is primarily policy advocacy rather than concrete guidance—actual supervisory expectations will emerge through TRIM reviews and CRR amendment details, which is where my model implications will crystallize."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must closely track Buch's supervisory stance on Basel output floor and leverage ratio implementation, as these directly constrain our capital models and CRR3 transition timelines; her pushback against capital deregulation as a growth lever is important for anticipating ECB's stance during any future rule relaxation pressure from member states."
+    }
+   }
+  },
   {
    "id": 1775,
    "url": "https://www.risk.net/risk-quantum/7963995/japan%E2%80%99s-g-sibs%E2%80%99-fallback-fund-rwas-top-%C2%A51trn",
