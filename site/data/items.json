@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T07:47:14+00:00",
+ "generated_at": "2026-09-10T07:48:52+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,91 @@
   }
  ],
  "items": [
+  {
+   "id": 1862,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-responds-european-commissions-non-adoption-draft-amending-technical-standards-prior-permission",
+   "title": "The EBA responds to the European Commission’s non-adoption of draft amending technical standards on prior permission",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-09-09T12:36:17+00:00",
+   "first_seen_at": "2026-09-10T07:47:47+00:00",
+   "summary": "The European Commission declined to adopt EBA draft technical standards that would have shortened the application period for prior permission requests to reduce own funds and eligible liabilities instruments under Commission Delegated Regulation (EU) No 241/2014. The EBA will now proceed with a broader review of the RTS to deliver further simplification and efficiency gains. This decision affects the administrative timeline for resolution and capital management decisions under the regulatory framework.",
+   "why_it_matters": "Credit risk and resolution practitioners must continue operating under existing lengthier timelines for prior permission applications; any future streamlining will be deferred pending EBA's broader RTS review.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is an administrative and resolution governance matter with no direct bearing on my PD/LGD model development, calibration, validation, or data requirements—the timeline for prior permission requests does not affect credit risk quantification methodologies or model review cycles."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a procedural setback on resolution mechanics that doesn't materially impact my corporate credit risk capital treatment or CRR3 implementation priorities; I'll monitor the EBA's broader RTS review, but the status quo timeline for own funds reductions poses no immediate compliance risk to our Nordic corporate exposures."
+    }
+   }
+  },
+  {
+   "id": 1867,
+   "url": "https://www.isda.org/2026/09/09/remove-bureaucracy-from-cross-margin-approvals/",
+   "title": "Remove Bureaucracy from Cross-margin Approvals",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-09-09T08:47:55+00:00",
+   "first_seen_at": "2026-09-10T07:48:28+00:00",
+   "summary": "ISDA commentary advocates for streamlined cross-margining approval processes between CFTC and SEC, noting current US capital rules do not recognize risk offsets under the standardized approach for counterparty credit risk. The article critiques the latest US Basel III proposal's treatment of cross-product netting and proposes a joint regulatory framework with transparent criteria and defined timelines. It emphasizes that capital requirements should align with actual risk and not create disincentives for efficient cross-margining arrangements.",
+   "why_it_matters": "Credit risk practitioners need to understand how cross-margining treatment affects capital requirements under the standardized approach and Basel III, and what regulatory changes may alter capital calculations for counterparty credit risk going forward.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "counterparty-credit-risk",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "I don't engage with this—it's a capital framework advocacy piece for counterparty credit risk under the standardized approach, which sits outside the IRB perimeter and doesn't touch PD/LGD model development, calibration, or validation for corporate exposures."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a US regulatory debate (CFTC/SEC/Fed framework) that does not affect our Nordic corporate loan book or CRR3 implementation; cross-margining for derivatives counterparty credit risk is outside my corporate exposures remit."
+    }
+   }
+  },
+  {
+   "id": 1870,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2026/sep/europe-finance-3-levers-revive-growth.html",
+   "title": "3 finance levers can help revive European economic growth",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-09-09T00:00:00+00:00",
+   "first_seen_at": "2026-09-10T07:48:48+00:00",
+   "summary": "Oliver Wyman analysis argues that Europe's €39.5 trillion in household savings are underutilized due to structural financing gaps, and proposes three mechanisms: securitization revival, pension system reform, and retail investor participation. The report notes that securitization reform is on the regulatory agenda and highlights that European securitization has outperformed US equivalents with lower default rates. Achieving these changes would materially reshape how banks deploy capital and investors allocate risk.",
+   "why_it_matters": "Securitization market recovery and pension asset mobilization directly affect bank capital recycling, credit supply, and the regulatory framework governing capital relief mechanisms under CRR.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is macroeconomic and capital markets policy rather than model-specific, but securitization reform does touch our IRB framework—specifically capital relief mechanics and origination incentives—so I need to monitor whether CRR changes alter our approach to underwriting and data collection on securitized exposures, though the core PD/LGD development process remains unchanged."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I note the macro case for securitization revival and pension reform, but this Oliver Wyman piece lacks concrete regulatory specificity—I need to track actual CRR3 securitization amendments, EBA rules, and ECB/FSA guidance on capital relief, not strategic commentary on financing gaps."
+    }
+   }
+  },
   {
    "id": 1825,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260902~f61170cf2f.en.html",
