@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T07:42:31+00:00",
+ "generated_at": "2026-09-12T07:37:32+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1881,
+   "url": "https://www.risk.net/node/7964101",
+   "title": "A methodology to measure the impacts of scenarios through expected credit losses",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-09-11T14:00:28+00:00",
+   "first_seen_at": "2026-09-12T07:36:55+00:00",
+   "summary": "The authors propose a framework for measuring scenario impacts on expected credit losses (ECL) by leveraging existing provisioning infrastructure within financial institutions. This methodology bridges scenario analysis and IFRS 9/ECL provisioning models. The approach enables practitioners to systematically quantify how macroeconomic scenarios translate into credit loss changes across portfolios.",
+   "why_it_matters": "Credit risk practitioners can adopt a structured methodology to link macroeconomic scenarios to ECL outcomes, strengthening scenario-based stress testing and provisioning governance under CRR/IFRS 9 requirements.",
+   "doc_status": "commentary",
+   "topics": [
+    "npl-provisioning",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I find this directly applicable to my work because any methodology that systematically links macroeconomic scenarios to ECL outputs directly impacts how we calibrate PD and LGD models under stress conditions and validate our downturn estimates—core elements of TRIM reviews and IRB model governance."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to operationalize robust scenario-to-ECL linkages for our Nordic corporate portfolio under IFRS 9 and regulatory stress testing mandates, making this methodology directly applicable to our capital and provisioning governance."
+    }
+   }
+  },
   {
    "id": 1862,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-responds-european-commissions-non-adoption-draft-amending-technical-standards-prior-permission",
