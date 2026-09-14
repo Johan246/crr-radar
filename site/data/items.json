@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T07:55:59+00:00",
+ "generated_at": "2026-09-14T08:29:03+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -423,6 +423,35 @@
     "regulatory": {
      "relevance": "high",
      "verdict": "I need to operationalize robust scenario-to-ECL linkages for our Nordic corporate portfolio under IFRS 9 and regulatory stress testing mandates, making this methodology directly applicable to our capital and provisioning governance."
+    }
+   }
+  },
+  {
+   "id": 1896,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2025/nov/trends-reshaping-european-sme-lending.html",
+   "title": "How Banks Need To Compete In The New SME Finance Landscape",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-09-11T00:00:00+00:00",
+   "first_seen_at": "2026-09-14T08:29:00+00:00",
+   "summary": "Oliver Wyman analysis of SME lending market trends, noting regulatory impacts including Basel IV and Consumer Credit Directive 2 on capital requirements and compliance burdens. Discusses technology-enabled lending, private debt alternatives, and embedded finance models reshaping European SME finance. Highlights regulatory frameworks (PSD3, FiDA) enabling data sharing and their competitive effects on digital versus traditional lenders.",
+   "why_it_matters": "Credit risk practitioners must understand how Basel IV capital requirement changes, regulatory data-sharing mandates, and the shift to digital/private debt channels are affecting loan origination standards, credit assessment models, and competitive positioning in SME credit portfolios.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to track Basel IV's PD/LGD calibration and capital requirement changes for SME exposures, and the data-sharing regulations (PSD3, FiDA) will affect our input data and benchmarking—but the market competition and fintech narrative is secondary to my core modelling work."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I need to understand the SME competitive dynamics and regulatory drivers, but this Oliver Wyman overview treats Basel IV and CCD2 generically without Nordic specifics or actionable supervisory guidance my bank must implement—I'll monitor the actual regulatory text and EBA technical standards more closely than this market analysis."
     }
    }
   },
