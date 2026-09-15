@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T08:29:03+00:00",
+ "generated_at": "2026-09-15T08:20:08+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 1898,
+   "url": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html",
+   "title": "ECB publishes supervisory banking statistics on significant institutions for the second quarter of 2026",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-15T08:00:00+00:00",
+   "first_seen_at": "2026-09-15T08:19:07+00:00",
+   "summary": "ECB publishes Q2 2026 supervisory banking statistics for significant institutions supervised under the Single Supervisory Mechanism. Key metrics include CET1 ratio at 16.00%, NPL ratio at 2.17%, and Liquidity Coverage Ratio at 154.91%. The ECB has also introduced new system-wide statistics combining significant and less significant institutions to provide enhanced supervisory transparency.",
+   "why_it_matters": "Credit risk practitioners need these quarterly benchmarks to assess capital adequacy trends, NPL developments, and regulatory compliance across the EU banking sector under CRR/CRR3 supervision.",
+   "doc_status": "final_rule",
+   "topics": [
+    "npl-provisioning",
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "These aggregate supervisory statistics are useful benchmarking context for understanding sector-wide credit risk trends and calibration reference points, but they lack the granular transaction-level data, obligor-specific defaults, and downturn information needed for direct PD/LGD model development or validation—I would reference them for industry context rather than as inputs to model building."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "These Q2 2026 SSM statistics are useful for competitive benchmarking and sector trend monitoring, but the aggregate EU-wide metrics have limited direct impact on our Nordic corporate loan book capital treatment—I need more granular Nordics-specific breakdowns and our own supervisory feedback to drive actual compliance and risk decisions."
+    }
+   }
+  },
+  {
+   "id": 1899,
+   "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html",
+   "title": "ECB publishes supervisory banking statistics on significant institutions for the second quarter of 2026",
+   "source_key": "ecb-ssm-archive",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-15T00:00:00+00:00",
+   "first_seen_at": "2026-09-15T08:19:14+00:00",
+   "summary": "ECB publishes Q2 2026 supervisory banking statistics for significant institutions. Key metrics include CET1 ratio at 16.00%, NPL ratio (excl. cash) at 2.17%, return on equity at 10.73%, and liquidity coverage ratio at 154.91%. The ECB also released new system-wide aggregated statistics combining significant and less significant institutions data across capital, profitability, liquidity and asset quality indicators.",
+   "why_it_matters": "Credit risk practitioners need these supervisory statistics to monitor capital adequacy trends, asset quality deterioration (NPLs and stage 2 loans), and provision levels across the ECB-supervised banking system.",
+   "doc_status": "final_rule",
+   "topics": [
+    "reporting-disclosure",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I track this as a calibration reference point for system-wide PD and LGD trends, particularly the 2.17% NPL ratio and any stage 2 loan movements, but the aggregate statistics alone don't directly inform my model development unless I'm stress testing against sector-wide deterioration scenarios."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I monitor these ECB supervisory statistics as general market context, but Q2 2026 aggregated data for the system-wide population has limited direct bearing on my specific bank's capital treatment of our Nordic corporate exposure portfolio or regulatory reporting obligations."
+    }
+   }
+  },
   {
    "id": 1881,
    "url": "https://www.risk.net/node/7964101",
