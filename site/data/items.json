@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T08:20:08+00:00",
+ "generated_at": "2026-09-16T08:14:09+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 1924,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260916_1~446a02f036.en.html",
+   "title": "Sharon Donnery: A simpler, more usable macroprudential framework for Europe",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-16T08:00:00+00:00",
+   "first_seen_at": "2026-09-16T08:12:59+00:00",
+   "summary": "ECB supervisory board member proposes simplifying the EU macroprudential buffer framework by merging multiple buffers into two: a non-releasable buffer (combining capital conservation and systemic importance buffers) and a releasable buffer (combining countercyclical and systemic risk buffers). The proposal addresses the practical problem that banks hesitate to use buffers due to distribution restrictions, market stigma, and interactions with leverage ratio and MREL constraints, and calls for stronger coordination between microprudential and macroprudential policy through an enhanced Macroprudential Forum.",
+   "why_it_matters": "Credit risk practitioners must track this ECB simplification proposal as it would fundamentally reshape capital buffer architecture and usability rules that directly affect their capital planning, stress testing scenarios, and buffer release mechanics under CRR3 implementation.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This proposal affects capital planning and stress testing frameworks, but has limited direct impact on PD/LGD model development or calibration—the core of my role—unless buffer release mechanics materially reshape downturn scenarios or capital floor assumptions we embed in validation exercises."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must monitor this ECB proposal closely as it directly impacts how our bank will operationalize macroprudential buffers under CRR3—the current framework's complexity creates real capital planning friction that this simplification could relieve, but any merger of buffers will require us to reassess our buffer release policies, MREL interactions, and stress testing frameworks."
+    }
+   }
+  },
+  {
+   "id": 1925,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260916~3467f1febf.en.html",
+   "title": "Sharon Donnery: One market, one rulebook: integration is Europe’s best simplification strategy",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-16T08:00:00+00:00",
+   "first_seen_at": "2026-09-16T08:13:07+00:00",
+   "summary": "ECB supervisor Sharon Donnery advocates integration of the European banking rulebook as the primary simplification strategy, highlighting fragmentation caused by national transposition of directives, options and discretions, and capital/liquidity constraints within banking groups. She proposes three measures: converting directives to directly applicable regulations to eliminate divergence, treating the banking union as a single jurisdiction with cross-border capital and liquidity waivers, and creating an integrated European reporting framework. She emphasises that supervisory resilience requirements will remain unchanged but notes that complexity management through integration is essential for European bank competitiveness and geopolitical resilience.",
+   "why_it_matters": "This signals ECB supervisory intent to reduce regulatory fragmentation through harmonised implementation of the single rulebook and push for regulatory consolidation at EU level rather than national level, directly affecting how banks structure compliance and capital management within groups.",
+   "doc_status": "commentary",
+   "topics": [
+    "crr3-implementation",
+    "reporting-disclosure",
+    "large-exposures"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is a supervisory direction statement with implications for model governance and group-level capital/liquidity treatment, but no direct impact on PD/LGD development, calibration methodology, or data requirements—unless we anticipate shifts in reporting frameworks that affect model input availability or validation perimeter."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to closely track ECB's integration agenda as it directly shapes the capital and liquidity treatment of our Nordic corporate exposures within the banking union context—particularly any movement toward unified waivers and consolidated reporting that could improve our group capital efficiency while reducing supervisory friction."
+    }
+   }
+  },
   {
    "id": 1898,
    "url": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html",
