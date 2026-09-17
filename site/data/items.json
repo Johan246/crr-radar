@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16T08:14:09+00:00",
+ "generated_at": "2026-09-17T08:20:16+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1945,
+   "url": "https://blogs.pwc.de/de/regulatory/article/256843/eba-veroeffentlichung-der-verluste-aus-immobilienfinanzierungen-in-2025/",
+   "title": "Regulatory Blog: EBA-Veröffentlichung der Verluste aus Immobilienfinanzierungen in 2025",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-09-16T08:28:00+00:00",
+   "first_seen_at": "2026-09-17T08:19:50+00:00",
+   "summary": "EBA publishes centralized data on property-backed credit losses for 2025, providing a harmonized basis for applying the \"hard test\" under CRR Articles 125, 126, and 199. The data, sourced from supervisory reporting template C 15.00, shows loss rates for residential and commercial real estate exposures by national market across EU/EEA jurisdictions. Ireland and Slovenia exceed the 0.5% threshold for commercial real estate (0.572% and 0.513% respectively), while residential markets remain below the 0.3% threshold. Institutions must apply the hard test on a market-by-market basis according to property location, with four member states (Belgium, France, Croatia, Romania) requiring reference to national authority data.",
+   "why_it_matters": "Credit risk practitioners must now use EBA's centralized loss data to verify hard test compliance for property-backed collateral recognition, replacing previous fragmented national sources and clarifying eligibility for credit risk mitigation in IRB and standardised approaches.",
+   "doc_status": "final_rule",
+   "topics": [
+    "credit-risk-mitigation",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to urgently integrate EBA's 2025 property loss data into our hard test validation process, verify which of our real estate portfolios exceed the 0.5%/0.3% thresholds by location, and confirm that our CRM eligibility decisions reflect the correct national/centralized data hierarchy."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to immediately obtain this EBA loss data and assess our Nordic corporate real estate exposures against the 0.5% and 0.3% thresholds, particularly for any cross-border lending into Ireland and Slovenia, and verify our hard test compliance documentation under CRR Articles 125, 126, and 199 is aligned with this centralized source."
+    }
+   }
+  },
   {
    "id": 1924,
    "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260916_1~446a02f036.en.html",
