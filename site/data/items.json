@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T08:20:16+00:00",
+ "generated_at": "2026-09-18T07:54:30+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 1970,
+   "url": "https://www.isda.org/2026/09/17/calibration-test-iq-september-2026/",
+   "title": "Calibration Test – IQ September 2026",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-09-17T09:11:30+00:00",
+   "first_seen_at": "2026-09-18T07:54:20+00:00",
+   "summary": "ISDA commentary on Basel III completion and capital requirements calibration, discussing risk sensitivity, implementation timelines, and the need for international consistency across US, EU, and UK regimes. EBA is expanding market risk benchmarking requirements, and ISDA Capital Models Benchmarking will support newly in-scope banks' compliance efforts.",
+   "why_it_matters": "Credit risk practitioners need to track Basel III implementation timelines and EBA benchmarking expansion as these will affect capital model validation, internal model adoption schedules, and regulatory expectations on model consistency.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly relevant to my work: Basel III implementation timelines shape capital model validation schedules, EBA benchmarking expansion will impose new consistency and backtesting requirements on our IRB models, and divergence across US/EU/UK regimes forces us to maintain multiple calibration frameworks and creates data governance complexity for group-level model governance."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I should monitor ISDA's commentary on Basel III calibration and EBA benchmarking expansion, but this item is peripheral to my corporate credit exposures mandate—market risk benchmarking and capital model validation affect our trading book and model governance more than my Nordic corporate loan portfolio's capital treatment directly."
+    }
+   }
+  },
   {
    "id": 1945,
    "url": "https://blogs.pwc.de/de/regulatory/article/256843/eba-veroeffentlichung-der-verluste-aus-immobilienfinanzierungen-in-2025/",
