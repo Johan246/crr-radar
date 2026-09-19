@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-18T07:54:30+00:00",
+ "generated_at": "2026-09-19T07:45:22+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 1975,
+   "url": "https://www.isda.org/2026/09/18/isda-publishes-updated-isda-simm-governance-framework/",
+   "title": "ISDA Publishes Updated ISDA SIMM® Governance Framework",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-09-18T15:00:00+00:00",
+   "first_seen_at": "2026-09-19T07:45:10+00:00",
+   "summary": "ISDA has published an updated ISDA SIMM Governance Framework that establishes principles for the operation of the Standard Initial Margin Model and its review process. The updated framework reflects a commitment to recalibrate ISDA SIMM on at least a semi-annual basis for consistency and transparency.",
+   "why_it_matters": "Changes to ISDA SIMM calibration frequency and governance directly affect initial margin calculations and capital requirements under counterparty credit risk frameworks for derivatives portfolios.",
+   "doc_status": "final_rule",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While ISDA SIMM governance affects our derivative counterparty risk and capital calculations, it has no direct bearing on PD/LGD model development, calibration, validation, or data requirements for corporate credit exposures under the IRB approach."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While ISDA SIMM governance affects our derivatives counterparty credit risk calculations, this is a market infrastructure issue managed by our treasury and trading desks—not a corporate loan book matter, and Nordic regulators do not typically mandate SIMM governance expectations in supervisory conversations."
+    }
+   }
+  },
   {
    "id": 1970,
    "url": "https://www.isda.org/2026/09/17/calibration-test-iq-september-2026/",
