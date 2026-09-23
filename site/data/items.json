@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T08:11:16+00:00",
+ "generated_at": "2026-09-23T08:14:00+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2002,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260922_1~fb8d813281.en.html",
+   "title": "Pedro Machado: From going concern to gone concern: The supervision-resolution continuum after a decade of the Single Resolution Mechanism",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-22T14:15:00+00:00",
+   "first_seen_at": "2026-09-23T08:13:01+00:00",
+   "summary": "Pedro Machado (ECB Supervisory Board) addresses the supervision-resolution continuum in banking union, arguing that supervision and resolution are integrated stages rather than parallel pillars. He emphasizes that bank failures stem from identifiable deterioration processes, and that prudential requirements at the going-concern stage (capital, liquidity, governance) inform resolvability assessments. The speech examines how recovery and resolution planning must be coordinated through information sharing, joint crisis simulations, and the ECB-SRB Memorandum of Understanding.",
+   "why_it_matters": "Credit risk practitioners need to understand how prudential capital and liquidity requirements now directly influence resolution strategy and resolvability, and how supervisory escalation procedures integrate with resolution triggers under banking union.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is relevant to understanding the institutional context in which our PD/LGD models operate and how capital adequacy frameworks feed into supervisory expectations, but it does not directly affect model development, calibration, validation, data inputs, or TRIM-style reviews of our credit risk methodologies."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to understand how the ECB's supervision-resolution continuum framework shapes capital and liquidity stress testing assumptions for our corporate exposures, particularly how resolvability assessments upstream may tighten going-concern requirements in ECB stress campaigns or SREP guidance."
+    }
+   }
+  },
   {
    "id": 1975,
    "url": "https://www.isda.org/2026/09/18/isda-publishes-updated-isda-simm-governance-framework/",
