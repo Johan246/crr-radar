@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T08:14:00+00:00",
+ "generated_at": "2026-09-24T08:04:44+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2021,
+   "url": "https://www.isda.org/2026/09/23/reshaping-the-us-treasury-market-the-transition-to-mandatory-central-clearing/",
+   "title": "Reshaping the US Treasury Market: The Transition to Mandatory Central Clearing",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-09-23T11:04:06+00:00",
+   "first_seen_at": "2026-09-24T08:04:27+00:00",
+   "summary": "ISDA examines the transition to mandatory central clearing of US Treasury securities, covering policy objectives, market structure, clearing adoption trends, participant application, margin and capital considerations, derivatives connections, and implementation steps. The analysis addresses how central clearing of Treasuries affects collateral management, hedging costs, and the clearing ecosystem across multiple market participant types.",
+   "why_it_matters": "Credit risk practitioners must understand how mandatory Treasury central clearing reshapes margin requirements, capital treatment, and collateral workflows under CRR/Basel frameworks, particularly counterparty credit risk and initial margin rules.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While central clearing mechanics are important for operational risk and treasury management, mandatory Treasury clearing is primarily a market microstructure and collateral operations issue that does not directly drive PD/LGD model development, calibration, or downturn estimation under the IRB approach."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While central clearing mechanics are relevant to CCR capital treatment generally, this is primarily a US Treasury market infrastructure issue with limited direct bearing on my Nordic corporate loan book capital requirements or ECB/Nordic FSA supervisory mandates."
+    }
+   }
+  },
   {
    "id": 2002,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260922_1~fb8d813281.en.html",
