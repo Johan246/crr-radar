@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T08:28:52+00:00",
+ "generated_at": "2026-09-26T08:15:47+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 2040,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment",
+   "title": "EU/EEA banks display strength amid a challenging risk environment",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-09-25T09:05:09+00:00",
+   "first_seen_at": "2026-09-26T08:14:53+00:00",
+   "summary": "The EBA published its Q2 2026 Risk Dashboard, a supervisory overview of EU/EEA banking sector risks and vulnerabilities based on regulatory reporting data. Key metrics show robust capital buffers (CET1 16.1%, 430 bp above requirements), strong liquidity (LCR 158.5%, NSFR 125.7%), and sound asset quality (NPL ratio 1.8%, Stage 2 loans 8.9%). The dashboard also covers lending growth trends, profitability indicators, and emerging risks including geopolitical tensions and AI-related financing concentration.",
+   "why_it_matters": "Credit risk practitioners must track supervisory sector assessments and capital/asset quality metrics to benchmark their own portfolios and understand EBA's risk monitoring priorities, particularly shifts in Stage 2 loans, lending concentration, and emerging exposures like AI financing.",
+   "doc_status": "consultation",
+   "topics": [
+    "reporting-disclosure",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "Useful aggregate context for portfolio benchmarking and supervisory expectations, but the dashboard itself contains no model-specific guidance—I need to scrutinize underlying credit metrics trends (Stage 2 migration, sector concentration, NPL flow rates) in our calibration samples and downturn scenarios rather than rely on cross-sectional aggregates."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I will monitor the EBA Risk Dashboard data on Stage 2 loan migration and AI concentration trends as contextual input to our portfolio benchmarking and emerging risk surveillance, but this is primarily a sector-wide snapshot rather than a regulatory mandate or capital treatment change that directly affects our Nordic corporate exposures."
+    }
+   }
+  },
+  {
+   "id": 2041,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-technical-standards-joint-decisions-institution-specific-capital-and-liquidity",
+   "title": "The EBA consults on revised technical standards for joint decisions on institution-specific capital and liquidity requirements",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-09-25T08:27:16+00:00",
+   "first_seen_at": "2026-09-26T08:15:01+00:00",
+   "summary": "The EBA has launched a public consultation on revised Implementing Technical Standards (ITS) governing joint decisions on institution-specific capital and liquidity requirements under Article 113 CRD. The revisions streamline the joint decision process, simplify templates into a single integrated risk assessment report, and align with CRD V, revised SREP guidelines, and current supervisory practices. The amendments also incorporate Pillar 2 Guidance and leverage ratio requirements into the scope of joint decisions. Comments are due by 4 January 2027.",
+   "why_it_matters": "Credit risk practitioners must understand the revised joint decision procedures and aligned SREP framework as they directly affect how institution-specific capital requirements, Pillar 2 measures, and supervisory guidance are determined and communicated within supervisory colleges.",
+   "doc_status": "consultation",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "Useful background on supervisory governance and capital requirement mechanics, but these ITS revisions do not directly affect PD/LGD model development, calibration, validation, or data requirements—they shape how capital requirements are determined at the institution level after models are built."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to engage closely with this consultation as the revised ITS will reshape how our institution-specific Pillar 2 requirements and leverage ratio add-ons are determined in joint decisions with the ECB and Nordic authorities, directly impacting our capital planning and regulatory reporting obligations."
+    }
+   }
+  },
   {
    "id": 2021,
    "url": "https://www.isda.org/2026/09/23/reshaping-the-us-treasury-market-the-transition-to-mandatory-central-clearing/",
