@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T09:24:19+00:00",
+ "generated_at": "2026-09-30T09:15:21+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,93 @@
   }
  ],
  "items": [
+  {
+   "id": 2060,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260930~04503f5461.en.html",
+   "title": "Sharon Donnery: Interview with banko.ro",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-30T08:00:00+00:00",
+   "first_seen_at": "2026-09-30T09:14:12+00:00",
+   "summary": "Sharon Donnery, ECB Supervisory Board member, discusses how capital and prudential standards remain anchored in underlying risk profiles despite the next-level supervision efficiency initiative. The ECB is reforming SREP to make Pillar 2 guidance and requirements more risk-based and focused on material bank-specific risks not covered by Pillar 1. The ECB has prioritised geopolitical risk management as a supervisory priority for 2025-27 and identified banks' excessive focus on direct exposures while underestimating indirect geopolitical effects through customers, supply chains and markets.",
+   "why_it_matters": "SREP reform will shift supervisory attention to material risks with simpler, more targeted Pillar 2 setting; banks must strengthen geopolitical scenario analysis and embed these risks into risk appetite frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "counterparty-credit-risk",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to closely monitor how ECB SREP reform will reshape Pillar 2 capital guidance for corporate exposures, particularly whether geopolitical risk assessments will increasingly flow into PD and LGD model validation frameworks and downturn estimation assumptions."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to incorporate ECB's evolving SREP methodology into our Pillar 2 capital planning and strengthen our geopolitical risk assessment across our Nordic corporate loan portfolio, particularly indirect exposures through customer supply chains."
+    }
+   }
+  },
+  {
+   "id": 2061,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260930~8b08062e83.en.html",
+   "title": "Frank Elderson: Supervisory risk appetite, efficiency and effectiveness",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-09-30T02:20:00+00:00",
+   "first_seen_at": "2026-09-30T09:14:18+00:00",
+   "summary": "ECB Banking Supervision Vice-Chair outlines a three-pillar supervisory approach: sharper risk prioritisation using a Risk Tolerance Framework (RTF), simpler and more efficient supervision through the Next Level Supervision initiative, and timely remediation. The speech emphasizes moving beyond minimum capital compliance to focus on material risks including governance, operational resilience, and emerging drivers like climate and geopolitical risks. Tangible efficiency improvements include reducing securitisation approval timelines from three months to seven days, stress testing data points by 55%, and capital decision approval timelines from months to less than six days.",
+   "why_it_matters": "Credit risk practitioners must adapt to ECB's explicit shift toward risk-based materiality prioritisation, active de-prioritisation in lower-risk areas, and accelerated supervisory approval timelines, which directly reshape reporting, assessment, and remediation expectations.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "securitisation",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly affects my model validation and supervisory review strategy; the RTF signals ECB's intent to sharpen materiality thresholds for PD/LGD models, the stress testing data efficiency push will compress my calibration timelines and data submission requirements, and the accelerated capital decision cycles mean I need leaner, faster model documentation and remediation workflows to avoid becoming a bottleneck."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track the ECB's RTF rollout and Next Level Supervision implementation timeline urgently, as this signals a material shift in how our corporate credit risk assessments and governance frameworks will be scrutinised—particularly around materiality thresholds and operational resilience—and we should prepare our remediation processes to match the accelerated supervisory approval cycles they're now targeting."
+    }
+   }
+  },
+  {
+   "id": 2062,
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260930~d495288355.en.html",
+   "title": "Frank Elderson: Supervisory risk appetite, efficiency and effectiveness",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-09-30T02:20:00+00:00",
+   "first_seen_at": "2026-09-30T09:14:27+00:00",
+   "summary": "Frank Elderson outlines the ECB's three-pillar approach to banking supervision: sharper risk prioritisation via a risk tolerance framework (RTF), simpler and more efficient supervisory processes, and timely remediation. The ECB emphasises materiality-based supervision over tick-box compliance, recent efficiency gains including reduced securitisation approval timelines (from ~3 months to ~7 days), and reduced stress testing data requirements (55% reduction). The speech stresses that supervisors must accept residual risk in lower-priority areas and that a culture shift toward substance-over-form compliance requires shared responsibility across supervisors, regulators, and banks.",
+   "why_it_matters": "Credit risk practitioners need to understand the ECB's shift away from prescriptive, form-based supervision toward materiality-driven risk assessment and the specific efficiency improvements affecting securitisation approval and stress testing, which directly change timelines and data requirements.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "securitisation",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I welcome the ECB's stated pivot toward materiality-based supervision and efficiency, but the practical implications for PD/LGD model review and validation are unclear—the speech emphasizes securitization and stress testing efficiency gains, not IRB model governance, so I need to monitor whether this actually translates to faster model approval timelines and clearer materiality thresholds for model change validation, or remains rhetorical."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "This directly shapes how the ECB will supervise our corporate exposures and capital treatment processes—the shift to materiality-based prioritisation, the RTF framework, and concrete efficiency gains in securitisation and stress testing are all operational realities I need to track and adjust our compliance and capital planning accordingly."
+    }
+   }
+  },
   {
    "id": 2040,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment",
