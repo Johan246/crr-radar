@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T09:15:21+00:00",
+ "generated_at": "2026-10-01T09:42:56+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,93 @@
   }
  ],
  "items": [
+  {
+   "id": 2076,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261001~6a72b2ab07.en.html",
+   "title": "Pedro Machado: The exit test: why the single market in banking depends on how banks fail",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-01T07:30:00+00:00",
+   "first_seen_at": "2026-10-01T09:41:51+00:00",
+   "summary": "ECB Supervisory Board member Pedro Machado outlines the European Commission's July 2026 Communication on banking competitiveness and crisis management, highlighting proposed legislative changes to cross-border capital and liquidity allocation, coordination of prudential and resolution requirements, and deposit insurance reform. The speech emphasizes that effective crisis management frameworks drive both resilience and competitiveness in the banking union, with reference to removing constraints on intragroup capital flows (€230 billion locked up in subsidiaries) and strengthening the coherence of layered regulatory requirements.",
+   "why_it_matters": "Credit risk practitioners must understand upcoming changes to consolidated/individual capital requirements, intragroup exposure treatment, and the alignment of macroprudential and resolution frameworks that will reshape how cross-border credit risk is managed and reported under the 2027 legislative package.",
+   "doc_status": "commentary",
+   "topics": [
+    "large-exposures",
+    "crr3-implementation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly affects IRB model scope and capital aggregation logic—if intragroup capital flows are unlocked and consolidated/individual capital requirements are realigned, our PD/LGD calibration perimeter, correlations, and downturn stress assumptions will need recalibration to reflect changed loss-absorption mechanics at both solo and consolidated levels."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I must track this closely—the July 2026 Commission Communication on banking competitiveness directly signals legislative changes to consolidated and individual capital requirements, intragroup exposures, and resolution coordination that will materially affect how we model and report Nordic corporate credit risk under the 2027 package; the €230 billion capital mobility constraint and regulatory coherence agenda are regulatory friction points we need to prepare for in advance of formal CRR3/BRRD amendments."
+    }
+   }
+  },
+  {
+   "id": 2079,
+   "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/september-2026",
+   "title": "Financial Policy Committee Record – September 2026",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-09-30T09:30:00+00:00",
+   "first_seen_at": "2026-10-01T09:42:07+00:00",
+   "summary": "The Bank of England FPC meeting of September 2026 discusses interconnected vulnerabilities in financial stability including sovereign debt stress, risky credit market exposure (particularly private credit), and AI-related debt issuance growth. The FPC maintains the UK countercyclical capital buffer (CCyB) at its neutral 2% setting and notes that UK banks remain appropriately capitalised with high liquidity despite rising bond yields and tightening financial conditions. The Committee assesses household and corporate resilience as adequate and reviews implications of proposed leverage ratio reforms for market leverage provided by banks.",
+   "why_it_matters": "Credit risk practitioners must track the FPC's capital buffer stance, supervisory concerns about private credit/risky asset vulnerability to tightening conditions, and how leverage ratio reforms could affect UK bank capacity to provide market leverage and support leveraged positions.",
+   "doc_status": "final_rule",
+   "topics": [
+    "large-exposures",
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to monitor the FPC's CCyB and leverage ratio stance because both affect our IRB capital requirements and the competitive positioning of our counterparties, but this record lacks the granular supervisory expectations and quantitative calibration guidance that would directly influence our PD/LGD model development or validation work."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While the FPC's CCyB stance and leverage ratio reform trajectory merit monitoring for UK operational exposure, this September 2026 record holds limited bearing on Nordic corporate loan capital treatment, CRR3 implementation timelines, EBA mandates, or ECB/Nordic FSA supervisory expectations that drive my regulatory affairs mandate."
+    }
+   }
+  },
+  {
+   "id": 2087,
+   "url": "https://www.isda.org/2026/09/30/isda-derivatives-trading-and-treasury-forum-scott-omalia-opening-remarks-2/",
+   "title": "ISDA Derivatives Trading and Treasury Forum: Scott O’Malia Opening Remarks",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-09-30T09:29:03+00:00",
+   "first_seen_at": "2026-10-01T09:42:45+00:00",
+   "summary": "ISDA Chief Executive Scott O'Malia addresses the ISDA Derivatives Trading and Treasury Forum, highlighting three efficiency priorities: the Basel 3.1 capital framework, tokenized collateral, and AI deployment. He welcomes the UK PRA's refinements to internal models capital treatment but urges flexibility on the January 2028 implementation date pending US alignment. A key concern is the treatment of cross-product netting under the standardized approach for counterparty credit risk (SA-CCR), where ISDA advocates for methodology changes to better reflect economic risk in Treasury clearing scenarios.",
+   "why_it_matters": "Credit risk practitioners must track ISDA's advocacy on SA-CCR netting treatment and capital framework implementation timelines, as pending US Treasury clearing and cross-margining programs will directly impact capital requirements and balance sheet allocation for clearing members.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "ISDA's SA-CCR netting advocacy and Basel 3.1 implementation timeline concerns are relevant to our counterparty credit risk modelling assumptions, but as a PD/LGD shop we focus on corporate exposures under IRB—derivatives and Treasury clearing sit outside our remit unless they affect IRB calibration data or supervisory timelines."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I note ISDA's advocacy on SA-CCR cross-product netting methodology and Basel 3.1 timelines, but this item is US-Treasury and clearing-centric; it affects our derivatives trading and counterparty credit risk treatment primarily if we are active clearing members, which is not my primary remit as a corporate loan book regulator."
+    }
+   }
+  },
   {
    "id": 2060,
    "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260930~04503f5461.en.html",
