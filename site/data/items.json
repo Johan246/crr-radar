@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T09:42:56+00:00",
+ "generated_at": "2026-10-02T09:17:08+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -399,6 +399,35 @@
  ],
  "items": [
   {
+   "id": 2089,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261001_1~039634f271.en.html",
+   "title": "Patrick Montagner: Remaining vigilant in a changing risk environment",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-01T10:15:00+00:00",
+   "first_seen_at": "2026-10-02T09:16:07+00:00",
+   "summary": "ECB supervisory board member Patrick Montagner delivers keynote speech emphasizing that while European banks remain resilient with strong capital and asset quality, supervisors must remain vigilant on emerging credit risk management issues. He highlights early signs of asset quality deterioration in certain segments and countries, increased cost of risk for some institutions, and growing interconnections with non-bank financial intermediaries including private credit. Montagner warns against complacency during periods of high profitability, noting that historically vulnerabilities accumulate when defaults are rare and earnings are strong.",
+   "why_it_matters": "Supervisory expectations are shifting focus to proactive credit risk management and asset quality monitoring in specific segments, signalling stricter supervisory scrutiny ahead for banks showing early deterioration signals.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "npl-provisioning",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly material to my work—Montagner's speech signals a supervisory pivot toward stricter asset quality scrutiny and credit risk management, which will likely translate into tighter expectations around PD model calibration, downturn estimation, and validation of portfolio segmentation, particularly for segments showing early deterioration signals."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to ensure our credit risk framework and monitoring processes are equipped to detect early asset quality deterioration signals, particularly in segments where defaults remain rare but profitability is masking underlying vulnerabilities—this is clearly a priority supervisory expectation from the ECB that will directly inform our capital treatment decisions and onsite examination focus."
+    }
+   }
+  },
+  {
    "id": 2076,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261001~6a72b2ab07.en.html",
    "title": "Pedro Machado: The exit test: why the single market in banking depends on how banks fail",
@@ -424,6 +453,64 @@
     "regulatory": {
      "relevance": "high",
      "verdict": "I must track this closely—the July 2026 Commission Communication on banking competitiveness directly signals legislative changes to consolidated and individual capital requirements, intragroup exposures, and resolution coordination that will materially affect how we model and report Nordic corporate credit risk under the 2027 package; the €230 billion capital mobility constraint and regulatory coherence agenda are regulatory friction points we need to prepare for in advance of formal CRR3/BRRD amendments."
+    }
+   }
+  },
+  {
+   "id": 2101,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2024/jun/credit-risk-transfer-solutions-for-north-american-banks.html",
+   "title": "Credit Risk Transfer Solutions For North American Banks",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-10-01T00:00:00+00:00",
+   "first_seen_at": "2026-10-02T09:16:58+00:00",
+   "summary": "Oliver Wyman report examines Credit Risk Transfer (CRT) and Significant Risk Transfer (SRT) solutions for North American banks, covering Non-Payment Insurance, funded and unfunded CRT structures, and their role in capital efficiency and portfolio management. The report references Basel III Endgame implementation and regulatory developments influencing CRT market adoption, drawing on European SRT market experience.",
+   "why_it_matters": "Credit risk practitioners need to understand evolving CRT/SRT mechanisms and regulatory frameworks (including Basel III Endgame) that affect capital treatment and portfolio risk mitigation strategies.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "credit-risk-mitigation",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The regulatory framework discussion around CRT/SRT capital treatment is relevant to our IRB model calibration and capital calculations, but this report's primary focus on North American solutions and capital efficiency strategies has limited direct bearing on our PD/LGD model development, validation, or margin of conservatism practices."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While the report touches on Basel III Endgame and regulatory frameworks, its primary focus on North American CRT/SRT solutions and non-payment insurance structures has limited applicability to my Nordic corporate loan book, where CRR3 and ECB supervisory expectations set the capital treatment agenda."
+    }
+   }
+  },
+  {
+   "id": 2102,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2020/apr/wholesale-investment-banks-analysis-2020.html",
+   "title": "Wholesale And Investment Banks - Steering Through The Next Cycle",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-10-01T00:00:00+00:00",
+   "first_seen_at": "2026-10-02T09:17:04+00:00",
+   "summary": "Oliver Wyman's 2020 analysis models pandemic scenarios and their impact on wholesale banks' earnings, capital adequacy, and credit losses. The report estimates banking book credit losses could reach $200–300 billion in adverse scenarios and projects extended periods of below-target profitability. It assesses banks' capital and liquidity buffers as shock absorbers and discusses structural vulnerabilities in business models under stress conditions.",
+   "why_it_matters": "Credit risk practitioners need to understand stress-scenario modelling of credit losses and capital adequacy impacts on the wholesale banking sector, particularly given the scale of projected losses and implications for large exposures and provisioning frameworks.",
+   "doc_status": "commentary",
+   "topics": [
+    "large-exposures",
+    "credit-risk-mitigation",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is a well-intentioned but ultimately dated stress-scenario narrative with limited direct modelling value: the pandemic assumptions have been superseded by actual 2020-2023 outcomes, and the report's aggregate loss estimates ($200–300bn) lack granularity on portfolio composition, sectoral drivers, or PD/LGD transmission channels that would inform our IRB calibration or downturn estimation work."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I appreciate the analytical framework on stress-scenario credit losses, but this 2020 pandemic retrospective has minimal bearing on my current regulatory mandate—it lacks forward-looking regulatory implementation timelines, CRR3 capital treatment specifics, EBA Q&As, or ECB/Nordic FSA supervisory expectations that would inform corporate credit decisions today."
     }
    }
   },
