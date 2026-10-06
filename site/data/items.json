@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T09:55:55+00:00",
+ "generated_at": "2026-10-06T09:43:07+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2113,
+   "url": "https://www.risk.net/risk-quantum/7964147/ccb%E2%80%99s-securitisation-risk-weighted-assets-nearly-quadruple",
+   "title": "CCB’s securitisation risk-weighted assets nearly quadruple",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-06T03:30:00+00:00",
+   "first_seen_at": "2026-10-06T09:42:27+00:00",
+   "summary": "China Construction Bank's securitisation risk-weighted assets (RWA) nearly quadrupled as residential mortgage securitisation holdings grew 42-fold in six months. The rapid expansion reflects increased investment in mortgage-backed securities as an investor. This development illustrates significant changes in securitisation exposures and their capital treatment under CRR.",
+   "why_it_matters": "Credit risk practitioners need to track how institutions' securitisation RWA calculations and investment strategies are evolving, as this may signal emerging supervisory expectations or regulatory developments around securitisation risk-weighting models.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This signals capital treatment mechanics around securitisation exposures that could affect our RWA calibration benchmarking, but it's a single-institution structural shift in China—not directly actionable for our IRB PD/LGD framework unless we model securitised corporate credit exposures or need to track supervisory expectations on risk-weighting methodologies that might migrate to Europe."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While securitisation RWA treatment under CRR is relevant to my work, this item focuses on a Chinese bank's internal portfolio strategy and doesn't signal any supervisory policy changes, EBA guidance, or Nordic regulatory developments that would affect our corporate loan book capital treatment."
+    }
+   }
+  },
   {
    "id": 2089,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261001_1~039634f271.en.html",
