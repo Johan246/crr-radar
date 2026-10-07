@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T09:43:07+00:00",
+ "generated_at": "2026-10-07T09:41:39+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,149 @@
   }
  ],
  "items": [
+  {
+   "id": 2129,
+   "url": "https://www.bankofengland.co.uk/news/2026/october/regulatory-thresholds-set-to-shift-to-automatic-increases",
+   "title": "Regulatory thresholds set to shift to automatic increases",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-07T09:00:00+00:00",
+   "first_seen_at": "2026-10-07T09:40:50+00:00",
+   "summary": "The PRA proposes automatic indexation of 128 regulatory thresholds to nominal UK GDP, with the first update on 1 July 2031 and thereafter every five years. The thresholds affect capital reporting, Solvency UK, Small Domestic Deposit Takers regime, and other prudential rules. The consultation runs from 7 October 2026 to 7 February 2027, aiming to improve proportionality and reduce compliance costs for smaller firms.",
+   "why_it_matters": "The automatic indexation of thresholds—including the £320 billion capital reporting threshold—will reshape which regulatory rules apply to your firm and what you must report, requiring business planning adjustments and potentially altering your regulatory classification trajectory.",
+   "doc_status": "consultation",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is a long-dated structural regulatory change (2031+) with potential portfolio implications, but it has no immediate impact on current PD/LGD model calibration, validation, or downturn estimation—I'll monitor the final rules once consultation closes, as threshold movements could affect our IRB scope and capital model boundary definitions, but this belongs on a regulatory horizon watch list rather than in active model work now."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This PRA proposal on UK regulatory threshold indexation has no bearing on my Nordic corporate loan book and does not affect CRR3 capital treatment, EBA mandates, or ECB/Nordic FSA supervision of our bank."
+    }
+   }
+  },
+  {
+   "id": 2124,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in261007~d067020f88.en.html",
+   "title": "Patrick Montagner: Interview with Les Echos",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-07T07:00:00+00:00",
+   "first_seen_at": "2026-10-07T09:40:20+00:00",
+   "summary": "ECB Banking Supervision member discusses resilience of EU banks in rising interest rate environment, noting that while interest rate and sovereign spread risks exist, European banks' capital quality and absorption capacity have improved significantly since 2008 and 2012. Emphasizes the need to maintain a Single Rulebook and preserve the output floor under the Basel framework, while acknowledging that regulatory complexity from overlapping requirements across authorities needs streamlining. Highlights supervisory focus on contagion channels and the dynamic nature of supervision in addressing emerging uncertainties including AI's potential impact on credit risk practices.",
+   "why_it_matters": "Confirms ECB supervisory priorities on capital resilience, output floor preservation, and regulatory simplification—directly shaping capital requirement expectations and supervisory dialogue for credit risk practitioners.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is regulatory positioning from ECB supervision, not model guidance; it confirms existing supervisory preferences on capital and the output floor but provides no new direction on PD/LGD methodology, calibration, data, or validation practice that would affect my model development work."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I note the ECB's reaffirmed commitment to the Basel output floor and Single Rulebook, which directly protects our capital treatment under CRR3, but this is primarily supervisory signalling rather than implementable guidance—valuable for strategic planning and compliance dialogue, though it doesn't materially change our immediate capital or reporting obligations."
+    }
+   }
+  },
+  {
+   "id": 2131,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/october/updating-regulatory-thresholds-consultation-paper",
+   "title": "CP13/26 – Updating regulatory thresholds: An autopilot approach",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-06T14:32:57+01:00",
+   "first_seen_at": "2026-10-07T09:40:59+00:00",
+   "summary": "The PRA proposes an automatic indexation framework for regulatory thresholds that would update fixed nominal thresholds every five years using UK nominal GDP, with the first update on 1 July 2031. The framework aims to prevent \"prudential drag\" where fixed thresholds unintentionally tighten over time as the economy grows. The PRA Rulebook and supervisory guidance would be amended to operationalise this systematic, cross-policy approach to threshold maintenance.",
+   "why_it_matters": "Credit risk practitioners must understand which thresholds applying to their firm—such as large exposures limits, IRB scope triggers, and provisioning requirements—will be automatically indexed, and plan for predictable threshold adjustments every five years starting in 2031.",
+   "doc_status": "consultation",
+   "topics": [
+    "large-exposures",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The autopilot indexation framework will mechanically adjust IRB scope thresholds and potentially large exposure triggers, creating predictable recalibration cycles, but the actual modeling and data implications depend on which specific thresholds are indexed and how this affects portfolio classification and approval scopes—this will require monitoring as the PRA's final rules crystallize."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This PRA proposal on UK threshold indexation has no bearing on my Nordic corporate loan book since we operate under CRR3 and ECB/Nordic FSA supervision, not UK PRA rules."
+    }
+   }
+  },
+  {
+   "id": 2125,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261006~8887da2bd4.en.html",
+   "title": "Frank Elderson: Effective supervision through timely remediation",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-06T13:00:00+00:00",
+   "first_seen_at": "2026-10-07T09:40:28+00:00",
+   "summary": "Frank Elderson (ECB SSM Vice-Chair) discusses supervisory philosophy emphasizing timely remediation of findings and proportionate use of supervisory tools including capital requirements and qualitative measures. He outlines a risk-based approach combining simplification with effective supervision, using escalation ladders for material weaknesses not addressed promptly. The speech addresses supervisory outcome-focus and the accumulated stock of ~12,000 measures across significant banks as of end-2025.",
+   "why_it_matters": "ECB is shifting supervisory stance toward earlier escalation and forceful intervention on material credit risk findings, signaling banks should expect tighter timelines and more intrusive tools (capital, restrictions, penalties) if weaknesses persist.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "credit-risk-mitigation",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly shapes how our PD/LGD models will be scrutinized going forward: ECB is signaling aggressive timelines for remediation of model findings, which means validation weaknesses, calibration issues, or data gaps will trigger capital add-ons or qualitative restrictions much faster than historical practice—we need to front-load model governance and downturn robustness work to avoid escalation."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor ECB escalation timing thresholds and capital tool triggers carefully—this signals earlier intervention on corporate credit risk findings, which will compress our remediation windows and likely force faster provisioning or capital actions on weaknesses in our Nordic corporate underwriting or monitoring frameworks."
+    }
+   }
+  },
+  {
+   "id": 2127,
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+   "title": "Frank Elderson: Effective supervision through timely remediation",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-10-06T13:00:00+00:00",
+   "first_seen_at": "2026-10-07T09:40:39+00:00",
+   "summary": "Frank Elderson, ECB Vice-Chair, outlines the ECB Banking Supervision's approach to combining regulatory simplification with effective supervisory remediation of identified weaknesses. He emphasizes that supervisors should focus on material risks, escalate when necessary using capital requirements and qualitative measures, and ensure timely remediation of high-severity findings without requiring excessive documentation for low-severity issues. The ECB notes that by end-2025, approximately 12,000 outstanding measures exist across significant banks (averaging 100 per bank), raising questions about proportionality and prioritization of findings in the current risk environment.",
+   "why_it_matters": "Credit risk practitioners need to understand evolving ECB supervisory expectations on remediation timelines, escalation procedures, and risk-based prioritization of findings, which will directly affect the intensity and nature of supervisory engagement on their credit risk frameworks and governance.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly shapes how supervisors will challenge our PD/LGD model validation findings and remediation expectations—the prioritization lens and timelines outlined here will determine which model deficiencies get escalated to capital requirements versus management action plans, affecting our margin of conservatism calibration and TRIM engagement intensity."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track this closely because Elderson is signaling a potential shift in ECB supervisory intensity and remediation expectations that will cascade directly into our credit risk governance and findings management—particularly around capital implications and how we prioritize remediation timelines for credit risk deficiencies."
+    }
+   }
+  },
   {
    "id": 2113,
    "url": "https://www.risk.net/risk-quantum/7964147/ccb%E2%80%99s-securitisation-risk-weighted-assets-nearly-quadruple",
