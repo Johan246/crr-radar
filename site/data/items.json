@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T09:41:39+00:00",
+ "generated_at": "2026-10-08T09:51:32+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2147,
+   "url": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-main-committee-meeting-24-june-2026",
+   "title": "Minutes of the London FXJSC Main Committee Meeting – 24 June 2026",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-07T09:08:40+00:00",
+   "first_seen_at": "2026-10-08T09:50:53+00:00",
+   "summary": "The London FXJSC Main Committee meeting (24 June 2026) discussed FX market developments, extended RTGS/CHAPS settlement hours, and updates from the Global FX Committee. Key discussion items included Standardised Approach for Counterparty Credit Risk (SA-CCR) as a focus area for the GFMA's Global Foreign Exchange Division, FX settlement risk data collection, and financial stability implications of near 24/7 settlement in FX markets.",
+   "why_it_matters": "Credit risk practitioners need to track SA-CCR developments in FX markets and potential changes to settlement and counterparty credit risk frameworks affecting FX transactions.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is FX market infrastructure and counterparty credit risk governance, not PD/LGD model development—settlement mechanics and SA-CCR have no bearing on my corporate exposure modelling work."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This FX market infrastructure discussion, while touching on SA-CCR, lacks direct bearing on my corporate loan book and does not address CRR3 implementation, EBA mandates, or Nordic supervisory expectations that would affect capital treatment of our Nordic corporate exposures."
+    }
+   }
+  },
   {
    "id": 2129,
    "url": "https://www.bankofengland.co.uk/news/2026/october/regulatory-thresholds-set-to-shift-to-automatic-increases",
