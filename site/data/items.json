@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T09:51:32+00:00",
+ "generated_at": "2026-10-09T09:55:47+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 2172,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-crr3crd6-dashboard-shows-banks-maintain-capital-levels-well-above-minimum-requirements-under",
+   "title": "EBA CRR3/CRD6 dashboard shows banks maintain capital levels well above minimum requirements under the fully loaded Basel III framework",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-09T09:13:19+00:00",
+   "first_seen_at": "2026-10-09T09:54:55+00:00",
+   "summary": "The EBA published its Q2 2026 CRR3/CRD6 dashboard covering 129 EU/EEA banks, showing an average CET1 ratio of 15.1% well above minimum requirements under fully loaded Basel III. The output floor impact has increased, with 33 institutions now bound by it, and projected capital shortfalls of EUR 2.2 billion in 2030 and EUR 18.5 billion by 2033 under static balance sheet assumptions. Supervisory reporting currently does not fully capture credit risk transitional arrangements, which will be addressed in future releases.",
+   "why_it_matters": "Credit risk practitioners need to understand the evolving output floor calibration (72.5% final level) and capital adequacy trajectories, especially the pending impact of credit risk transitional arrangement expiry on standardised RWAs and overall minimum capital requirements.",
+   "doc_status": "final_rule",
+   "topics": [
+    "output-floor",
+    "crr3-implementation",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The output floor escalation and credit risk transitional arrangement expiry are supervisory landmarks that will mechanically increase our standardised RWA floor and thus impact IRB model headroom, but the EBA dashboard itself contains no direct calibration, data quality, or model validation insights for our PD/LGD framework—only aggregate system-wide capital trends."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track this dashboard closely as it directly informs our CRR3 implementation roadmap and capital planning—the output floor bind on 33 institutions and the EUR 18.5B projected shortfall by 2033 signal we must stress-test our corporate credit risk models now against the 72.5% final floor to ensure our standardised RWAs under transitional arrangements won't create a capital surprise when those safeguards expire."
+    }
+   }
+  },
+  {
+   "id": 2178,
+   "url": "https://www.risk.net/risk-quantum/7964201/unicredit-cva-rwas-double-amid-commerzbank-stake-build-up",
+   "title": "UniCredit CVA RWAs double amid Commerzbank stake build-up",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-09T03:30:00+00:00",
+   "first_seen_at": "2026-10-09T09:55:12+00:00",
+   "summary": "UniCredit's credit valuation adjustment (CVA) risk-weighted assets have doubled following its strategic build-up of a stake in Commerzbank. CVA risk comprises the capital charge for counterparty credit risk exposure. The bank attributes the RWA increase to large derivative positions and hedging activity associated with the acquisition strategy.",
+   "why_it_matters": "A material rise in CVA RWAs signals heightened counterparty credit risk capital requirements that practitioners must monitor in their risk-weighted asset forecasting and capital planning.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a capital management story about CVA RWA impact from a specific M&A transaction, but it has no bearing on my PD/LGD model development, calibration, validation, or data requirements for corporate exposures under IRB."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While CVA RWA mechanics are foundational to my role, this article focuses on UniCredit's specific M&A strategy and derivative positioning related to the Commerzbank acquisition—a transaction outside our Nordic corporate loan book with no direct bearing on our capital treatment or supervisory landscape."
+    }
+   }
+  },
   {
    "id": 2147,
    "url": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-main-committee-meeting-24-june-2026",
