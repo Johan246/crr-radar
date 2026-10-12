@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T09:36:25+00:00",
+ "generated_at": "2026-10-12T10:08:17+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,92 @@
   }
  ],
  "items": [
+  {
+   "id": 2189,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+   "title": "The EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-12T07:13:34+00:00",
+   "first_seen_at": "2026-10-12T10:07:06+00:00",
+   "summary": "The EBA published a Final Report with draft amendments to Regulatory Technical Standards on prudential requirements for central securities depositories (CSDs) and designated credit institutions offering banking-type ancillary services. The amendments respond to the CSDR \"Refit\" allowing banking CSDs to provide payment and foreign exchange services to other CSDs, and update requirements to manage credit and liquidity risks including intra-day monitoring to mitigate systemic risk from increased CSD interconnectedness.",
+   "why_it_matters": "Credit risk practitioners managing CSD counterparty exposures or liquidity frameworks need to monitor updates to prudential standards governing CSD credit risk, reporting, and interconnectedness thresholds.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "counterparty-credit-risk",
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a CSD prudential standard update with no direct implication for my corporate PD/LGD model development, calibration, or validation work—our IRB framework covers corporate exposures, not CSD counterparty risk or payment infrastructure requirements."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While this addresses prudential standards for CSDs, it does not materially affect capital treatment of our Nordic corporate loan book or our regulatory obligations as a credit institution with corporate exposures."
+    }
+   }
+  },
+  {
+   "id": 2190,
+   "url": "https://www.risk.net/risk-quantum/7964199/basel-iii-capital-hit-on-g-sibs-jumps-sixfold-in-h2-2025",
+   "title": "Basel III capital hit on G-Sibs jumps sixfold in H2 2025",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-12T03:30:00+00:00",
+   "first_seen_at": "2026-10-12T10:07:19+00:00",
+   "summary": "Basel III output floor requirements for globally systemically important banks (G-SIBs) are estimated to increase by 1.8% of Tier 1 capital in the second half of 2025, the highest level since 2023. This represents a sixfold jump in the capital impact relative to earlier periods. The increase reflects tightening constraints from the standardised approach floor and other Basel III Endgame provisions.",
+   "why_it_matters": "G-SIB capital planners and risk managers must update their Basel III output floor modelling and stress-testing assumptions to reflect significantly higher binding constraints on internal ratings-based approach gains in 2025.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "The output floor tightening is directly material to my PD/LGD model validation and capital model calibration—if the floor becomes increasingly binding, it fundamentally changes the economic relevance of our IRB model outputs and requires us to reassess margin of conservatism, potential model recalibration triggers, and how we present model risk in supervisory reviews."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor this closely—if our bank qualifies as a G-SIB under Nordic or EU criteria, a 1.8% Tier 1 capital output floor impact in H2 2025 is material for our capital planning, and I must understand whether CRR3 implementation timelines or transitional provisions affect our exposure floor binding constraints."
+    }
+   }
+  },
+  {
+   "id": 2191,
+   "url": "https://www.risk.net/regulation/7964240/french-regulator-wants-permanent-changes-to-eu%E2%80%99s-output-floor",
+   "title": "French regulator wants permanent changes to EU’s output floor",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-12T03:30:00+00:00",
+   "first_seen_at": "2026-10-12T10:07:25+00:00",
+   "summary": "The French regulator is pushing for permanent changes to the EU output floor framework, seeking capital relief measures. The proposal faces resistance from supervisory authorities in Finland and the Netherlands who have expressed concerns about modifications to the current rules.",
+   "why_it_matters": "Credit risk practitioners need to track this emerging debate as changes to output floor calculations could materially affect minimum capital requirements and competitive positioning across European banks.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our IRB model framework and capital requirements; output floor changes could shift the binding constraint on our PD/LGD models and capital ratios, so I need to monitor the regulatory trajectory closely and stress-test our internal models against alternative floor scenarios."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I'm monitoring this output floor debate closely, but it remains speculative until there's concrete direction from CRR3 negotiations or ECB guidance—the Franco-Nordic divergence is worth tracking given our Scandinavian base, but any capital relief would likely benefit all significant institutions equally."
+    }
+   }
+  },
   {
    "id": 2172,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-crr3crd6-dashboard-shows-banks-maintain-capital-levels-well-above-minimum-requirements-under",
