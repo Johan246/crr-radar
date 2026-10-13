@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T10:08:17+00:00",
+ "generated_at": "2026-10-13T10:01:02+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 2198,
+   "url": "https://www.isda.org/2026/10/13/how-efficiency-enhances-resilience-in-the-financial-system/",
+   "title": "How Efficiency Enhances Resilience in the Financial System",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-10-13T08:01:37+00:00",
+   "first_seen_at": "2026-10-13T10:00:51+00:00",
+   "summary": "ISDA commentary argues that US Treasury clearing implementation requires alignment of capital and margin requirements to recognize exposure offsets and cross-product netting under SA-CCR for repos and derivatives. The article discusses the standardised approach for counterparty credit risk (SA-CCR) methodology, highlighting that overly conservative capital calculations would restrict bank balance sheet capacity and market liquidity, and notes parallel regulatory work on secured financing transaction (SFT) haircuts and margining practices.",
+   "why_it_matters": "Credit risk practitioners need to track the evolution of SA-CCR cross-product netting rules and capital treatment of repos/derivatives portfolios, as regulatory alignment on these issues will directly affect counterparty credit risk capital calculations and collateral efficiency strategies.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "standardised-approach",
+    "credit-risk-mitigation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This addresses counterparty credit risk (CCR) capital frameworks and collateral efficiency, but falls outside my core PD/LGD modelling mandate—it concerns SA-CCR methodology, netting rules, and derivatives/repo capital treatment rather than corporate exposure probability of default or loss given default calibration."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While SA-CCR cross-product netting rules matter for counterparty credit risk, this ISDA commentary on US Treasury clearing and derivative margin alignment is primarily a US-focused regulatory issue with limited direct bearing on my Nordic corporate loan book capital treatment."
+    }
+   }
+  },
   {
    "id": 2189,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
