@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T10:01:02+00:00",
+ "generated_at": "2026-10-14T08:19:47+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,64 @@
   }
  ],
  "items": [
+  {
+   "id": 2201,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261014~02407f2add.en.html",
+   "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-14T00:00:00+00:00",
+   "first_seen_at": "2026-10-14T08:18:58+00:00",
+   "summary": "ECB Vice-Chair Frank Elderson addresses supervisory approaches to climate and nature (C&N) risks, emphasizing the shift from traditional risk estimation based on historical data to managing non-linear, complex interconnected systems. The speech discusses how banks have built foundational architectures for capturing C&N risks in stress testing and scenario analysis, but notes that forward-looking risks differ substantially from past events and remain difficult to quantify. Elderson frames the challenge in terms of known knowns, known unknowns, and unknown unknowns, highlighting that many material C&N risks cannot be fully understood or measured with confidence.",
+   "why_it_matters": "Credit risk practitioners must recalibrate provisions, capital models and stress-testing assumptions away from historical patterns toward non-linear climate scenarios, fundamentally challenging how loss-given-default, transition risk and physical risk are embedded in IRB and standardised approaches.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "npl-provisioning",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly material to my PD/LGD model governance: Elderson's emphasis on non-linear forward-looking risks versus historical calibration fundamentally challenges our downturn and through-the-cycle assumptions, particularly for corporates exposed to transition and physical risks. We need to reassess whether our historical LGD databases and PD transition matrices adequately capture tail risks that may not be represented in observed data, and we face immediate pressure to document our margin of conservatism against climate scenario uncertainties that are inherently unmeasurable by traditional backtesting."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "This speech signals that ECB supervisors expect us to materially evolve our climate and nature risk quantification methodology beyond historical data backtesting, which will directly pressure our corporate credit risk models, stress testing frameworks, and potentially our ICAAP capital adequacy assumptions."
+    }
+   }
+  },
+  {
+   "id": 2202,
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html",
+   "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-10-14T00:00:00+00:00",
+   "first_seen_at": "2026-10-14T08:19:06+00:00",
+   "summary": "ECB Vice-Chair Frank Elderson discusses supervisory approaches to climate and nature risks in a framework of known knowns, known unknowns and unknown unknowns. Banks have made progress quantifying direct C&N impacts on loss given default, transition scenario effects on capital, and exposure concentrations in carbon-intensive sectors and physical risk areas. The speech emphasizes challenges in modeling non-linear relationships and radical uncertainty inherent in C&N risks that differ from historical patterns used in traditional risk management.",
+   "why_it_matters": "Credit risk practitioners must reconsider how traditional risk quantification and capital models apply to climate and nature risks that exhibit non-linearity and radical uncertainty beyond measurable historical relationships.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The ECB's framing of C&N risks as radical uncertainty with non-linear dynamics is important context for supervisory expectations, but the item lacks concrete technical guidance on model adjustments, downturn calibration methods, or data requirements that would directly impact our PD/LGD framework evolution."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "This speech signals ECB supervisory expectations on climate and nature risk integration into credit risk frameworks and capital modeling, which will shape our stress testing methodologies and sector concentration reporting for Nordic corporates, but the current guidance remains directional rather than prescriptive on capital treatment."
+    }
+   }
+  },
   {
    "id": 2198,
    "url": "https://www.isda.org/2026/10/13/how-efficiency-enhances-resilience-in-the-financial-system/",
