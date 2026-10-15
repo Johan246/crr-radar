@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T08:19:47+00:00",
+ "generated_at": "2026-10-15T07:56:42+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 2218,
+   "url": "https://www.risk.net/risk-quantum/7964186/rbc-scotiabank-securitisation-rwas-hit-record-highs",
+   "title": "RBC, Scotiabank securitisation RWAs hit record highs",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-15T03:30:00+00:00",
+   "first_seen_at": "2026-10-15T07:56:11+00:00",
+   "summary": "RBC and Scotiabank have reported record-high risk-weighted assets (RWAs) under the securitisation standardised approach (SEC-SA), with a 23% increase across major Canadian banks. RBC's securitisation RWAs increased by C$1.5bn, driving the aggregate rise among peers.",
+   "why_it_matters": "Credit risk practitioners need to track securitisation RWA movements under SEC-SA rules, as these record highs signal shifts in Canadian banks' securitisation exposures and potential implications for capital adequacy and regulatory compliance.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "standardised-approach",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a capital adequacy and RWA reporting story, but without detail on portfolio composition, model drivers, or data quality issues affecting securitisation PD/LGD calibration, it has minimal direct relevance to my modelling work under the IRB approach."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I monitor securitisation capital treatment closely, but this story focuses on Canadian banks' RWA movements under SEC-SA with no bearing on Nordic corporate exposures or Scandinavian regulatory mandates."
+    }
+   }
+  },
   {
    "id": 2201,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261014~02407f2add.en.html",
