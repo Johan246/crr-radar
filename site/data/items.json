@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T07:56:42+00:00",
+ "generated_at": "2026-10-16T07:49:54+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2230,
+   "url": "https://www.risk.net/risk-quantum/7964212/emirates-nbd-fund-rwas-surge-480",
+   "title": "Emirates NBD fund RWAs surge 480%",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-16T03:30:00+00:00",
+   "first_seen_at": "2026-10-16T07:49:26+00:00",
+   "summary": "Emirates NBD reports a 480% surge in risk-weighted assets (RWAs) for its fund holdings, coinciding with its acquisition of RBL and first application of the look-through approach to fund exposures. The look-through approach, which requires banks to calculate RWAs by looking through to underlying fund assets rather than using a standard charge, is a CRR/Basel methodology that significantly impacts capital requirements for fund-related exposures.",
+   "why_it_matters": "The look-through approach can materially increase RWA and capital charges for fund exposures; this case demonstrates the potential impact when banks first apply the approach or consolidate fund holdings.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a bank capital adequacy event with no bearing on PD/LGD model development, calibration, or validation; it reflects mechanical RWA calculation methodology (look-through vs. standard charge) applied to fund exposures, which sit outside the corporate IRB portfolio I model."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I need to understand if Emirates NBD's experience signals upcoming CRR3 implementation challenges for our Nordic corporates' fund-related exposures, but the direct application here is limited since this concerns UAE regulatory treatment and fund RWA methodology rather than corporate loan book capital requirements."
+    }
+   }
+  },
   {
    "id": 2218,
    "url": "https://www.risk.net/risk-quantum/7964186/rbc-scotiabank-securitisation-rwas-hit-record-highs",
