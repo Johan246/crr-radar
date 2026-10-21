@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T08:08:02+00:00",
+ "generated_at": "2026-10-21T08:14:19+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 2286,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2023/jan/the-eu-banking-regulatory-framework-and-its-impact-on-banks-and-the-economy.html",
+   "title": "The EU Banking Regulatory Framework And Its Impact On Banks",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-10-20T00:00:00+00:00",
+   "first_seen_at": "2026-10-21T08:13:46+00:00",
+   "summary": "Oliver Wyman analysis commissioned by the European Banking Federation examines the EU banking regulatory framework's impact on competitiveness and capital efficiency compared to US peers. The report highlights that EU banks face higher capital requirements (CET1 10.6% vs 9.9% in US), more complex capital determination approaches, and higher contributions to deposit/resolution funds, resulting in an estimated 0.8-1.0 percentage point ROE gap due to regulatory cost differences. The analysis suggests that a review of capital requirements and supervisory processes could free €4-4.5 trillion in additional lending capacity.",
+   "why_it_matters": "Credit risk practitioners must understand how EU capital requirements, supervisory discretion, and Basel III implementation timelines compare to global peers and affect lending capacity available to support economic growth.",
+   "doc_status": "commentary",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to stay aware of the regulatory capital landscape and competitive positioning, but this high-level benchmarking against US frameworks and advocacy-tinged analysis has limited direct bearing on my core work of building defensible PD/LGD models and navigating supervisory validation—the real constraints I face are data quality, model assumptions, and TRIM-style scrutiny, not aggregate capital ratios."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track this closely as it directly informs the competitive and regulatory context for Nordic corporate lending—the capital efficiency analysis, CET1 benchmarking against US peers, and CRR3 implementation implications are core to my capital planning and supervisory engagement strategy."
+    }
+   }
+  },
   {
    "id": 2230,
    "url": "https://www.risk.net/risk-quantum/7964212/emirates-nbd-fund-rwas-surge-480",
