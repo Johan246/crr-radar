@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T08:16:41+00:00",
+ "generated_at": "2026-10-23T08:14:32+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,119 @@
   }
  ],
  "items": [
+  {
+   "id": 2425,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261023~32ca63a9d1.en.html",
+   "title": "Patrick Montagner: Stress testing in a changing risk environment",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-23T08:00:00+00:00",
+   "first_seen_at": "2026-10-23T08:11:05+00:00",
+   "summary": "ECB Banking Supervision member discusses the evolving role of stress testing in supervisory oversight, distinguishing between EU-wide stress tests used in SREP and Pillar 2 guidance, banks' internal stress tests, and macroprudential exercises. The speech emphasizes how stress tests reveal weaknesses in capital positions and risk management practices, though they operate within limitations such as constrained balance-sheet approaches and simplified crisis representations. Stress testing continues to be a central tool for assessing bank resilience, comparing outcomes across institutions, and understanding systemic risk transmission channels.",
+   "why_it_matters": "Credit risk practitioners need to understand how ECB supervisory stress testing feeds into capital requirements, SREP outcomes, and Pillar 2 guidance, and how their own internal stress tests should inform capital planning rather than serve as disconnected technical exercises.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "reporting-disclosure",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly affects how our PD/LGD models feed into stress testing frameworks, SREP outcomes, and capital requirements—stress testing is a primary supervisory validation tool for our IRB models and drives regulatory capital outcomes, so understanding ECB expectations on methodological rigor, downturn calibration, and model limitations is essential for my work."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to understand how ECB stress testing cascades into our SREP outcomes and Pillar 2 capital guidance, and this speech clarifies the supervisory framework—stress tests are no longer peripheral technical exercises but central to how supervisors validate our corporate risk models and set capital expectations for our Nordic loan book."
+    }
+   }
+  },
+  {
+   "id": 2430,
+   "url": "https://www.risk.net/risk-quantum/7964246/dz-bank-ditches-slotting-approach-for-project-finance-exposures",
+   "title": "DZ Bank ditches slotting approach for project finance exposures",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-23T03:30:00+00:00",
+   "first_seen_at": "2026-10-23T08:11:24+00:00",
+   "summary": "DZ Bank has received regulatory approval to transfer approximately €8.6 billion in risk-weighted assets from the slotting approach to Foundation IRB (F-IRB) methodology for project finance exposures. The shift represents a move away from the standardised approach's simplified treatment toward internal ratings-based capital calculations. This change is applicable under CRR/CRD rules governing IRB methodology for specialised lending exposures.",
+   "why_it_matters": "Banks using IRB for project finance can now reference DZ Bank's regulatory approval pathway and expected capital impact when considering similar methodology transitions from slotting to F-IRB.",
+   "doc_status": "final_rule",
+   "topics": [
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly relevant to our IRB model governance—DZ Bank's regulatory approval to migrate €8.6bn PF exposures from slotting to F-IRB sets a precedent for our own potential methodology transitions and validates the supervisory pathway, while the capital impact disclosure will inform our downturn calibration and margin of conservatism assumptions for similar specialised lending portfolios."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I monitor this as a competitive and supervisory precedent: DZ Bank's approval to migrate €8.6bn of project finance from slotting to F-IRB signals ECB/BaFin appetite for IRB methodology transitions under CRR3, but this has limited direct bearing on our Nordic corporate loan book unless we hold material project finance exposures subject to similar capital arbitrage questions."
+    }
+   }
+  },
+  {
+   "id": 2427,
+   "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
+   "title": "The Commission welcomes the political agreement reached on the review of the Securitisation Framework",
+   "source_key": "ec-fisma",
+   "source_name": "European Commission (DG FISMA)",
+   "source_org": "European Commission",
+   "author_type": "regulatory",
+   "published_at": "2026-10-22T00:00:00+00:00",
+   "first_seen_at": "2026-10-23T08:11:14+00:00",
+   "summary": "The European Commission and co-legislators have reached political agreement on a revised Securitisation Framework to be implemented by end-2026. The package includes amendments to the Securitisation Regulation (reducing operational burdens and streamlining due diligence) and amendments to the Capital Requirements Regulation to make prudential treatment of securitisations more risk-sensitive. The provisional agreement awaits technical finalisation and formal approval before publication in the Official Journal.",
+   "why_it_matters": "Credit risk practitioners must prepare for revised CRR securitisation rules that will alter prudential risk weights and eligibility criteria for securitised exposures, likely affecting portfolio management, due diligence workloads, and capital calculations.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "securitisation",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This securitisation framework overhaul will affect capital treatment and due diligence workflows, but does not directly impact our PD/LGD model build or calibration—it is primarily a prudential rules change that our risk management function will need to operationalise for portfolio reporting."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor this securitisation framework review closely as it directly affects our CRR capital treatment for any corporate exposures we originate or hold via securitisation vehicles, and the end-2026 implementation timeline requires us to begin regulatory impact assessment and systems readiness planning now."
+    }
+   }
+  },
+  {
+   "id": 2452,
+   "url": "https://www.afme.eu/news-insights/press-releases/eu-securitisation-agreement-delivers-progress-but-prudential-shortcomings-remain/",
+   "title": "EU securitisation agreement delivers progress, but prudential shortcomings remain",
+   "source_key": "afme",
+   "source_name": "AFME News",
+   "source_org": "AFME",
+   "author_type": "consumer",
+   "published_at": "2026-10-22T00:00:00+00:00",
+   "first_seen_at": "2026-10-23T08:11:59+00:00",
+   "summary": "AFME comment on provisional political agreement on EU securitisation framework review. Welcomes progress on Securitisation Regulation including sanctions convergence, UCITS concentration limits, and STS ultimate floors (5% resilient, 7% non-resilient), but criticises prudential framework for remaining overly conservative on non-STS transactions under standardised approach, particularly p-factor calibrations and unresolved CCF calibration. Warns that insufficient risk-weight relief for non-STS securitisation constrains banks' ability to finance real economy.",
+   "why_it_matters": "Banks and prudential teams need to understand the agreed prudential calibrations for securitisation risk weights under both STS and non-STS regimes, and monitor outstanding issues (CCF, output floor) expected to be revisited in Banking Competitiveness Package Q1 2027.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "securitisation",
+    "standardised-approach",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is tangential to my core PD/LGD model work—securitisation risk weights operate under standardised approach mechanics rather than IRB calibrations—but I should monitor the CCF and p-factor treatment as these indirectly shape our IRB portfolio risk profile and competitive dynamics around real estate lending securitisation."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track the final securitisation framework calibrations for capital treatment of our corporate loan securitisations, particularly the p-factor and CCF parameters under the standardised approach, and flag the Q1 2027 Banking Competitiveness review as a critical supervisory monitoring point."
+    }
+   }
+  },
   {
    "id": 2286,
    "url": "https://www.oliverwyman.com/our-expertise/insights/2023/jan/the-eu-banking-regulatory-framework-and-its-impact-on-banks-and-the-economy.html",
