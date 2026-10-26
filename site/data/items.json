@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T08:03:19+00:00",
+ "generated_at": "2026-10-26T08:26:29+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2597,
+   "url": "https://www.risk.net/risk-quantum/7964274/securitisation-exposures-surge-80-at-european-banks-as-risk-density-falls",
+   "title": "Securitisation exposures surge 80% at European banks as risk density falls",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-26T04:30:00+00:00",
+   "first_seen_at": "2026-10-26T08:24:53+00:00",
+   "summary": "European banks' securitisation exposures have increased 80% over a four-year period while RWAs grew only 52%, indicating declining risk density per unit of exposure. Synthetic securitisation positions more than doubled, reflecting shifts in portfolio composition and capital efficiency strategies. The disproportionate growth in exposures relative to RWAs suggests potential changes in risk weighting methodologies or securitisation structure composition.",
+   "why_it_matters": "Credit risk practitioners need to understand whether this exposure growth reflects capital arbitrage opportunities, regulatory changes in securitisation treatment, or supervisory challenges under CRR/CRR3.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our PD/LGD model calibration and IRB securitisation risk weighting—the 80% exposure surge against only 52% RWA growth signals either structural portfolio shifts in underlying collateral, changes in tranche attachment points, or potential supervisory scrutiny on our risk density assumptions that could affect model validation and downturn calibration requirements."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to understand whether our bank's securitisation strategy is similarly benefiting from declining risk density under current CRR3 rules, or whether supervisory push-back on capital arbitrage is imminent—this directly impacts our corporate loan securitisation pipeline and internal capital modeling for Q1 review."
+    }
+   }
+  },
   {
    "id": 2425,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261023~32ca63a9d1.en.html",
