@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T08:35:06+00:00",
+ "generated_at": "2026-10-28T09:15:05+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2686,
+   "url": "https://www.risk.net/risk-quantum/7964320/basel-g-sib-rule-change-could-spare-24-banks-reporting",
+   "title": "Basel G-Sib rule change could spare 24 banks reporting",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-10-28T04:30:00+00:00",
+   "first_seen_at": "2026-10-28T09:14:15+00:00",
+   "summary": "Basel Committee proposed raising the total exposure measure (TEM) threshold for G-SIB designation from €200bn to €350bn, which could exclude approximately 24 globally systemically important banks from enhanced regulatory reporting requirements. This threshold change would reduce the additional reporting pool by about 60%. The proposal is part of ongoing Basel framework refinements affecting systemic bank designations and their supervisory obligations.",
+   "why_it_matters": "Credit risk practitioners at banks near the proposed TEM threshold need to reassess their regulatory classification status and understand revised reporting and capital charge obligations if their bank's exposure measure falls below the new threshold.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "reporting-disclosure",
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While this changes regulatory classification thresholds, it doesn't materially affect our PD/LGD model development, calibration, validation, or data requirements—it's primarily a reporting and capital charge recalibration issue at the portfolio level rather than a modelling input or methodology question."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "If our bank falls near that €200-350bn TEM band, I need to track this Basel proposal carefully for its capital treatment implications, but the primary impact is on G-SIB designation and systemic risk reporting rather than our core corporate credit risk framework—I'll flag it for monitoring pending ECB/Nordic FSA implementation signals."
+    }
+   }
+  },
   {
    "id": 2597,
    "url": "https://www.risk.net/risk-quantum/7964274/securitisation-exposures-surge-80-at-european-banks-as-risk-density-falls",
