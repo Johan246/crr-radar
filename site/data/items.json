@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T09:15:05+00:00",
+ "generated_at": "2026-10-29T09:14:38+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2715,
+   "url": "https://www.isda.org/2026/10/28/isda-afma-sydney-derivatives-trading-forum-scott-omalia-opening-remarks/",
+   "title": "ISDA/AFMA Sydney Derivatives Trading Forum: Scott O’Malia Opening Remarks",
+   "source_key": "isda",
+   "source_name": "ISDA",
+   "source_org": "ISDA",
+   "author_type": "consumer",
+   "published_at": "2026-10-28T14:38:00+00:00",
+   "first_seen_at": "2026-10-29T09:14:27+00:00",
+   "summary": "Scott O'Malia's remarks at the ISDA/AFMA Sydney Derivatives Trading Forum highlight liquidity management challenges facing Australian superannuation funds subject to initial and variation margin requirements on non-cleared derivatives, particularly as FX hedge exposures grow. ISDA recommends stress testing, broadened eligible collateral, and use of the risk-sensitive ISDA SIMM to better reflect actual portfolio risk and reduce over-margining. The remarks also cover tokenized collateral initiatives and AI deployment in industry solutions for derivatives market infrastructure efficiency.",
+   "why_it_matters": "Credit risk practitioners must understand how regulatory margin requirements interact with superannuation fund liquidity constraints and how ISDA SIMM adoption can optimize capital and collateral efficiency under non-cleared derivatives regimes.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "credit-risk-mitigation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This addresses derivatives margin management and liquidity issues for superannuation funds, but has no direct bearing on PD/LGD model development, calibration, validation, or downturn estimation for corporate credit exposures under IRB."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While derivatives margin optimization has tangential relevance to collateral management, this item focuses on Australian superannuation fund liquidity and ISDA SIMM advocacy rather than Nordic corporate credit risk capital treatment, CRR3 timelines, or supervisory guidance applicable to Scandinavian banking."
+    }
+   }
+  },
   {
    "id": 2686,
    "url": "https://www.risk.net/risk-quantum/7964320/basel-g-sib-rule-change-could-spare-24-banks-reporting",
