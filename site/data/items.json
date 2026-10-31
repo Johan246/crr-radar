@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T09:29:18+00:00",
+ "generated_at": "2026-10-31T09:12:37+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 2734,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in261030~21a824d8f2.en.html",
+   "title": "Pedro Machado: Interview with Bloomberg",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-10-30T10:10:00+00:00",
+   "first_seen_at": "2026-10-31T09:12:05+00:00",
+   "summary": "ECB SSM Supervisory Board member Pedro Machado discusses securitisation market revival, highlighting support for properly structured risk transfers while emphasizing concerns around counterparty credit risk in synthetic structures, insurance company protection mechanisms, and emerging complexity in synthetic risk transfer (SRT) platforms. The ECB prefers absolute risk weight floors (not below 7% for senior tranches) and is monitoring growing insurance-backed financing of SRTs and data centre exposures as potential credit risk management issues.",
+   "why_it_matters": "Banks' securitisation structures—especially synthetic SRTs with insurance backing and data centre exposures—face heightened ECB scrutiny on risk transfer substance, counterparty credit risk, and complexity, with implications for capital relief qualification and STS/fast-track eligibility.",
+   "doc_status": "commentary",
+   "topics": [
+    "securitisation",
+    "counterparty-credit-risk",
+    "credit-risk-mitigation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our securitisation programme design and IRB model inputs: synthetic SRT structures we consider for capital relief must now contend with ECB's emerging scrutiny on insurance-backed counterparty risk, minimum risk weight floors (7% senior floor), and data centre sector exposure concentration—all affecting our risk transfer validation, model parameter calibration, and whether deals qualify for capital relief under IRB-SA hybrid approaches."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I note the ECB's evolving stance on securitisation structuring and risk weight floors for senior tranches, but this has limited direct bearing on my Nordic corporate loan book unless we're actively using synthetic SRT platforms for capital relief—which would require specific portfolio review to assess relevance to our current exposures and capital planning."
+    }
+   }
+  },
   {
    "id": 2715,
    "url": "https://www.isda.org/2026/10/28/isda-afma-sydney-derivatives-trading-forum-scott-omalia-opening-remarks/",
