@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T09:58:56+00:00",
+ "generated_at": "2026-11-02T10:27:35+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2741,
+   "url": "https://www.risk.net/risk-quantum/7964356/rewriting-the-output-floor-how-eu-reform-options-would-split-the-banks",
+   "title": "Rewriting the output floor: how EU reform options would split the banks",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-11-02T04:30:00+00:00",
+   "first_seen_at": "2026-11-02T10:27:10+00:00",
+   "summary": "Article discusses EU regulatory reform options affecting the output floor (minimum capital requirement floor) under CRR3/Basel 3.1, with analysis of how different transition and market-risk reform scenarios would impact capital requirements for EU banks by 2033.",
+   "why_it_matters": "Credit risk practitioners need to understand evolving EU policy on output floor relief and implementation timelines, as transitional relief duration and market-risk treatment directly affect their minimum capital requirements and CRR3 compliance planning.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "Interesting for capital planning but doesn't touch my model work—the output floor is a regulatory constraint applied *after* IRB models are built, not a driver of PD/LGD estimation, calibration, or validation methodology."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "This is directly relevant to my capital treatment planning and CRR3 implementation roadmap; understanding the output floor transition options and their impact on our minimum capital requirements by 2033 is essential for accurate stress testing, capital adequacy forecasting, and supervisory dialogue with the ECB and Nordic FSAs."
+    }
+   }
+  },
   {
    "id": 2734,
    "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in261030~21a824d8f2.en.html",
