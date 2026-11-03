@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T10:27:35+00:00",
+ "generated_at": "2026-11-03T10:24:58+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -399,6 +399,64 @@
  ],
  "items": [
   {
+   "id": 2745,
+   "url": "https://www.bankofengland.co.uk/news/2026/november/regulators-explore-credit-union-reforms-to-support-growth-innovation-and-better-outcomes-for-members",
+   "title": "Regulators explore credit union reforms to support growth, innovation and better outcomes for members",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-03T10:00:00+00:00",
+   "first_seen_at": "2026-11-03T10:24:18+00:00",
+   "summary": "The PRA and FCA launched a joint discussion paper exploring regulatory reforms for UK credit unions, including risk-based capital frameworks, simplified Basel provisions, potential replacement of leverage ratios with standardised risk-weighted asset approaches, and streamlined audit requirements for smaller institutions. The consultation seeks industry feedback on proportionality, capital requirements, product innovation barriers, and potential conversion pathways to building societies.",
+   "why_it_matters": "Credit risk practitioners in UK deposit takers will need to track proposed changes to capital frameworks, RWA methodologies, and leverage ratio treatment that could materially alter regulatory capital requirements and reporting for credit unions and similar institutions.",
+   "doc_status": "consultation",
+   "topics": [
+    "standardised-approach",
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "I work on IRB models for corporate exposures at a bank; credit union regulatory reforms for capital framework simplification and leverage ratio replacement have no direct modelling or data implication for my PD/LGD work."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This UK credit union reform discussion paper is not relevant to my work managing corporate exposures in a Nordic bank—our regulatory regime differs materially from the UK prudential framework, and credit unions have minimal presence in our Scandinavian corporate loan portfolio."
+    }
+   }
+  },
+  {
+   "id": 2744,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261103~dff42acdd1.en.html",
+   "title": "Pedro Machado: Simplification and complexity in the banking union: separating the wheat from the chaff",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-03T08:45:00+00:00",
+   "first_seen_at": "2026-11-03T10:24:10+00:00",
+   "summary": "ECB Supervisory Board member Pedro Machado discusses the complexity of the prudential framework, arguing that it has grown from 30 pages (Basel I, 1988) to over 15,000 pages of rules, implementing standards and guidance. He distinguishes between legitimate complexity needed for a complex financial system and unjustified complexity that favors large banks and creates compliance burdens for smaller lenders. He cautions against lowering capital standards as a solution to complexity, emphasizing proportionality and simplification instead.",
+   "why_it_matters": "Credit risk practitioners need to understand the ECB's stance on regulatory complexity and the distinction between proportionate simplification versus capital-weakening shortcuts as CRR3 implementation and future reforms proceed.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I track this as important supervisory signal-setting, but it lacks concrete modelling guidance—Machado's distinction between justified and unjustified complexity may guide proportionality debates around IRB, but until it translates into CRR3 specifics or TRIM expectations on PD/LGD calibration, validation, or data requirements, it remains principled commentary rather than actionable change."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I need to track ECB's simplification philosophy as it shapes CRR3 implementation and future capital framework evolution, but this high-level strategic commentary is less directly actionable than specific regulatory updates or consultation deadlines affecting our Nordic corporate exposures."
+    }
+   }
+  },
+  {
    "id": 2741,
    "url": "https://www.risk.net/risk-quantum/7964356/rewriting-the-output-floor-how-eu-reform-options-would-split-the-banks",
    "title": "Rewriting the output floor: how EU reform options would split the banks",
@@ -452,6 +510,64 @@
     "regulatory": {
      "relevance": "medium",
      "verdict": "I note the ECB's evolving stance on securitisation structuring and risk weight floors for senior tranches, but this has limited direct bearing on my Nordic corporate loan book unless we're actively using synthetic SRT platforms for capital relief—which would require specific portfolio review to assess relevance to our current exposures and capital planning."
+    }
+   }
+  },
+  {
+   "id": 2746,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/credit-unions-supporting-sustainable-growth-and-resilience-discussion-paper",
+   "title": "DP2/26 – Credit Unions: Supporting sustainable growth and resilience",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-30T09:25:41+00:00",
+   "first_seen_at": "2026-11-03T10:24:27+00:00",
+   "summary": "The PRA/FCA has published a discussion paper reviewing the regulatory framework for UK credit unions (around 340 firms, £4.9bn assets, 2m+ members) to assess fitness for purpose as the sector diversifies and grows. The review examines proportionality, resilience, governance, risk management, mortgages, product innovation, orderly exit mechanisms, and barriers to sustainable growth across firms of varying size and complexity. Responses are invited by 5 March 2027.",
+   "why_it_matters": "Credit risk practitioners managing credit unions or assessing credit union sector dynamics need to track this review as it may reshape prudential requirements, capital/provisioning rules, large exposure limits, and operational resilience standards for credit unions under UK CRR/regulatory framework.",
+   "doc_status": "consultation",
+   "topics": [
+    "standardised-approach",
+    "npl-provisioning",
+    "large-exposures"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a regulatory framework review for UK credit unions under a different prudential perimeter and asset class that does not affect my corporate PD/LGD model development, IRB calibration, or data infrastructure."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This UK credit union regulatory review has no bearing on my Nordic corporate loan book or CRR3 implementation priorities, as credit unions are not part of our institutional credit exposures and the PRA/FCA framework does not govern our capital treatment or supervisory expectations."
+    }
+   }
+  },
+  {
+   "id": 2747,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/nicu-implementing-legislative-changes-consultation-paper",
+   "title": "CP15/26 – Northern Ireland Credit Unions: Implementing legislative changes",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-10-29T15:20:04+00:00",
+   "first_seen_at": "2026-11-03T10:24:33+00:00",
+   "summary": "The PRA proposes amendments to its rules and supervisory expectations to accommodate Northern Ireland Credit Union (NICU) legislative reforms planned for April 2027, including new member referral arrangements and loan participation activities. Changes include additions to the Credit Unions Part of the PRA Rulebook and a new chapter in Supervisory Statement SS2/23 setting out prudential expectations for managing credit risk and governance risks arising from these new activities. The consultation paper assumes the Northern Ireland Assembly will enact the Credit Unions (Amendment) Bill as introduced by the Department for the Economy.",
+   "why_it_matters": "Credit union supervisors and practitioners must understand the new prudential framework for member referrals and loan participation, including the PRA's expectation that credit risk responsibility sits with receiving NICUs, to ensure compliant implementation by April 2027.",
+   "doc_status": "consultation",
+   "topics": [
+    "credit-risk-mitigation",
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This proposal affects Northern Ireland credit union regulation but has no material implication for my corporate PD/LGD modelling work, IRB capital framework, or data infrastructure—credit unions sit outside our perimeter."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This PRA consultation on Northern Ireland Credit Union reforms has no bearing on our Nordic corporate loan book or capital treatment of Scandinavian corporate exposures, and falls outside our regulatory remit as a Nordic bank."
     }
    }
   },
