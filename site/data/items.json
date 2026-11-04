@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T10:24:58+00:00",
+ "generated_at": "2026-11-04T10:20:24+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,62 @@
   }
  ],
  "items": [
+  {
+   "id": 2764,
+   "url": "https://blogs.pwc.de/de/regulatory/article/257640/eba-guidelines-on-the-sound-management-of-third-party-risk-regarding-non-ict-services/",
+   "title": "Regulatory Blog: EBA Guidelines on the sound management of third-party risk regarding non-ICT services",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-11-04T09:27:14+00:00",
+   "first_seen_at": "2026-11-04T10:19:41+00:00",
+   "summary": "EBA published final Guidelines on the sound management of third-party risk regarding non-ICT services (EBA/GL/2026/09) on 18 September 2026, replacing the 2019 Outsourcing Guidelines. The TPR Guidelines broaden scope from outsourcing arrangements to all third-party arrangements supporting recurring or ongoing functions, with proportionate requirements based on whether services support critical or important functions. The guidelines clarify separation from DORA (ICT services fall under DORA only) and introduce enhanced risk management requirements including registers, contracts, monitoring, and exit strategies on a tiered basis.",
+   "why_it_matters": "Credit risk practitioners must reassess third-party dependencies and risk management frameworks, as the new guidelines expand beyond outsourcing to all recurring third-party arrangements and impose differentiated compliance obligations depending on criticality of functions supported.",
+   "doc_status": "final_rule",
+   "topics": [
+    "other",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a third-party risk governance and compliance matter with no direct bearing on PD/LGD model development, calibration, validation, or downturn estimation—it concerns operational outsourcing frameworks rather than credit risk modelling."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "While third-party risk management is important operationally, this guidance on non-ICT services has no direct bearing on capital treatment, CRR3, or supervisory expectations specific to my corporate loan book—it applies horizontally to all bank functions rather than corporate credit exposures."
+    }
+   }
+  },
+  {
+   "id": 2760,
+   "url": "https://www.risk.net/risk-quantum/7964347/eu-carve-out-halves-bnp-paribas%E2%80%99-cross-border-g-sib-activity",
+   "title": "EU carve-out halves BNP Paribas’ cross-border G-Sib activity",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-11-04T04:30:00+00:00",
+   "first_seen_at": "2026-11-04T10:19:32+00:00",
+   "summary": "An EU carve-out in Basel G-SIB framework rules reduces BNP Paribas' cross-border activity measure by approximately 50%, lowering its systemic risk score. The Basel Committee consultation may formalize this preferential treatment for European banks under revised G-SIB methodology.",
+   "why_it_matters": "G-SIB designation directly affects capital requirements and regulatory expectations for systemically important institutions; changes to the activity measure calculation could shift capital burdens across major international banks.",
+   "doc_status": "consultation",
+   "topics": [
+    "large-exposures",
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a capital adequacy and systemic risk designation issue with no direct bearing on my PD/LGD model development, calibration, validation, or downturn estimation frameworks."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I monitor this closely as a potential Basel III precedent affecting our own systemic importance scoring, but our Nordic corporate book exposure to G-SIB capital arbitrage is limited; the real impact depends on whether the Basel Committee formalizes the EU carve-out and how it cascades into our own regulatory treatment."
+    }
+   }
+  },
   {
    "id": 2745,
    "url": "https://www.bankofengland.co.uk/news/2026/november/regulators-explore-credit-union-reforms-to-support-growth-innovation-and-better-outcomes-for-members",
