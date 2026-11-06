@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T10:14:05+00:00",
+ "generated_at": "2026-11-06T10:17:11+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,61 @@
   }
  ],
  "items": [
+  {
+   "id": 2819,
+   "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+   "title": "ECB publishes consolidated banking data for end-June 2026",
+   "source_key": "ecb",
+   "source_name": "European Central Bank",
+   "source_org": "ECB",
+   "author_type": "regulatory",
+   "published_at": "2026-11-06T09:00:00+00:00",
+   "first_seen_at": "2026-11-06T10:16:32+00:00",
+   "summary": "The ECB published consolidated banking data for end-June 2026 covering 336 banking groups and 2,283 credit institutions in the EU. Key metrics include: total assets grew 5.18% year-on-year to €34.99 trillion, non-performing loans ratio increased slightly to 1.99%, Common Equity Tier 1 ratio was 16.43%, and return on equity was 5.31%. The dataset comprises balance sheet composition, asset quality, capital adequacy, liquidity, and solvency indicators compiled on a group consolidated basis under IFRs and EBA supervisory reporting standards.",
+   "why_it_matters": "Credit risk practitioners need these regulatory-reported aggregates to benchmark asset quality, capital ratios, and provisioning trends across the EU banking sector and assess compliance with CRR capital adequacy requirements.",
+   "doc_status": "final_rule",
+   "topics": [
+    "npl-provisioning",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is useful sector-wide reference data for calibration benchmarking and stress testing assumptions, but the consolidated aggregate metrics don't directly inform our PD/LGD model architecture, downturn estimation, or validation datasets—we rely on granular transaction-level or counterparty-level data for those purposes."
+    },
+    "regulatory": {
+     "relevance": "medium",
+     "verdict": "I use this sector-wide benchmarking data to contextualize our Nordic corporate exposure metrics and validate our CRR capital adequacy positioning, but the macro aggregates alone don't drive our regulatory reporting or capital treatment decisions."
+    }
+   }
+  },
+  {
+   "id": 2818,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261106~be7a42d6e7.en.html",
+   "title": "Sharon Donnery: If time stood still: regulatory modernisation and financial stability",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-06T00:00:00+00:00",
+   "first_seen_at": "2026-11-06T10:16:24+00:00",
+   "summary": "Sharon Donnery, ECB Supervisory Board member, discusses regulatory modernisation aligned with financial stability objectives, including capital and liquidity safeguards, bank governance, and supervisory approaches to managing evolving risks. She addresses how banking regulation must balance safety with reducing unnecessary complexity while preserving resilience and the banking system's role in economic growth.",
+   "why_it_matters": "Credit risk supervisors and practitioners need to understand the ECB's strategic direction on regulatory modernisation and the principles—simplification, technology adoption, risk focus, resilience preservation—that will shape future capital requirements, governance expectations, and credit risk supervision practices.",
+   "doc_status": "commentary",
+   "topics": [
+    "other"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to track ECB supervisory thinking on regulatory direction and complexity reduction, but unless this speech contains concrete policy signals on capital methodology, margin of conservatism philosophy, or downturn estimation principles, it's strategic context rather than actionable model guidance."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor this carefully—Donnery's statements on regulatory modernisation and simplification directly shape ECB supervisory expectations on capital treatment, governance standards, and credit risk frameworks that govern my corporate loan book."
+    }
+   }
+  },
   {
    "id": 2764,
    "url": "https://blogs.pwc.de/de/regulatory/article/257640/eba-guidelines-on-the-sound-management-of-third-party-risk-regarding-non-ict-services/",
