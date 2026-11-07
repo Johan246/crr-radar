@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T10:17:11+00:00",
+ "generated_at": "2026-11-07T09:32:32+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2832,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines",
+   "title": "The EBA outlines next steps on supervisory reporting simplification and extends implementation timelines following consultation feedback on the ITS",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-06T12:14:56+00:00",
+   "first_seen_at": "2026-11-07T09:31:45+00:00",
+   "summary": "The EBA has refined its supervisory reporting simplification package following consultation feedback, extending implementation timelines and introducing proportionality measures. Key changes include reduced collateral and stress-testing reporting, integration of credit risk and IFRS 9 benchmarking into the framework, and postponed effective dates to December 2027 (first reference) and December 2028 (for liquidity, asset encumbrance and ESG). The final ITS report will be published in December 2026 with Commission adoption to follow, offering institutions at least one year for implementation.",
+   "why_it_matters": "Credit risk practitioners must plan for integrated credit risk benchmarking reporting starting December 2027, revised collateral and stress-testing templates, and alignment with IFRS 9 reporting changes under the new supervisory framework.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to track the December 2027 and 2028 implementation dates closely for data and reporting infrastructure, but the substantive modelling impact is limited—this is primarily an operational compliance matter unless the benchmarking templates materially change PD/LGD validation or disclosure requirements.\""
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to track the December 2027 and December 2028 implementation timelines closely as our bank must coordinate credit risk benchmarking, collateral reporting, and IFRS 9 alignment across the organization—these timelines directly impact our regulatory reporting roadmap and system development priorities."
+    }
+   }
+  },
   {
    "id": 2819,
    "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
