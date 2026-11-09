@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T09:48:02+00:00",
+ "generated_at": "2026-11-09T10:49:27+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -478,6 +478,35 @@
     "regulatory": {
      "relevance": "high",
      "verdict": "I need to monitor this carefully—Donnery's statements on regulatory modernisation and simplification directly shape ECB supervisory expectations on capital treatment, governance standards, and credit risk frameworks that govern my corporate loan book."
+    }
+   }
+  },
+  {
+   "id": 2896,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2019/nov/italian-banks-on-an-inclined-plan.html",
+   "title": "Italian Banks On An Inclined Plane",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-11-06T00:00:00+00:00",
+   "first_seen_at": "2026-11-09T10:49:20+00:00",
+   "summary": "Oliver Wyman analysis of Italian banking sector challenges identifies non-performing asset de-risking, revenue pressures from regulatory changes, and need for business model transformation. The report flags NPL completion and credit process modernisation as critical for Italian banks facing margin compression and regulatory headwinds over the next five years.",
+   "why_it_matters": "Credit risk practitioners must understand Italian bank strategy responses to NPL de-risking requirements and regulatory pressures, which may influence IRB model updates, provisioning practices, and counterparty credit assessments in the Italian market.",
+   "doc_status": "commentary",
+   "topics": [
+    "npl-provisioning",
+    "standardised-approach",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I need to track Italian bank NPL de-risking strategies and regulatory responses because they influence how counterparties in my portfolio behave under stress, but this is high-level industry analysis rather than a direct model input unless I'm directly exposed to Italian sovereign or bank credit risk."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a strategic analysis of Italian peer competition and business model pressures, but it does not address Nordic corporate credit risk capital treatment, CRR3 timelines, EBA mandates, or regulatory obligations that directly govern our corporate loan portfolio and reporting."
     }
    }
   },
