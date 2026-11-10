@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T10:49:27+00:00",
+ "generated_at": "2026-11-10T10:42:48+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -399,6 +399,90 @@
  ],
  "items": [
   {
+   "id": 2903,
+   "url": "https://www.risk.net/risk-quantum/7964371/uk-banks-face-divergent-basel-31-capital-outcomes",
+   "title": "UK banks face divergent Basel 3.1 capital outcomes",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-11-10T04:30:00+00:00",
+   "first_seen_at": "2026-11-10T10:41:56+00:00",
+   "summary": "Barclays and Lloyds face different capital impacts from Basel 3.1 implementation in the UK: Barclays' RWA increases may reduce Pillar 2A relief, while Lloyds expects benefits from both output floor and RWA changes. These divergent outcomes reflect differences in banks' exposure mix and how the output floor mechanism will interact with existing capital requirements. The implementation timeline and supervisory calibration of Pillar 2A under the new framework remains uncertain.",
+   "why_it_matters": "UK banks' capital positions and Pillar 2A buffers will shift materially and unpredictably under Basel 3.1, affecting capital planning and dividend capacity differently across the sector.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This is directly material to my modelling work: Basel 3.1's output floor and RWA methodology changes will reshape how our PD/LGD models feed into capital requirements, the divergent outcomes across peer institutions signal supervisory uncertainty around Pillar 2A recalibration, and I need to understand both the output floor's mechanical impact on our IRB models' RWA contribution and how downturn LGD assumptions will be stress-tested under the new framework—particularly whether our current margin of conservatism will be adequate post-implementation."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I track Basel 3.1/CRR3 implementation timelines and supervisory calibration because they drive capital treatment of our Nordic corporate exposures, but UK-specific outcomes at Barclays and Lloyds do not directly affect our bank's capital framework or corporate lending book—we operate under ECB/EBA mandate, not PRA guidance."
+    }
+   }
+  },
+  {
+   "id": 2901,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-streamlines-2027-eu-wide-stress-test-more-55-reduction-requested-data",
+   "title": "The EBA streamlines the 2027 EU-wide stress test with more than 55% reduction in requested data",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-09T15:08:44+00:00",
+   "first_seen_at": "2026-11-10T10:41:37+00:00",
+   "summary": "The EBA has published the final methodology, templates, and guidance for the 2027 EU-wide stress test, with a 55% reduction in required data points achieved through simplification and alignment with supervisory reporting standards. For the first time, a dedicated climate risk module will assess physical and transition risks alongside core stress testing of banks' solvency across key risk areas. The exercise will run from January to July 2027 using a constrained bottom-up approach with static balance sheet assumptions.",
+   "why_it_matters": "Credit risk practitioners must prepare for significantly streamlined reporting templates and new climate risk data requirements for the 2027 stress test, with key submission deadlines between April and July 2027.",
+   "doc_status": "final_rule",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The 2027 stress test simplification is operationally relevant—we'll need to map our PD/LGD data infrastructure to the streamlined templates and ensure our downturn datasets align with EBA expectations—but the 55% data reduction and climate module add administrative burden without directly reshaping our model methodology or validation approach."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to urgently brief our stress testing and data governance teams on the 2027 EBA exercise timeline and the new climate risk module—this will materially impact our data collection architecture and corporate credit risk reporting workflows by Q1 2027."
+    }
+   }
+  },
+  {
+   "id": 2928,
+   "url": "https://www.oliverwyman.com/our-expertise/insights/2020/aug/priorities-for-corporate-banks-in-2020.html",
+   "title": "Four Priorities For Corporate Banks In 2020",
+   "source_key": "oliverwyman",
+   "source_name": "Oliver Wyman Insights",
+   "source_org": "Oliver Wyman",
+   "author_type": "consumer",
+   "published_at": "2026-11-09T00:00:00+00:00",
+   "first_seen_at": "2026-11-10T10:42:42+00:00",
+   "summary": "Oliver Wyman 2020 analysis of corporate banking priorities post-COVID, highlighting record provisioning levels (~14x pre-crisis), stressed cashflow models for credit viability assessment, and implications of 30% potential corporate unviability under adverse scenarios. The article addresses forward-looking provisioning frameworks and credit portfolio management decisions in elevated stress environments.",
+   "why_it_matters": "Credit risk practitioners need to understand the provisioning methodology shifts and stressed cashflow-based credit decisioning frameworks that became standard post-2020, as these inform current expected credit loss (CECL/IFRS 9) and forward-looking impairment practices.",
+   "doc_status": "commentary",
+   "topics": [
+    "npl-provisioning",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "I recognize the historical context on post-COVID provisioning escalation and stressed cashflow assessment practices, but this 2020 retrospective has limited direct relevance to my current PD/LGD model development unless we're calibrating downturn scenarios or validating through the actual 2020–2021 data; the key takeaway is that provisioning methodology shifts reflect market-wide loss expectations during crisis, which should already be embedded in my model calibration data and downturn estimation, not treated as new forward-looking guidance."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I appreciate the credit risk analytics, but a 2020 retrospective on COVID-era provisioning practices is now historical—our bank has long since operationalized IFRS 9 ECL frameworks and moved past the emergency provisioning period; unless this contains proprietary stress methodologies or EBA guidance implementation details I'm not aware of, it doesn't affect my current capital, reporting, or supervisory compliance obligations."
+    }
+   }
+  },
+  {
    "id": 2832,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines",
    "title": "The EBA outlines next steps on supervisory reporting simplification and extends implementation timelines following consultation feedback on the ITS",
@@ -507,6 +591,35 @@
     "regulatory": {
      "relevance": "low",
      "verdict": "This is a strategic analysis of Italian peer competition and business model pressures, but it does not address Nordic corporate credit risk capital treatment, CRR3 timelines, EBA mandates, or regulatory obligations that directly govern our corporate loan portfolio and reporting."
+    }
+   }
+  },
+  {
+   "id": 2902,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/amendments-to-the-large-exposures-framework-part-2-policy-statement",
+   "title": "PS20/26 – Amendments to the Large Exposures Framework – Part 2",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-04T15:28:59+00:00",
+   "first_seen_at": "2026-11-10T10:41:50+00:00",
+   "summary": "The PRA publishes final policy amendments to the UK Large Exposures framework, completing consultation CP14/24. Final changes address securities financing transaction exposure calculation, trading book exposure limits, credit risk mitigation techniques, and mandatory substitution requirements, with alignment to Basel standards. Implementation timeline and reporting template updates are included.",
+   "why_it_matters": "Credit risk practitioners must update exposure calculations for SFTs, trading book limits, and CRM application; implement mandatory substitution for mitigated exposures; and meet new reporting requirements under revised timelines.",
+   "doc_status": "final_rule",
+   "topics": [
+    "large-exposures",
+    "credit-risk-mitigation",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While this addresses credit risk framework mechanics, it primarily impacts exposure calculation procedures and reporting templates rather than model foundations—PD/LGD calibration, validation, or downturn estimation remain unaffected by large exposures regulatory mechanics."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is PRA guidance on the UK Large Exposures framework, which does not apply to our Nordic corporate loan book under CRR3 and Nordic FSA jurisdiction; we follow EBA and ECB standards, not UK regulatory policy post-Brexit."
     }
    }
   },
