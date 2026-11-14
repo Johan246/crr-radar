@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T10:27:36+00:00",
+ "generated_at": "2026-11-14T09:45:31+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 2971,
+   "url": "https://blogs.pwc.de/de/regulatory/article/257808/eba-simplification-package/",
+   "title": "Regulatory Blog: EBA Simplification Package",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-11-13T13:17:53+00:00",
+   "first_seen_at": "2026-11-14T09:45:25+00:00",
+   "summary": "The EBA announced on 6 November 2026 modifications to its Simplification Package following consultation feedback, including streamlined reporting templates, reduced reporting frequencies, tighter alignment with disclosure rules, and simplified operational loss reporting. The first reporting date shifts from September 2027 to December 2027 (December 2028 for selected areas including liquidity, asset encumbrance, and benchmarking). The EBA plans to publish final ITS drafts in December 2026 and submit them to the European Commission, with technical implementation guidance expected in early 2027.",
+   "why_it_matters": "Credit risk practitioners must prepare for revised credit risk and IFRS 9 benchmarking reporting requirements integrated into supervisory reporting, with simplified stress test modules and changed submission timelines requiring structural impact analysis and systems redesign by end of 2027.",
+   "doc_status": "proposed_change",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our IRB model governance and supervisory reporting architecture—the timeline shift and template redesigns require immediate assessment of data infrastructure, validation routines, and PD/LGD benchmarking disclosure workflows, with systems freeze-off needed by Q4 2027."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to immediately task our reporting infrastructure team with impact analysis on the December 2027 (and December 2028 for liquidity/asset encumbrance) implementation timelines, particularly around credit risk and IFRS 9 benchmarking template changes—this directly affects our supervisory reporting obligations and system architecture for corporate exposures."
+    }
+   }
+  },
   {
    "id": 2903,
    "url": "https://www.risk.net/risk-quantum/7964371/uk-banks-face-divergent-basel-31-capital-outcomes",
