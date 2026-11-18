@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T11:25:48+00:00",
+ "generated_at": "2026-11-18T10:59:41+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,33 @@
   }
  ],
  "items": [
+  {
+   "id": 2993,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/clarifying-the-pra-approach-to-the-implementation-of-the-o-sii-buffer-consultation-paper",
+   "title": "CP16/26 – Clarifying the Prudential Regulation Authority’s approach to the implementation of the O-SII buffer",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-17T13:43:32+00:00",
+   "first_seen_at": "2026-11-18T10:59:13+00:00",
+   "summary": "The PRA has published a consultation paper proposing amendments to its statement of policy on the O-SII buffer to clarify that it could lower O-SII buffer rates to zero during systemic stress when prospective losses would cause firms to restrict lending beyond economic warrant. The proposals aim to improve buffer usability by reducing automatic distribution restrictions triggered when capital buffers are deployed, thereby supporting continuous lending to the real economy. The amendments would not change normal-times O-SII buffer calibration, reporting requirements, or the scope of affected firms.",
+   "why_it_matters": "Credit risk practitioners need to understand the new framework for O-SII buffer release and rebuild cycles, which affects lending capacity decisions and capital management during stress periods for systemically important UK banks.",
+   "doc_status": "consultation",
+   "topics": [
+    "output-floor"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "This is a macroprudential buffer policy question with no direct implication for PD/LGD model development, calibration, validation, downturn estimation, or data requirements—the O-SII buffer operates at the capital management and distribution restriction level, not the credit risk parameter level."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a UK PRA consultation on O-SII buffer flexibility during stress that does not apply to Nordic banks; our corporate loan book is managed under CRR3 and ECB/Nordic FSA frameworks, not FCA/PRA rules."
+    }
+   }
+  },
   {
    "id": 2971,
    "url": "https://blogs.pwc.de/de/regulatory/article/257808/eba-simplification-package/",
