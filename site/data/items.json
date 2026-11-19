@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T10:59:41+00:00",
+ "generated_at": "2026-11-19T11:02:21+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,93 @@
   }
  ],
  "items": [
+  {
+   "id": 3003,
+   "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261119~e75c4ff195.en.html",
+   "title": "Claudia Buch: Introductory statement",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-19T10:00:00+00:00",
+   "first_seen_at": "2026-11-19T11:01:30+00:00",
+   "summary": "ECB Supervisory Board Chair Claudia Buch presents 2026 SREP results showing stable average SREP scores (2.5) and largely stable CET1 capital requirements at 11.3% of RWA. The statement identifies credit risk management weaknesses as a persistent supervisory concern and reports that Pillar 2 requirements remain stable at 1.2%, with modest reductions applied where overlaps with Basel III Pillar 1 requirements were identified. The banking sector maintains a strong CET1 ratio of around 16% and leverage ratio of 5.8%, well above minimum thresholds.",
+   "why_it_matters": "Credit risk practitioners need to understand the ECB's latest P2R methodology, the treatment of Pillar 1/Pillar 2 overlaps under Basel III implementation, and supervisory expectations on credit risk identification and management going forward.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to track the ECB's 2026 SREP methodology closely—particularly the overlap treatment between Pillar 1 and Pillar 2 requirements, as this directly affects how our PD/LGD model outputs feed into capital adequacy frameworks and what margin of conservatism we must embed in our estimates."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to closely monitor ECB's P2R and Pillar 2 overlap treatment methodology as it directly shapes our SREP outcome, capital requirement trajectory, and credit risk expectations from supervision—especially given the persistent focus on credit risk weaknesses."
+    }
+   }
+  },
+  {
+   "id": 3004,
+   "url": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr261119~4cb883c88e.en.html",
+   "title": "ECB keeps capital requirements broadly stable for 2027, focuses its priorities on banks’ financial and operational resilience",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-19T09:00:00+00:00",
+   "first_seen_at": "2026-11-19T11:01:37+00:00",
+   "summary": "ECB's 2026 SREP results show euro area banks maintained robust capital and liquidity positions with CET1 requirements broadly stable at 11.3% of RWA for 2027. The revised Pillar 2 methodology strengthens the link between capital requirements and bank-specific risk profiles while reducing overlaps with Pillar 1. Supervisory priorities for 2027-29 emphasize credit underwriting standards, geopolitical resilience, and operational/ICT risk management, with new qualitative measures focused on credit risk (33%), internal governance (24%), and operational risk (12%).",
+   "why_it_matters": "Credit risk practitioners must align underwriting and risk management practices with the ECB's intensified focus on credit quality, leverage, and CRR III implementation, while adapting to the revised Pillar 2 methodology and new supervisory measures on NPE management and risk data capabilities.",
+   "doc_status": "final_rule",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This directly impacts our model validation and SREP positioning: the revised Pillar 2 methodology's strengthened link to bank-specific risk profiles means our PD/LGD models will face renewed scrutiny on granularity and downturn calibration, the 33% supervisory focus on credit risk drives expectations around underwriting standards and risk data capabilities we must demonstrate, and the emphasis on NPE management and credit quality requires us to validate margin of conservatism assumptions against tightened ECB benchmarks for 2027."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to integrate ECB's 2027 SREP findings into our capital planning and ensure our Nordic corporate credit underwriting standards align with the intensified supervisory focus on credit quality and leverage, particularly given the revised Pillar 2 methodology that may affect our specific capital add-ons."
+    }
+   }
+  },
+  {
+   "id": 3005,
+   "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr261119~4cb883c88e.en.html",
+   "title": "ECB keeps capital requirements broadly stable for 2027, focuses its priorities on banks’ financial and operational resilience",
+   "source_key": "ecb-ssm-archive",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-19T00:00:00+00:00",
+   "first_seen_at": "2026-11-19T11:01:45+00:00",
+   "summary": "ECB published 2026 Supervisory Review and Evaluation Process results showing CET1 capital requirements broadly stable at 11.3% of risk-weighted assets for 2027, with Pillar 2 CET1 requirements at 1.2%. A revised Pillar 2 methodology was applied for the first time, strengthening the link between capital requirements and bank-specific risk profiles. Supervisory priorities for 2027-29 focus on banks' resilience to geopolitical and macro-financial shocks, with emphasis on credit risk management, internal governance, and operational resilience.",
+   "why_it_matters": "Credit risk practitioners must understand the revised Pillar 2 methodology framework and stable capital requirement settings for 2027 budget planning, while tracking ECB's intensified focus on credit underwriting standards and CRR III implementation consistency.",
+   "doc_status": "final_rule",
+   "topics": [
+    "standardised-approach",
+    "irb-approach",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "The revised Pillar 2 methodology directly impacts our PD/LGD model validation framework and supervisory expectations; I need to review how the strengthened link to bank-specific risk profiles will influence our TRIM discussions, downturn calibration requirements, and the intensity of credit underwriting scrutiny that will flow into model governance."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to understand the revised Pillar 2 methodology immediately—it directly affects how the ECB will assess our corporate credit risk profile and capital adequacy, and knowing the 2027 baseline of 11.3% CET1 is essential for our SREP planning and stress testing frameworks."
+    }
+   }
+  },
   {
    "id": 2993,
    "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/clarifying-the-pra-approach-to-the-implementation-of-the-o-sii-buffer-consultation-paper",
