@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T11:02:21+00:00",
+ "generated_at": "2026-11-20T10:50:57+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,64 @@
   }
  ],
  "items": [
+  {
+   "id": 3017,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-continue-display-resilience-amid-sovereign-debt-pressures-borrower-vulnerabilities-and",
+   "title": "EU/EEA banks continue to display resilience amid sovereign debt pressures, borrower vulnerabilities and rising cyber threats",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-19T16:00:00+00:00",
+   "first_seen_at": "2026-11-20T10:50:19+00:00",
+   "summary": "The EBA's Autumn 2026 Risk Assessment Report finds EU/EEA banks remain resilient with strong capital (CET1 16.2%), liquidity and profitability, though NPL ratios have stabilised at ~1.8% with pockets of vulnerability in SME and commercial real estate lending. Key risks include sovereign debt sensitivity, growing interconnectedness with NBFIs (up 18.5% YoY), and operational threats from cyber and AI adoption. Capital headroom has tightened to 4.7% (down ~10 bps YoY), and consumer credit, SME loans and CRE exposures warrant closest monitoring.",
+   "why_it_matters": "Credit risk practitioners must monitor tightening capital headroom, elevated SME credit risk and NPL pressures, growing NBFI interconnectedness, and sovereign portfolio concentration as key drivers of supervisory expectations and potential refinements to standardised and IRB approaches.",
+   "doc_status": "final_rule",
+   "topics": [
+    "npl-provisioning",
+    "standardised-approach",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "This EBA risk assessment directly informs our IRB model calibration priorities—tightening capital headroom, rising SME default risk, and sovereign concentration all demand immediate attention in our downturn assumptions, segment-level PD recalibration, and TRIM-readiness, particularly for validation of economic cycle sensitivity in our corporate portfolio."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to closely monitor the EBA's Autumn 2026 Risk Assessment findings on capital headroom compression (4.7%, down 10 bps YoY) and elevated vulnerabilities in SME and CRE segments, as these will likely inform ECB supervisory guidance on corporate exposures and may trigger changes to IRB model expectations or standardised risk weights for my bank's Nordic portfolio."
+    }
+   }
+  },
+  {
+   "id": 3019,
+   "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in261119~44f86306fd.en.html",
+   "title": "Sharon Donnery: Strong, but not immune: resilience in an age of uncertainty",
+   "source_key": "ecb-ssm",
+   "source_name": "ECB Banking Supervision (SSM)",
+   "source_org": "ECB/SSM",
+   "author_type": "regulatory",
+   "published_at": "2026-11-19T15:00:00+00:00",
+   "first_seen_at": "2026-11-20T10:50:28+00:00",
+   "summary": "ECB supervisory board member discusses 2026 SREP results showing stable average scores (2.5) and CET1 requirements at 11.3% of RWA; notes the ECB applied revised Pillar 2 methodology to avoid double-counting with Basel III reforms and adjusted requirements to link more closely to underlying bank risks. Persistent supervisory concerns remain in internal governance, operational resilience, risk data aggregation, cyber resilience, and credit risk management, with pockets of vulnerability in consumer credit, commercial real estate, and lending to energy-intensive firms.",
+   "why_it_matters": "The revised Pillar 2 methodology and overlap adjustments with Basel III reforms directly change how capital requirements are set for 2027, and ongoing supervisory focus on credit risk management and asset quality vulnerabilities signals heightened expectations for credit risk practitioners.",
+   "doc_status": "commentary",
+   "topics": [
+    "crr3-implementation",
+    "output-floor",
+    "irb-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "The revised Pillar 2 methodology and ECB's overlap adjustments with Basel III reforms are operationally material to our PD/LGD model framework; heightened supervisory scrutiny on credit risk management, asset quality in consumer credit and CRE, and systemic stress in energy-intensive lending directly translates to margin of conservatism requirements and downturn calibration assumptions that we need to anticipate in our next model validation cycle."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to closely monitor the revised Pillar 2 methodology and ECB's overlap adjustments with Basel III—these directly impact our 2027 capital requirements—and I should ensure our credit risk management practices align with the heightened supervisory expectations on governance, risk data aggregation, and commercial real estate exposures in our Nordic corporate book."
+    }
+   }
+  },
   {
    "id": 3003,
    "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261119~e75c4ff195.en.html",
