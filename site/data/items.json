@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T10:50:57+00:00",
+ "generated_at": "2026-11-21T10:34:38+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,35 @@
   }
  ],
  "items": [
+  {
+   "id": 3027,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-information-third-country-groups-and-branches-operating-eueea",
+   "title": "The EBA publishes updated information on third-country groups and branches operating in the EU/EEA",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-20T08:46:25+00:00",
+   "first_seen_at": "2026-11-21T10:34:02+00:00",
+   "summary": "The EBA published its 2026 update identifying 441 third-country banking groups operating in the EU/EEA, of which 9 have established an intermediate EU parent undertaking (IPU) as required under CRD Article 21b for groups with total assets of EUR 40 billion or more. The update also covers 58 third-country groups operating through 84 branches across the EU/EEA. This transparent list supports consistent application of EU regulatory framework requirements for third-country bank governance and supervision.",
+   "why_it_matters": "Credit risk practitioners need to understand the organisational structure and regulatory classification of third-country banking groups for counterparty credit risk assessment, large exposures monitoring, and consolidated supervision purposes under CRD/CRR requirements.",
+   "doc_status": "final_rule",
+   "topics": [
+    "counterparty-credit-risk",
+    "large-exposures",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While the EBA's registry of third-country groups is useful reference material for compliance and large exposure monitoring, it has no direct implication for my PD/LGD model development, calibration, validation, or downturn estimation work on corporate exposures under the IRB approach."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I monitor this as a data point for interbank exposure management and counterparty credit risk oversight, but it doesn't directly affect my corporate loan book capital treatment or supervisory reporting obligations for Nordic corporates."
+    }
+   }
+  },
   {
    "id": 3017,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-continue-display-resilience-amid-sovereign-debt-pressures-borrower-vulnerabilities-and",
