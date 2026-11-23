@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T10:38:46+00:00",
+ "generated_at": "2026-11-23T11:40:59+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 3035,
+   "url": "https://www.risk.net/markets/7964517/sa-ccr-capital-impact-on-fx-needs-rethink-says-ms-trader",
+   "title": "SA-CCR capital impact on FX needs rethink, says MS trader",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-11-23T04:30:00+00:00",
+   "first_seen_at": "2026-11-23T11:40:36+00:00",
+   "summary": "A Morgan Stanley trader argues that standardised approach for counterparty credit risk (SA-CCR) capital requirements may create problematic incentives during extreme FX liquidity events. The piece suggests current SA-CCR calibration could force banks to reduce FX hedging or exposures at precisely the moments when liquidity is most stressed. Capital requirements under SA-CCR may need recalibration to better account for tail liquidity risk in FX markets.",
+   "why_it_matters": "SA-CCR practitioners need to monitor debates over whether current calibration creates procyclical capital demands in FX that could amplify market stress or force undesirable deleveraging decisions.",
+   "doc_status": "commentary",
+   "topics": [
+    "counterparty-credit-risk",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "While SA-CCR calibration is supervisory regulation I track, this piece is a trader's opinion on FX market microstructure incentives rather than an analysis of model design, data requirements, or validation issues that would materially affect my PD/LGD framework or IRB model governance."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is primarily a market microstructure debate from a sell-side trader; unless our Nordic corporate book has material FX derivative exposures creating SA-CCR charges that supervisors signal are problematic, I don't see a pressing capital treatment or regulatory change issue affecting our corporate exposures framework."
+    }
+   }
+  },
   {
    "id": 3027,
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-information-third-country-groups-and-branches-operating-eueea",
