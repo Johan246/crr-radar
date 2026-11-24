@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T11:40:59+00:00",
+ "generated_at": "2026-11-24T13:12:46+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,34 @@
   }
  ],
  "items": [
+  {
+   "id": 3045,
+   "url": "https://www.risk.net/risk-quantum/7964425/nomura%E2%80%99s-ima-capital-charge-falls-to-record-low",
+   "title": "Nomura’s IMA capital charge falls to record low",
+   "source_key": "risknet",
+   "source_name": "Risk.net",
+   "source_org": "Risk.net",
+   "author_type": "consumer",
+   "published_at": "2026-11-24T04:30:00+00:00",
+   "first_seen_at": "2026-11-24T13:12:19+00:00",
+   "summary": "Nomura's internal model approach (IMA) capital charge for model risk has declined to ¥68bn, reaching a record low and creating a widening gap versus standardised approach requirements. The article reports on comparative capital efficiency between IMA and standardised methodologies for a major bank.",
+   "why_it_matters": "IMA performance trends and divergence from standardised approach reflect model validation effectiveness and supervisory model risk oversight—critical benchmarks for IRB practitioners evaluating capital optimisation and model governance.",
+   "doc_status": "commentary",
+   "topics": [
+    "irb-approach",
+    "standardised-approach"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "I see this as a capital efficiency narrative about Nomura's IMA charge rather than a substantive item for my modeling work—it reflects output outcomes and competitive positioning, but tells me nothing about PD/LGD calibration rigor, downturn assumptions, data governance, or supervisory validation practices that would actually inform my model development and TRIM preparation."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "Nomura's Japanese IMA capital performance is not material to my Nordic corporate loan book—this is a Japanese bank's model approval status under different regulatory regimes, with no bearing on our CRR3 implementation, EBA mandates, or ECB/Nordic FSA supervisory expectations."
+    }
+   }
+  },
   {
    "id": 3035,
    "url": "https://www.risk.net/markets/7964517/sa-ccr-capital-impact-on-fx-needs-rethink-says-ms-trader",
