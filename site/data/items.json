@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T13:12:46+00:00",
+ "generated_at": "2026-11-25T12:01:29+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -399,6 +399,62 @@
  ],
  "items": [
   {
+   "id": 3093,
+   "url": "https://blogs.pwc.de/de/regulatory/article/258031/ezb-und-eba-konkretisieren-die-roadmap-fuer-das-meldewesen-der-zukunft/",
+   "title": "Regulatory Blog: EZB und EBA konkretisieren die Roadmap für das Meldewesen der Zukunft",
+   "source_key": "pwc-reg",
+   "source_name": "PwC Regulatory Blog",
+   "source_org": "PwC",
+   "author_type": "consumer",
+   "published_at": "2026-11-25T11:05:19+00:00",
+   "first_seen_at": "2026-11-25T12:01:17+00:00",
+   "summary": "The ECB and EBA held workshops in October–November 2026 to advance Europe's future reporting framework, with concrete steps on the Integrated Reporting Framework (IReF), the Data Point Model 2.1, and EBA Reporting Framework 4.4. IReF will harmonise statistical reporting (AnaCredit, BSI, MIR, SHS-S) through a Logical Data Model based on structured entities (Party, Loan, Security, Deposit, Derivative, Protection) with phased implementation starting April 2031 for loans to non-households and April 2034 for comprehensive granular reporting. Around 80% of simplified FINREP Solo and 53% of full FINREP Solo data points can be mapped to IReF structures, though no automatic replacement of FINREP or national reporting requirements is planned; an Extended Technical Layer will harmonise remaining national requirements.",
+   "why_it_matters": "Credit risk practitioners must prepare data architecture changes to support granular, harmonised reporting under IReF starting 2031, align credit definitions and identifiers across systems, and anticipate integration of statistical and supervisory reporting for loans and counterparty data.",
+   "doc_status": "commentary",
+   "topics": [
+    "reporting-disclosure",
+    "crr3-implementation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I must prepare for material changes to our data infrastructure and credit definitions that will cascade through PD/LGD model calibration pipelines starting 2031—IReF's structured entities and harmonised identifiers will fundamentally reshape how we source, validate, and segment exposure data for IRB models."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to ensure our corporate loan data architecture and taxonomy alignment strategies support IReF implementation from 2031 onwards, particularly the logical data model for loan entities and counterparty identifiers which will directly impact our supervisory reporting infrastructure."
+    }
+   }
+  },
+  {
+   "id": 3050,
+   "url": "https://www.bankofengland.co.uk/news/2026/november/regulators-implement-growth-friendly-securitisation-reforms",
+   "title": "Regulators implement growth-friendly securitisation reforms",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-25T10:00:00+00:00",
+   "first_seen_at": "2026-11-25T12:00:36+00:00",
+   "summary": "The PRA and FCA have published final/near-final rules simplifying UK securitisation requirements, including reduced due diligence prescriptiveness, flexible risk retention (minimum 5%) options, and limited re-securitisation permissions. The reforms aim to reduce industry costs by approximately £168 million over ten years while maintaining financial stability safeguards. These changes are designed to support lending and economic growth while preventing a return to pre-financial crisis practices.",
+   "why_it_matters": "Credit risk practitioners must update securitisation origination, documentation, and risk retention policies to reflect the new PRA/FCA regime on due diligence, investor/issuer transparency standards, and re-securitisation permissions.",
+   "doc_status": "final_rule",
+   "topics": [
+    "securitisation",
+    "credit-risk-mitigation"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "low",
+     "verdict": "I work on IRB PD and LGD models for corporate exposures; securitisation rules and risk retention frameworks are outside my direct remit and don't materially affect my model development, calibration, validation, or data infrastructure."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I focus on Nordic corporate credit risk and CRR3 capital treatment—UK securitisation rule changes under PRA/FCA supervision do not materially impact our Nordic corporate loan book or our regulatory capital requirements."
+    }
+   }
+  },
+  {
    "id": 3045,
    "url": "https://www.risk.net/risk-quantum/7964425/nomura%E2%80%99s-ima-capital-charge-falls-to-record-low",
    "title": "Nomura’s IMA capital charge falls to record low",
@@ -451,6 +507,35 @@
     "regulatory": {
      "relevance": "low",
      "verdict": "This is primarily a market microstructure debate from a sell-side trader; unless our Nordic corporate book has material FX derivative exposures creating SA-CCR charges that supervisors signal are problematic, I don't see a pressing capital treatment or regulatory change issue affecting our corporate exposures framework."
+    }
+   }
+  },
+  {
+   "id": 3052,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/reforms-to-securitisation-requirements-policy-statement",
+   "title": "PS21/26 – Reforms to securitisation requirements",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-20T16:07:59+00:00",
+   "first_seen_at": "2026-11-25T12:00:44+00:00",
+   "summary": "The PRA publishes final reforms to UK securitisation requirements, simplifying due diligence and transparency rules, introducing additional risk retention modalities, and clarifying resecuritisation bans and credit-granting criteria. The package includes new capital treatment for single-loan residential mortgage securitisations under the IRB approach and amendments to PRA Rulebook parts covering securitisation capital, NPL securitisations, and reporting for CRR firms.",
+   "why_it_matters": "Credit risk practitioners must update compliance frameworks for simplified securitisation capital requirements, revised IRB treatment for single-loan mortgages, and reduced operational burdens on due diligence and documentation.",
+   "doc_status": "final_rule",
+   "topics": [
+    "securitisation",
+    "irb-approach",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "This is primarily a securitisation compliance and capital treatment update; unless our bank is a material originator of single-loan residential mortgage securitisations under IRB, the IRB modelling implications are limited—I'd need to understand our specific securitisation portfolio exposure and whether the new capital treatment affects our RWA calculation or model validation approaches."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "This is a UK PRA rulebook reform with no bearing on our Nordic corporate loan book or CRR3 implementation in the EU/EEA—I'll monitor for any equivalent EU securitisation guidance, but this specific package doesn't require our action."
     }
    }
   },
