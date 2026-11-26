@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T12:01:29+00:00",
+ "generated_at": "2026-11-26T11:49:26+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -398,6 +398,63 @@
   }
  ],
  "items": [
+  {
+   "id": 3100,
+   "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/november-2026",
+   "title": "Financial Policy Committee Record – November 2026",
+   "source_key": "boe-pra",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-26T10:30:00+00:00",
+   "first_seen_at": "2026-11-26T11:48:57+00:00",
+   "summary": "The PRA Financial Policy Committee identifies interconnected vulnerabilities in credit and financial markets including elevated leveraged hedge fund positions, rising government bond yields, stretched equity valuations, and stress in weaker corporate borrowers and private credit. Higher interest rates are eroding financial headroom for households and intensifying sovereign debt pressures. These vulnerabilities create systemic risk of simultaneous crystallisation affecting credit risk exposures across markets.",
+   "why_it_matters": "Credit risk practitioners must anticipate potential deleveraging cascades, widening corporate spreads, heightened default risks among weaker borrowers, and tighter credit conditions as supervisory concerns about interconnected leverage and credit market stress translate into regulatory capital and provisioning expectations.",
+   "doc_status": "final_rule",
+   "topics": [
+    "large-exposures",
+    "npl-provisioning",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to integrate these interconnected vulnerabilities into our downturn scenarios and stress testing frameworks, particularly for PD and LGD calibration—rising rates and deleveraging cascades directly drive default probability assumptions, while simultaneous market stress scenarios are essential for validating our margin of conservatism under IRB."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to integrate PRA's November 2026 FPC interconnectedness assessment into our corporate stress testing frameworks and provisioning models, particularly for weaker borrowers in our Nordic loan book where rising rates and deleveraging pressures will compress margins and trigger earlier default cycles."
+    }
+   }
+  },
+  {
+   "id": 3096,
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-follow-review-confirms-high-level-supervisory-convergence-applying-default-rules-across-eueea",
+   "title": "The EBA follow-up review confirms high level of supervisory convergence in applying default rules across the EU/EEA",
+   "source_key": "eba",
+   "source_name": "European Banking Authority",
+   "source_org": "EBA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-26T08:09:01+00:00",
+   "first_seen_at": "2026-11-26T11:48:44+00:00",
+   "summary": "The EBA published a follow-up report confirming strong implementation and high supervisory convergence of its Guidelines on the definition of default (DoD) across EU/EEA jurisdictions. The review assessed 31 competent authorities, finding the Guidelines implemented primarily through binding national frameworks or supervisory guidance, with the SSM showing particularly strong convergence. The EBA identified opportunities for further progress through enhanced internal documentation of methodologies and increased sharing of granular data and supervisory best practices across jurisdictions.",
+   "why_it_matters": "Credit risk practitioners need to understand that default determination practices are now highly converged across EU/EEA, reducing inconsistency in IRB provisioning and classification methodologies, though some variation persists in implementation approaches.",
+   "doc_status": "final_rule",
+   "topics": [
+    "irb-approach",
+    "npl-provisioning"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to monitor this closely: harmonised default definitions across SSM are foundational to our PD calibration assumptions, historical default rate validation, and IRB classification consistency; any supervisory convergence reduces model uncertainty but I must review whether our current methodology fully aligns with the latest EBA guidance and ensure our TRIM documentation explicitly addresses default determination criteria."
+    },
+    "regulatory": {
+     "relevance": "high",
+     "verdict": "I need to monitor the EBA's convergence findings carefully to ensure our corporate default determination framework aligns with both ECB SSM expectations and peer practice across Nordic jurisdictions, as divergence in provisioning methodologies could expose us to supervisory criticism and inconsistent capital outcomes."
+    }
+   }
+  },
   {
    "id": 3093,
    "url": "https://blogs.pwc.de/de/regulatory/article/258031/ezb-und-eba-konkretisieren-die-roadmap-fuer-das-meldewesen-der-zukunft/",
