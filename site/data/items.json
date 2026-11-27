@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T11:49:26+00:00",
+ "generated_at": "2026-11-27T11:41:50+00:00",
  "topics": {
   "irb-approach": "IRB approach",
   "standardised-approach": "Standardised approach",
@@ -399,6 +399,34 @@
  ],
  "items": [
   {
+   "id": 3110,
+   "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/o-sii-buffer-rates-for-ring-fenced-banks-and-large-building-societies",
+   "title": "2026 Other Systemically Important Institutions (O-SII) buffer rates",
+   "source_key": "boe-archive",
+   "source_name": "Bank of England / PRA",
+   "source_org": "BoE/PRA",
+   "author_type": "regulatory",
+   "published_at": "2026-11-26T16:41:11+00:00",
+   "first_seen_at": "2026-11-27T11:41:17+00:00",
+   "summary": "The PRA has set O-SII buffer rates for 2028 application based on the FPC framework, applicable to five ring-fenced bank sub-groups (ranging 1.0–2.0% of RWAs) and Nationwide Building Society (1.0%). For RFBs, where the O-SII buffer exceeds any G-SIB buffer, the group PRA buffer and Leverage Ratio Group Add-on will increase to ensure systemic risk coverage at group level.",
+   "why_it_matters": "Credit risk practitioners must model and provision for these higher capital buffer requirements effective 1 January 2028, affecting capital planning and RWA consumption for major UK ring-fenced banks and building societies.",
+   "doc_status": "final_rule",
+   "topics": [
+    "output-floor",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "medium",
+     "verdict": "The O-SII buffer directive sets compliance requirements but doesn't directly impact my PD/LGD model development or calibration; however, I need to flag that higher RWA consumption and capital planning changes may tighten stress scenarios and downturn assumptions in future model reviews, particularly if default rates spike under constrained capital regimes."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I am a Nordic bank regulator-watcher focused on CRR3 and ECB/Nordic FSA mandates for continental Europe; this PRA decision on UK ring-fenced banks and building societies has no bearing on my Scandinavian corporate loan book capital treatment or reporting obligations."
+    }
+   }
+  },
+  {
    "id": 3100,
    "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/november-2026",
    "title": "Financial Policy Committee Record – November 2026",
@@ -452,6 +480,35 @@
     "regulatory": {
      "relevance": "high",
      "verdict": "I need to monitor the EBA's convergence findings carefully to ensure our corporate default determination framework aligns with both ECB SSM expectations and peer practice across Nordic jurisdictions, as divergence in provisioning methodologies could expose us to supervisory criticism and inconsistent capital outcomes."
+    }
+   }
+  },
+  {
+   "id": 3115,
+   "url": "https://www.afme.eu/news-insights/press-releases/afme-calls-for-meaningful-reform-following-fpc-review-of-uk-bank-capital/",
+   "title": "AFME calls for meaningful reform following FPC review of UK bank capital",
+   "source_key": "afme",
+   "source_name": "AFME News",
+   "source_org": "AFME",
+   "author_type": "consumer",
+   "published_at": "2026-11-26T00:00:00+00:00",
+   "first_seen_at": "2026-11-27T11:41:44+00:00",
+   "summary": "The Bank of England's Financial Policy Committee has published a review of UK bank capital requirements, with AFME calling for reforms to reduce overlaps and overcapitalisation in the framework. AFME prioritises improved calibration of Pillar 2A requirements, greater transparency on PRA methodology, and meaningful leverage ratio reform to prevent higher net capital requirements. The PRA is expected to consult on targeted proposals and leverage ratio measures.",
+   "why_it_matters": "UK credit risk practitioners must track the upcoming consultations on Pillar 2A and leverage ratio reform, as changes could materially reduce or redistribute minimum capital requirements across the banking sector.",
+   "doc_status": "commentary",
+   "topics": [
+    "output-floor",
+    "large-exposures",
+    "reporting-disclosure"
+   ],
+   "reviews": {
+    "quant": {
+     "relevance": "high",
+     "verdict": "I need to monitor the PRA's upcoming consultations closely—P2A recalibration and leverage ratio reform will directly impact our IRB model adequacy, capital ratios, and potentially our margin of conservatism assumptions, especially if the floor mechanism shifts."
+    },
+    "regulatory": {
+     "relevance": "low",
+     "verdict": "I track Nordic and EU regulatory frameworks closely, but UK banking capital reforms—even those affecting major international players—sit outside my remit as a Scandinavian corporate bank regulator; our capital treatment follows CRR3 and ECB/Nordic FSA guidance, not PRA policy."
     }
    }
   },
